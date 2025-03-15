@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+.link {
+  color: black;
+  text-decoration: none;
+  transition: 200ms;
+}
+.link:hover {
+  color: green;
+  transition: 200ms;
+}
