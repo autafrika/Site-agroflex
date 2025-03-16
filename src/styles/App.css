@@ -34,6 +34,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 100ms ease;
 }
 .btn.active {
   background-color: #000;
@@ -46,4 +47,5 @@
 }
 .btn:hover {
   transform: scale(1.03);
+  transition: 200ms ease-in;
 }
