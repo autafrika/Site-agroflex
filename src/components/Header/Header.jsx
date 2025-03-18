@@ -132,7 +132,7 @@ function Header() {
               </button>
             </div>
 
-            <ul className="mt-5">
+            <ul onClick={() => setIsOpen(false)} className="mt-5">
               <li className="mb-1">
                 <a
                   href="#home"
