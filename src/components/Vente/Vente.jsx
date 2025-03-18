@@ -16,9 +16,9 @@ function Vente() {
         odio, non sequi eius quidem corporis quibusdam quos magnam nam dolor
         impedit qui alias, aperiam recusandae autem tempora, molestias optio.
       </p>
-      <div className="flex gap-7 justify-center items-center overflow-hidden">
+      <div className="flex  p-3 gap-7 justify-start items-center overflow-x-auto overflow-y-hidden">
         <div>
-          <div className="card bg-base-100  w-68 p-2 shadow-md">
+          <div className="card bg-base-100  w-68 p-2 ">
             <figure className="overflow-hidden h-42">
               <img src={carotte} className="w-full object-center" alt="plant" />
             </figure>
@@ -35,7 +35,7 @@ function Vente() {
           </div>
         </div>
         <div>
-          <div className="card bg-base-100  w-68 p-2 shadow-sm">
+          <div className="card bg-base-100  w-68 p-2 ">
             <figure className="overflow-hidden h-42">
               <img src={onions} className="w-full object-center" alt="plant" />
             </figure>
@@ -52,7 +52,7 @@ function Vente() {
           </div>
         </div>
         <div>
-          <div className="card bg-base-100  w-68 p-2 shadow-sm">
+          <div className="card bg-base-100  w-68 p-2 ">
             <figure className="overflow-hidden h-42">
               <img src={courge} className="w-full object-center" alt="plant" />
             </figure>

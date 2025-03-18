@@ -33,10 +33,10 @@ function Diagnostic() {
               commodi, eos ad at enim.
             </p>
             <div className="btns">
-              <button className="btn active w-fit">
+              <button className="btn enable w-fit">
                 Obtenir un diagnostique
               </button>
-              <button className="btn inactive w-fit">
+              <button className="btn disable w-fit">
                 Obtenir un diagnostique
               </button>
             </div>

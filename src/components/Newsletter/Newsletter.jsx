@@ -15,7 +15,7 @@ function Newsletter() {
             type="email"
             placeholder="Entrez votre email"
           />
-          <button className="h-12 btn active">Subscribe</button>
+          <button className="h-12 btn enable">Subscribe</button>
         </form>
       </div>
     </div>

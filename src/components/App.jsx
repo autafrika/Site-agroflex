@@ -7,16 +7,19 @@ import Diagnostic from "./Diagnostic/Diagnostic";
 import Newsletter from "./Newsletter/Newsletter";
 import Vente from "./Vente/Vente";
 import Footer from "./Footer/Footer";
+import Functionnalities from "./Functionnalites/Functionnalities";
+
 function App() {
   return (
     <div>
       <Hero />
+      <Functionnalities />
       <Services />
-      <Scan />
+      {/*<Scan />
       <Diagnostic />
       <Vente />
       <Newsletter />
-      <Footer />
+      <Footer /> */}
     </div>
   );
 }
