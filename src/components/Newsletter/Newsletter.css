@@ -1,0 +1,27 @@
+.patern {
+  background: radial-gradient(#a9910f 15%, transparent 16%),
+    repeating-linear-gradient(
+      0deg,
+      transparent 6.5%,
+      #ffffff 7%,
+      #ffffff 9%,
+      transparent 10%
+    ),
+    linear-gradient(
+      45deg,
+      transparent 49%,
+      #a9910f 49%,
+      #a9910f 51%,
+      transparent 51%
+    ),
+    linear-gradient(
+      -45deg,
+      transparent 49%,
+      #a9910f 49%,
+      #a9910f 51%,
+      transparent 51%
+    );
+  background-size: 2em 2em;
+  background-color: #ffffff;
+  opacity: 1;
+}

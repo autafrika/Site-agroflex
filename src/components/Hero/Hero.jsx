@@ -10,7 +10,10 @@ import RainEffect from "../Rain/Rain";
 
 function Hero() {
   return (
-    <div className="h-hero h-screen overflow-hidden relative z-0  flexColumn w-full ">
+    <div
+      id="home"
+      className="h-hero h-screen overflow-hidden relative z-10  flexColumn w-full "
+    >
       <div className="flex h-screen -z-10 absolute object-cover top-0 left-0 w-full">
         <img
           className=" object-cover object-bottom w-full "
@@ -22,16 +25,16 @@ function Hero() {
       <Header />
       <div className="h-left h-full  flex flex-col justify-center items-center  text-white p-10 gap-5 bg-black/50">
         <h1 className="font-extrabold  transform text-center text-4xl/11 lg:text-5xl/12 2xl:text-6xl/17 p-4 ">
-          Welcome To our plateform <br /> It&apos;s actualy a pleasure <br />
+          Optimisez Votre Production Agricole
         </h1>
 
         <p className="text-lg lg:text-xl text-center text-gray-100">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam vitae
-          placeat aliquid sit maxime voluptas ipsum ea eos.
+          Utilisez la technologie pour améliorer vos rendements et réduire les
+          coûts.
         </p>
         <div className="flex justify-center items-center gap-6 mt-5">
-          <button className="btn enable ">Get started</button>
-          <button className="btn disable">Learn More</button>
+          <button className="btn enable ">Commencer </button>
+          <button className="btn disable">Savoir plus</button>
         </div>
       </div>
       <div className="hidden lg:block">

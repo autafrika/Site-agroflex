@@ -7,84 +7,92 @@ import onions from "../../assets/envente/onions.jpeg";
 
 function Vente() {
   return (
-    <div className="pt-32 pb-20 px-32 h-auto">
-      <h2 className="flex-none pb-6 text-3xl text-slate-600 font-semibold text-center">
-        votre processus agricole jusqu&apos;a la vente
+    <div className="pt-14 pb-14 px-4 lg:px-32 h-auto bg-slate-500/10">
+      <h2 className="flex-none pb-6 text-2xl lg:text-3xl text-slate-600 font-semibold text-center">
+        De la Production à la Commercialisation
       </h2>
-      <p className="text-center pb-16">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod doloribus
-        odio, non sequi eius quidem corporis quibusdam quos magnam nam dolor
-        impedit qui alias, aperiam recusandae autem tempora, molestias optio.
+      <p className="text-sm lg:text-base text-center pb-16 lg:px-10">
+        L&apos;application accompagne chaque étape, de la culture à la vente des
+        produits, en facilitant la gestion, l&apos;optimisation des rendements
+        et la mise en relation avec les acheteurs.
       </p>
       <div className="flex  p-3 gap-7 justify-start items-center overflow-x-auto overflow-y-hidden">
-        <div>
-          <div className="card bg-base-100  w-68 p-2 ">
-            <figure className="overflow-hidden h-42">
+        <div className="w-full h-auto">
+          <div className="card bg-base-100 ">
+            <figure className="overflow-hidden h-36 lg:h-42">
               <img src={carotte} className="w-full object-center" alt="plant" />
             </figure>
-            <div className="card-body px-2">
+            <div className="card-body lg:px-2 ">
               <h2 className="card-title">Carottes</h2>
               <p>
-                A card component has a figure, a body part, and inside body
-                there are title and actions parts
+                Quantite:13239 <br />
+                Prix: 10$
+                <br />
+                Description: produit en bonne sante
               </p>
               <div className="card-actions justify-end">
-                <button className="btn active">Buy Now</button>
+                <button className="btn enable">Buy Now</button>
               </div>
             </div>
           </div>
         </div>
         <div>
           <div className="card bg-base-100  w-68 p-2 ">
-            <figure className="overflow-hidden h-42">
+            <figure className="overflow-hidden h-36 lg:h-42">
               <img src={onions} className="w-full object-center" alt="plant" />
             </figure>
-            <div className="card-body px-2">
+            <div className="card-body lg:px-2">
               <h2 className="card-title">Onions</h2>
               <p>
-                A card component has a figure, a body part, and inside body
-                there are title and actions parts
+                Quantite:13239 <br />
+                Prix: 10$
+                <br />
+                Description: produit en bonne sante
               </p>
               <div className="card-actions justify-end">
-                <button className="btn active">Buy Now</button>
+                <button className="btn enable">Buy Now</button>
               </div>
             </div>
           </div>
         </div>
         <div>
           <div className="card bg-base-100  w-68 p-2 ">
-            <figure className="overflow-hidden h-42">
+            <figure className="overflow-hidden h-36 lg:h-42">
               <img src={courge} className="w-full object-center" alt="plant" />
             </figure>
-            <div className="card-body px-2">
+            <div className="card-body lg:px-2">
               <h2 className="card-title">Courges</h2>
               <p>
-                A card component has a figure, a body part, and inside body
-                there are title and actions parts
+                Quantite:13239 <br />
+                Prix: 10$
+                <br />
+                Description: produit en bonne sante
               </p>
               <div className="card-actions justify-end">
-                <button className="btn active">Buy Now</button>
+                <button className="btn enable">Buy Now</button>
               </div>
             </div>
           </div>
         </div>
         <div>
-          <div className="card bg-base-100  w-68 p-2 shadow-sm">
-            <figure className="overflow-hidden h-42 object-cover">
+          <div className="card bg-base-100  w-68 p-2">
+            <figure className="overflow-hidden h-36 lg:h-42 object-cover">
               <img
                 src={aubergine}
                 className="w-full object-center"
                 alt="plant"
               />
             </figure>
-            <div className="card-body px-2 ">
+            <div className="card-body lg:px-2 ">
               <h2 className="card-title">Aubergines</h2>
               <p>
-                A card component has a figure, a body part, and inside body
-                there are title and actions parts
+                Quantite:13239 <br />
+                Prix: 10$
+                <br />
+                Description: produit en bonne sante
               </p>
               <div className="card-actions justify-end">
-                <button className="btn active">Buy Now</button>
+                <button className="btn enable">Buy Now</button>
               </div>
             </div>
           </div>

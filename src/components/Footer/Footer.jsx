@@ -5,28 +5,50 @@ import agroflex from "../../assets/agroflex.png";
 function Footer() {
   return (
     <div>
-      <footer className="footer sm:footer-horizontal bg-base-200 text-base-content p-10">
-        <aside>
-          <img src={agroflex} className="w-24" alt="agroflex" />
+      <footer
+        id="contact"
+        className="footer sm:footer-horizontal bg-base-200 text-base-content p-10"
+      >
+        <aside className="w-[70%]">
+          <img
+            src={agroflex}
+            className="w-24 -ml-2 bg-white rounded-xl"
+            alt="agroflex"
+          />
           <p className="text-base/6">
-            Agro flex Lorem ipsum dolor sit amet consectetur adipisicing.
+            Agro flex une solution numerique specialement conçue pour les
+            agriculteurs et les fermiers
             <br />
-            Providing reliable tech since 2025
+            Fourni de puis 2025
           </p>
         </aside>
         <nav>
-          <h6 className="footer-title">Services</h6>
-          <a className="link link-hover">Branding</a>
-          <a className="link link-hover">Design</a>
-          <a className="link link-hover">Marketing</a>
-          <a className="link link-hover">Advertisement</a>
+          <h6 className="footer-title">Liens</h6>
+          <a className="link link-hover" href="#Accueil">
+            Accueil
+          </a>
+          <a className="link link-hover" href="#fonctionnalites">
+            Fonctionnalites
+          </a>
+          <a className="link link-hover" href="#services">
+            Services
+          </a>
+          <a className="link link-hover" href="#newsletter">
+            Newsletter
+          </a>
+          <a className="link link-hover" href="#contact">
+            Contact
+          </a>
         </nav>
         <nav>
-          <h6 className="footer-title">Company</h6>
-          <a className="link link-hover">About us</a>
-          <a className="link link-hover">Contact</a>
-          <a className="link link-hover">Jobs</a>
-          <a className="link link-hover">Press kit</a>
+          <h6 className="footer-title">Contact</h6>
+          <a className="link link-hover" href="mailto:contact@autafrika.com">
+            contact@autafrika.com
+          </a>
+          <h6 className="footer-title">Site officiel</h6>
+          <a className="link link-hover" href="https://www.autafrika.com">
+            https://autafrika.com
+          </a>
         </nav>
       </footer>
       <footer className="w-full text-center py-4 text-sm">

@@ -15,11 +15,11 @@ function App() {
       <Hero />
       <Functionnalities />
       <Services />
-      {/*<Scan />
+      <Scan />
       <Diagnostic />
       <Vente />
       <Newsletter />
-      <Footer /> */}
+      <Footer />
     </div>
   );
 }
