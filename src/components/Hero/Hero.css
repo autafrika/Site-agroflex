@@ -1,7 +1,5 @@
 @import "tailwindcss";
 
 .h-hero h2 {
-  font-size: medium;
-  font-weight: bold;
-  color: white;
+  @apply text-sm xl:text-base font-bold text-white;
 }

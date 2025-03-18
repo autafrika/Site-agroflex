@@ -37,8 +37,9 @@ function Hero() {
           <button className="btn disable">Savoir plus</button>
         </div>
       </div>
+
       <div className="hidden lg:block">
-        <div className="lg:w-[410px] flex flex-row  p-3 lg:h-[130px] backdrop-blur-sm bg-gradient-to-br from-gray-700/30 to-green-800/10 border border-gray-400  absolute bottom-8 left-8 rounded-lg">
+        <div className="lg:w-[310px] lg:h-[99px] xl:w-[410px] xl:h-[130px]  flex flex-row p-1 xl:p-3 backdrop-blur-sm bg-gradient-to-br from-gray-700/30 to-green-800/10 border border-gray-400  absolute bottom-8 left-8 rounded-lg">
           <div className="h-full w-2/3 rounded-md flex items-end overflow-hidden">
             <img
               className="h-[120%] w-full object-cover"
@@ -46,12 +47,17 @@ function Hero() {
               alt=""
             />
           </div>
-          <div className="w-full h-full py-2 px-3 flex flex-col justify-between ">
-            <h2>Controllez la qualite et l&apos;etat du sol</h2>
-            <p className="text-gray-100 text-xs">Lorem ipsum dolor sit.</p>
+          <div className="w-full h-full px-2 xl:px-2 flex flex-col justify-between ">
+            <h2 className="lg:text-sm">
+              Controllez la qualite et l&apos;etat du sol
+            </h2>
+            <p className="text-gray-100 text-xs">
+              Un sol bien entretenu favorise la croissance en bonne qualite des
+              cultures
+            </p>
           </div>
         </div>
-        <div className="w-[410px] p-3 flex h-[130px] backdrop-blur-sm from-gray-700/30 to-green-800/10 border border-gray-400  absolute bottom-8 left-1/2 rounded-lg -translate-x-1/2 ">
+        <div className="lg:w-[310px] lg:h-[99px]  xl:w-[410px] xl:h-[130px] p-1 xl:p-3 flex  backdrop-blur-sm from-gray-700/30 to-green-800/10 border border-gray-400  absolute bottom-8 left-1/2 rounded-lg -translate-x-1/2 ">
           <div className="h-full w-1/2 rounded-md flex items-end overflow-hidden">
             <img
               className="h-[120%] w-full object-cover"
@@ -60,14 +66,16 @@ function Hero() {
             />
           </div>
 
-          <div className="w-full h-full py-2 px-3 flex flex-col justify-between ">
-            <h2>Donnez a vos les reels besoins qu&apos;ils ont</h2>
+          <div className="w-full h-full px-2  p-1 xl:p-2 flex flex-col justify-between ">
+            <h2 className="lg:text-sm">
+              Donnez a vos les reels besoins qu&apos;ils ont
+            </h2>
             <p className="text-gray-100 text-xs">
               Soyez au courant des besoins de vos plantes
             </p>
           </div>
         </div>
-        <div className="w-[410px] flex p-3 h-[130px] bg-green-500/20 border border-gray-400 backdrop-blur-md absolute bottom-8 right-8 rounded-lg">
+        <div className="lg:w-[310px] lg:h-[99px] xl:w-[410px] xl:h-[130px]  flex p-1 xl:p-3  bg-green-500/20 border border-gray-400 backdrop-blur-md absolute bottom-8 right-8 rounded-lg">
           <div className="h-full w-1/2 rounded-md flex items-end overflow-hidden">
             <img
               className="h-[120%] w-full object-cover"
@@ -75,8 +83,10 @@ function Hero() {
               alt=""
             />
           </div>
-          <div className="w-full h-full py-2 px-3 flex flex-col justify-between ">
-            <h2>Multipliez vos rendement et vos chiffre d&apos;affaires</h2>
+          <div className="w-full h-full p-1 xl:p-2 flex flex-col justify-between ">
+            <h2 className="lg:text-sm">
+              Multipliez vos rendement et vos chiffre d&apos;affaires
+            </h2>
             <p className="text-gray-100 text-xs">
               Le rendement est consequent avec les informations cruciales
             </p>

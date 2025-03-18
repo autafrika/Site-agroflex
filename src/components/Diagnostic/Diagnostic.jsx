@@ -36,9 +36,9 @@ function Diagnostic() {
               <button className="btn enable w-fit text-xs lg:text-sm ">
                 Obtenir l&apos;application
               </button>
-              <button className="btn disable w-fit text-xs lg:text-sm">
+              {/* <button className="btn disable w-fit text-xs lg:text-sm">
                 Tester l&apos;application
-              </button>
+              </button> */}
             </div>
           </div>
         </div>
