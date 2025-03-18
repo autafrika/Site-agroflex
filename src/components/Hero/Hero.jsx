@@ -5,7 +5,7 @@ import champ from "../../assets/champ1.webp";
 import plantHand from "../../assets/plante-hand.jpg";
 import solmonitor from "../../assets/solmonitor.jpg";
 import croissant from "../../assets/croissant.jpg";
-import Weather from "../Weather/Weather";
+// import Weather from "../Weather/Weather";
 import RainEffect from "../Rain/Rain";
 
 function Hero() {
