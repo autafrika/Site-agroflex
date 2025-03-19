@@ -7,6 +7,7 @@ import solmonitor from "../../assets/solmonitor.jpg";
 import croissant from "../../assets/croissant.jpg";
 // import Weather from "../Weather/Weather";
 import RainEffect from "../Rain/Rain";
+import { motion } from "framer-motion";
 
 function Hero() {
   return (
@@ -24,9 +25,16 @@ function Hero() {
       </div>
       <Header />
       <div className="h-left h-full  flex flex-col justify-center items-center  text-white p-10 gap-5 bg-black/50">
-        <h1 className="font-extrabold  transform text-center text-4xl/11 md:text-5xl/12 2xl:text-6xl/17 p-4 ">
+        <motion.h1
+          initial={{ opacity: 0, y: 50 }} // Départ en bas avec une opacité 0
+          whileInView="visible"
+          animate={{ opacity: 1, y: 0 }} // Arrive en haut avec opacité 1
+          exit={{ opacity: 0, y: 50 }} // Redescend en disparaissant
+          transition={{ duration: 0.5, ease: "easeOut" }} // Animation fluide
+          className="font-extrabold  transform text-center text-4xl/11 md:text-5xl/12 2xl:text-6xl/17 p-4 "
+        >
           Optimisez Votre Production Agricole
-        </h1>
+        </motion.h1>
 
         <p className="text-lg lg:text-xl text-center text-gray-100">
           Utilisez la technologie pour améliorer vos rendements et réduire les

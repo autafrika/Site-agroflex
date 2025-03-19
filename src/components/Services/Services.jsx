@@ -1,6 +1,8 @@
 import React from "react";
 import "./Services.css";
 import home from "../../assets/home1.png";
+import { motion } from "framer-motion";
+
 function Services() {
   return (
     <div
@@ -14,13 +16,21 @@ function Services() {
       <div className="w-full h-fit gap-5 flex flex-col items-center justify-center lg:flex-row ">
         <div className="serv-left relative h-full flex justify-center items-center  w-full lg:w-1/2 ">
           <span className="absolute bulb1 w-[20rem] h-[20rem] lg:w-[32rem] lg:h-[32rem] bg-green-300/20 "></span>
-          <div className=" flex justify-center items-center border-none w-full   lg:w-auto h-auto ">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            variants={{
+              hidden: { opacity: 0, y: 100 },
+              visible: { opacity: 1, y: 0, transition: { duration: 0.7 } },
+            }}
+            className=" flex justify-center items-center border-none w-full   lg:w-auto h-auto "
+          >
             <img
               alt="wallpaper"
               className=" object-cover bg-transparent rounded-2xl w-[8rem] lg:w-[14rem]  shadow drop-shadow-2xl"
               src={home}
             />
-          </div>
+          </motion.div>
         </div>
 
         <div className="serv-right h-full  w-full lg:w-1/2 flex flex-col justify-center items-center p-5 ">

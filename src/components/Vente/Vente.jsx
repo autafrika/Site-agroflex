@@ -25,10 +25,11 @@ function Vente() {
             <div className="card-body lg:px-2 ">
               <h2 className="card-title">Carottes</h2>
               <p>
-                Quantite:13239 <br />
-                Prix: 10$
+                <span className="font-semibold">Quantité :</span> 13239 <br />
+                <span className="font-semibold">Prix : </span> 10$
                 <br />
-                Description: produit en bonne sante
+                <span className="font-semibold"> Description : </span> produit
+                en bonne sante <br />
               </p>
               <div className="card-actions justify-end">
                 <button className="btn enable">Buy Now</button>
@@ -37,17 +38,18 @@ function Vente() {
           </div>
         </div>
         <div>
-          <div className="card bg-base-100  w-68 p-2 ">
+          <div className="card bg-base-100  p-2 ">
             <figure className="overflow-hidden h-36 lg:h-42">
               <img src={onions} className="w-full object-center" alt="plant" />
             </figure>
             <div className="card-body lg:px-2">
               <h2 className="card-title">Onions</h2>
               <p>
-                Quantite:13239 <br />
-                Prix: 10$
+                <span className="font-semibold">Quantité :</span> 13239 <br />
+                <span className="font-semibold">Prix : </span> 10$
                 <br />
-                Description: produit en bonne sante
+                <span className="font-semibold"> Description : </span> produit
+                en bonne sante <br />
               </p>
               <div className="card-actions justify-end">
                 <button className="btn enable">Buy Now</button>
@@ -56,17 +58,18 @@ function Vente() {
           </div>
         </div>
         <div>
-          <div className="card bg-base-100  w-68 p-2 ">
+          <div className="card bg-base-100  p-2 ">
             <figure className="overflow-hidden h-36 lg:h-42">
               <img src={courge} className="w-full object-center" alt="plant" />
             </figure>
             <div className="card-body lg:px-2">
               <h2 className="card-title">Courges</h2>
               <p>
-                Quantite:13239 <br />
-                Prix: 10$
+                <span className="font-semibold">Quantité :</span> 13239 <br />
+                <span className="font-semibold">Prix : </span> 10$
                 <br />
-                Description: produit en bonne sante
+                <span className="font-semibold"> Description : </span> produit
+                en bonne sante <br />
               </p>
               <div className="card-actions justify-end">
                 <button className="btn enable">Buy Now</button>
@@ -75,7 +78,7 @@ function Vente() {
           </div>
         </div>
         <div>
-          <div className="card bg-base-100  w-68 p-2">
+          <div className="card bg-base-100  p-2">
             <figure className="overflow-hidden h-36 lg:h-42 object-cover">
               <img
                 src={aubergine}
@@ -86,10 +89,11 @@ function Vente() {
             <div className="card-body lg:px-2 ">
               <h2 className="card-title">Aubergines</h2>
               <p>
-                Quantite:13239 <br />
-                Prix: 10$
+                <span className="font-semibold">Quantité :</span> 13239 <br />
+                <span className="font-semibold">Prix : </span> 10$
                 <br />
-                Description: produit en bonne sante
+                <span className="font-semibold"> Description : </span> produit
+                en bonne sante <br />
               </p>
               <div className="card-actions justify-end">
                 <button className="btn enable">Buy Now</button>
