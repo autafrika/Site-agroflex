@@ -25,7 +25,7 @@ function Functionnalities() {
           technologies avancées.
         </p>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 lg:gap-10 w-full px-10 relative z-0 h-full text-center text-sm text-gray-600  flex-wrap justify-center items-center pt-14 gap-y-10 gap-x-9">
+      <div className="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 lg:gap-10 w-full px-10 relative z-0 h-full  text-sm text-gray-600  flex-wrap justify-center items-center pt-14 gap-y-10 gap-x-9">
         <div className="funct flex flex-col items-center gap-4">
           <div className="w-32 h-32 bul3 bg-green-400/20">
             <img

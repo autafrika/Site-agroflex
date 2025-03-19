@@ -21,8 +21,11 @@
   border-radius: 67% 33% 61% 39% / 47% 30% 70% 53%;
 }
 .func {
-  @apply text-sm pb-1 text-gray-600 font-semibold;
+  @apply text-sm pb-1  text-gray-600 font-semibold;
+}
+.funct {
+  @apply text-center px-5;
 }
 .funct p {
-  @apply text-xs/5 lg:text-sm/6 text-gray-500 px-10;
+  @apply text-xs/5 lg:text-sm/6 text-gray-500;
 }
