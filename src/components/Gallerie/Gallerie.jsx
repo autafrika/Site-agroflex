@@ -37,7 +37,7 @@ const Gallery = () => {
         <span className="absolute  -left-[5%] top-[14%] h-[25rem] lg:h-[45rem] w-[25rem] lg:w-[45rem] rounded-full blur-3xl bg-red-500/10"></span>
         <span className="absolute -right-[5%] bottom-[15%] h-[25rem] lg:h-[45rem] w-[25rem] lg:w-[45rem] rounded-full blur-3xl bg-green-500/10"></span>
 
-        <div className="flex flex-col  items-center w-full py-14 min-h-[80vh] h-auto  gap-4">
+        <div className="flex flex-col  items-center w-full py-14 h-auto  gap-4">
           <div className="detection  w-full h-full  ">
             <div className="w-full flex justify-between lg:grid lg:grid-cols-4 grid-rows-1 h-full ">
               <div className="lg:col-span-1 h-full flex flex-col gap-y-4 lg:gap-5 py-3 lg:py-6   rounded-2xl items-center justify-center text-wrap lg:items-end">
@@ -50,7 +50,7 @@ const Gallery = () => {
                   />
                   <hr className="absolute -z-10 top-6 md:top-10 left-1/2 border-dashed text-gray-400 w-[30vw]" />
                   <p className="text-[10px] text-wrap md:text-xs/5 text-gray-500 text-center ">
-                    Maladie detectee
+                    Maladie détectée
                   </p>
                 </div>
                 <div className="relative  w-17  lg:w-32  flex flex-col gap-1  justify-center items-center">
@@ -125,7 +125,7 @@ const Gallery = () => {
                   />
                   <hr className="absolute -z-10 top-6 md:top-10 right-1/2 border-dashed text-gray-400 w-[30vw]" />
                   <p className="text-[10px] text-wrap md:text-xs/5 text-gray-500 text-center ">
-                    Plante en bonne santee
+                    Plante en bonne santée
                   </p>
                 </div>
                 <div className="relative  w-17 lg:w-32  flex flex-col gap-1  justify-center items-center">
@@ -137,14 +137,14 @@ const Gallery = () => {
                   />
                   <hr className="absolute -z-10 top-6 md:top-10 right-1/2 border-dashed text-gray-400 w-[30vw]" />
                   <p className="text-[10px] text-wrap md:text-xs/5 text-gray-500 text-center ">
-                    Quelques astuces
+                    Quelques astuces pour garder la bonne santée
                   </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="btns flex flex-wrap lg:flex-nowrap justify-center -mt-10  ">
+        <div className="btns flex flex-wrap lg:flex-nowrap justify-center   mt-14  ">
           <button className="btn enable w-fit text-xs lg:text-sm ">
             Tester l&apos;application
           </button>
