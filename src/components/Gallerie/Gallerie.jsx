@@ -10,18 +10,7 @@ import reponse4 from "../../assets/detectionReponse/reponseMalade3.png";
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { img } from "framer-motion/client";
-
-const images = [
-  detection1,
-  detection4,
-  reponse1,
-  detection2,
-  detection3,
-  reponse2,
-  reponse3,
-  reponse4,
-];
+// import { img } from "framer-motion/client";
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -44,7 +33,7 @@ const Gallery = () => {
                 <div className="relative w-17  lg:w-32 flex flex-col gap-1  justify-center items-center">
                   <motion.img
                     onClick={() => setSelectedImage(detection3)}
-                    className="z-10  h-12 lg:h-20 w-12 lg:w-20 p-1  cursor-pointer object-cover rounded-full bg-white"
+                    className="z-10  h-12 lg:h-20 w-12 lg:w-20 p-[2px] lg:p-1  cursor-pointer object-cover rounded-full bg-white"
                     src={detection3}
                     alt="plante"
                   />
@@ -56,7 +45,7 @@ const Gallery = () => {
                 <div className="relative  w-17  lg:w-32  flex flex-col gap-1  justify-center items-center">
                   <motion.img
                     onClick={() => setSelectedImage(reponse2)}
-                    className="z-10  h-12 lg:h-20 w-12 lg:w-20 p-1  cursor-pointer object-cover rounded-full bg-white"
+                    className="z-10  h-12 lg:h-20 w-12 lg:w-20 p-[2px] lg:p-1  cursor-pointer object-cover rounded-full bg-white"
                     src={reponse2}
                     alt="plante"
                   />
@@ -65,35 +54,36 @@ const Gallery = () => {
                     Descrit la maladie
                   </p>
                 </div>
-                <div className="relative  w-17 lg:w-32  flex flex-col gap-1  justify-center items-center">
-                  <motion.img
-                    onClick={() => setSelectedImage(reponse4)}
-                    className="z-10  h-12 lg:h-20 w-12 lg:w-20 p-1  cursor-pointer object-cover rounded-full bg-white"
-                    src={reponse4}
-                    alt="plante"
-                  />
-                  <hr className="absolute -z-10 top-6 md:top-10 left-1/2 border-dashed text-gray-400 w-[30vw]" />
-                  <p className="text-[10px] text-wrap md:text-xs/5 text-gray-500 text-center ">
-                    Causes probables
-                  </p>
-                </div>
+
                 <div className="relative  w-17  lg:w-32  flex flex-col gap-1  justify-center items-center">
                   <motion.img
                     onClick={() => setSelectedImage(reponse3)}
-                    className="z-10  h-12 lg:h-20 w-12 lg:w-20 p-1  cursor-pointer object-cover rounded-full bg-white"
+                    className="z-10  h-12 lg:h-20 w-12 lg:w-20 p-[2px] lg:p-1  cursor-pointer object-cover rounded-full bg-white"
                     src={reponse3}
                     alt="plante"
                   />
                   <hr className="absolute -z-10 top-6 md:top-10 left-1/2 border-dashed text-gray-400 w-[30vw]" />
                   <p className="text-[10px] text-wrap md:text-xs/5 text-gray-500 text-center ">
-                    Astuces et prescriptions
+                    Symptomes et causes
+                  </p>
+                </div>
+                <div className="relative  w-17 lg:w-32  flex flex-col gap-1  justify-center items-center">
+                  <motion.img
+                    onClick={() => setSelectedImage(reponse4)}
+                    className="z-10  h-12 lg:h-20 w-12 lg:w-20 p-[2px] lg:p-1  cursor-pointer object-cover rounded-full bg-white"
+                    src={reponse4}
+                    alt="plante"
+                  />
+                  <hr className="absolute -z-10 top-6 md:top-10 left-1/2 border-dashed text-gray-400 w-[30vw]" />
+                  <p className="text-[10px] text-wrap md:text-xs/5 text-gray-500 text-center ">
+                    Traitements et astuces
                   </p>
                 </div>
               </div>
 
               <div className="lg:col-span-2 relative  h-full flex justify-center items-center">
                 <span className="absolute text-center -top-12  font-semibold font-mono underline underline-offset-[10px] ">
-                  Scan de la plante
+                  Scanner la plante
                 </span>
                 <motion.img
                   onClick={() => setSelectedImage(detection2)}
@@ -107,7 +97,7 @@ const Gallery = () => {
                 <div className="relative  w-17 lg:w-32  flex flex-col gap-1  justify-center items-center">
                   <motion.img
                     onClick={() => setSelectedImage(detection1)}
-                    className="z-10  h-12 lg:h-20 w-12 lg:w-20 p-1  cursor-pointer object-cover rounded-full bg-white"
+                    className="z-10  h-12 lg:h-20 w-12 lg:w-20 p-[2px] lg:p-1  cursor-pointer object-cover rounded-full bg-white"
                     src={detection1}
                     alt="plante"
                   />
@@ -119,7 +109,7 @@ const Gallery = () => {
                 <div className="relative  w-17 lg:w-32  flex flex-col gap-1  justify-center items-center">
                   <motion.img
                     onClick={() => setSelectedImage(reponse1)}
-                    className="z-10  h-12 lg:h-20 w-12 lg:w-20 p-1  cursor-pointer object-cover rounded-full bg-white"
+                    className="z-10  h-12 lg:h-20 w-12 lg:w-20 p-[2px] lg:p-1  cursor-pointer object-cover rounded-full bg-white"
                     src={reponse1}
                     alt="plante"
                   />
@@ -131,13 +121,13 @@ const Gallery = () => {
                 <div className="relative  w-17 lg:w-32  flex flex-col gap-1  justify-center items-center">
                   <motion.img
                     onClick={() => setSelectedImage(detection1)}
-                    className="z-10  h-12 lg:h-20 w-12 lg:w-20 p-1  cursor-pointer object-cover rounded-full bg-white"
+                    className="z-10  h-12 lg:h-20 w-12 lg:w-20 p-[2px] lg:p-1  cursor-pointer object-cover rounded-full bg-white"
                     src={detection1}
                     alt="plante"
                   />
                   <hr className="absolute -z-10 top-6 md:top-10 right-1/2 border-dashed text-gray-400 w-[30vw]" />
                   <p className="text-[10px] text-wrap md:text-xs/5 text-gray-500 text-center ">
-                    Quelques astuces pour garder la bonne santée
+                    Quelques astuces pour garder sa bonne santé
                   </p>
                 </div>
               </div>
