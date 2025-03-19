@@ -93,7 +93,7 @@ const Gallery = () => {
                 />
               </div>
 
-              <div className="lg:col-span-1 h-full  rounded-2xl flex flex-col gap-4 lg:gap-5 py-3 lg:py-6 justify-center items-center">
+              <div className="lg:col-span-1 h-full  rounded-2xl flex flex-col gap-4 lg:gap-5 py-3 lg:py-6 justify-center items-center lg:items-start">
                 <div className="relative  w-17 lg:w-32  flex flex-col gap-1  justify-center items-center">
                   <motion.img
                     onClick={() => setSelectedImage(detection1)}
