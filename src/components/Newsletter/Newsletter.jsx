@@ -6,9 +6,9 @@ function Newsletter() {
       id="newsletter"
       className="w-full h-[46vh] lg:h-[60vh] flex justify-center items-center  py-14 px-2 lg:p-10"
     >
-      <div className="news  w-full lg:w-[80%] gap-2 px-4 lg:gap-5 rounded-xl lg:rounded-3xl h-full flex flex-col justify-center items-start lg:items-center bg-gradient-to-tr from-green-950 to-green-800 text-white">
+      <div className="news  w-full lg:w-[80%] gap-2 px-4 lg:gap-5 rounded-xl lg:rounded-3xl h-full flex flex-col justify-center items-start md:items-center bg-gradient-to-tr from-green-950 to-green-800 text-white">
         <h3 className="font-bold text-2xl lg:text-3xl">Newsletter</h3>
-        <p className="lg:text-center text-sm lg:text-lg lg:px-20 text-gray-100">
+        <p className="lg:text-center text-sm md:text-center lg:text-lg lg:px-20 text-gray-100">
           Recevez des notifications dans boite mail sur des nouveautés de
           l&apos;application et des astuces pour optimiser vos cultures.
         </p>

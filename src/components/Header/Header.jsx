@@ -31,7 +31,7 @@ function Header() {
   return (
     <>
       <nav className=" hidden lg:flex flex-row justify-between items-center  h-auto gap-6 px-10 py-5  backdrop-blur-3xl absolute w-full">
-        <div className="logo flex w-36  flexCenter rounded-full overflow-hidden p-1 bg-white">
+        <div className="logo flex w-36 cursor-pointer flexCenter rounded-full overflow-hidden p-1 bg-white">
           <img className="h-10 align-center" src={agroflex} alt="gim" />
         </div>
 
@@ -68,7 +68,7 @@ function Header() {
             >
               <img
                 src={agroflex}
-                className="h-11 px-3 py-1 bg-white  border rounded-full w-auto lg:h-[4.5rem] drop-shadow-xl lg:w-auto "
+                className="h-11 px-3 py-1 cursor-pointer bg-white  border rounded-full w-auto lg:h-[4.5rem] drop-shadow-xl lg:w-auto "
                 alt="logo autafrika"
               />
             </a>
@@ -90,10 +90,10 @@ function Header() {
         </div>
       ) : (
         <>
-          <span className="absolute w-screen h-screen bg-black/10 backdrop-blur-[3px]"></span>
+          <span className="fixed z-10 w-screen h-screen  backdrop-blur-[4px]"></span>
 
           <nav
-            className=" fixed lg:hidden z-50 top-0 left-0 w-screen max-w-md h-fit py-6 px-5 pt-3 gap-4 flex flex-col m-auto  bg-white/70 shadow-xl backdrop-blur-md overflow-y-auto  "
+            className=" fixed lg:hidden z-50 top-0 left-0 w-screen max-w-md h-fit py-6 px-5 pt-3 gap-4 flex flex-col m-auto  bg-white/80 shadow-xl backdrop-blur-md overflow-y-auto  "
             ref={menuRef}
           >
             <div className="flex justify-between items-center rounded-md shadow-md bg-green-400/40">

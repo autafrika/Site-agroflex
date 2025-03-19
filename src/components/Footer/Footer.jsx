@@ -23,7 +23,7 @@ function Footer() {
           </p>
         </aside>
         <nav className="flex flex-col gap-4">
-          <h6 className="footer-title">Liens</h6>
+          <h6 className="footer-title text-black">Liens</h6>
           <a className="link link-hover" href="#home">
             Accueil
           </a>

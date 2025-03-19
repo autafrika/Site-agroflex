@@ -14,7 +14,7 @@ function Hero() {
       id="home"
       className="h-hero h-screen overflow-hidden relative z-10  flexColumn w-full "
     >
-      <div className="flex h-screen -z-10 absolute object-cover top-0 left-0 w-full">
+      <div className="flex h-screen -z-5 absolute object-cover top-0 left-0 w-full">
         <img
           className=" object-cover object-bottom w-full "
           src={champ}
@@ -24,7 +24,7 @@ function Hero() {
       </div>
       <Header />
       <div className="h-left h-full  flex flex-col justify-center items-center  text-white p-10 gap-5 bg-black/50">
-        <h1 className="font-extrabold  transform text-center text-4xl/11 lg:text-5xl/12 2xl:text-6xl/17 p-4 ">
+        <h1 className="font-extrabold  transform text-center text-4xl/11 md:text-5xl/12 2xl:text-6xl/17 p-4 ">
           Optimisez Votre Production Agricole
         </h1>
 
@@ -47,13 +47,12 @@ function Hero() {
               alt=""
             />
           </div>
-          <div className="w-full h-full px-2 xl:px-2 flex flex-col justify-between ">
+          <div className="w-full h-full px-1 p-1 xl:px-2 flex flex-col justify-between ">
             <h2 className="lg:text-sm">
-              Controllez la qualite et l&apos;etat du sol
+              Controllez la qualité et l&apos;état du sol
             </h2>
             <p className="text-gray-100 text-xs">
-              Un sol bien entretenu favorise la croissance en bonne qualite des
-              cultures
+              Sol bien entretenu, croissance en bonne qualité
             </p>
           </div>
         </div>
@@ -68,7 +67,7 @@ function Hero() {
 
           <div className="w-full h-full px-2  p-1 xl:p-2 flex flex-col justify-between ">
             <h2 className="lg:text-sm">
-              Donnez a vos les reels besoins qu&apos;ils ont
+              Donnez à vos les réels besoins qu&apos;ils ont
             </h2>
             <p className="text-gray-100 text-xs">
               Soyez au courant des besoins de vos plantes
@@ -93,7 +92,6 @@ function Hero() {
           </div>
         </div>
       </div>
-      <div className="h-right"></div>
     </div>
   );
 }
