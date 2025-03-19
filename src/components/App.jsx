@@ -5,6 +5,7 @@ import Services from "./Services/Services";
 import Scan from "./Scan/Scan";
 import Diagnostic from "./Diagnostic/Diagnostic";
 import Newsletter from "./Newsletter/Newsletter";
+import Meteo from "./Meteo/Meteo";
 import Vente from "./Vente/Vente";
 import Footer from "./Footer/Footer";
 import Functionnalities from "./Functionnalites/Functionnalities";
@@ -16,6 +17,7 @@ function App() {
       <Functionnalities />
       <Services />
       <Scan />
+      <Meteo />
       <Diagnostic />
       <Vente />
       <Newsletter />

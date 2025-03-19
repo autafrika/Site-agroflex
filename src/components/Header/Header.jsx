@@ -31,9 +31,12 @@ function Header() {
   return (
     <>
       <nav className=" hidden lg:flex flex-row justify-between items-center  h-auto gap-6 px-10 py-5  backdrop-blur-3xl absolute w-full">
-        <div className="logo flex w-36 cursor-pointer flexCenter rounded-full overflow-hidden p-1 bg-white">
+        <a
+          href="#home"
+          className="logo flex w-36 cursor-pointer flexCenter rounded-full overflow-hidden p-1 bg-white"
+        >
           <img className="h-10 align-center" src={agroflex} alt="gim" />
-        </div>
+        </a>
 
         <ul className="hidden lg:flex lg:justify-center lg:items-center h-links w-[80%]  h-12 lg:flexCenter gap-10 font-semibold rounded-full bg-white">
           <li className="link">
@@ -64,7 +67,7 @@ function Header() {
             <a
               className="mr-auto py-2 text-3xl font-bold leading-none bg-"
               aria-label="accueil"
-              href=""
+              href="#home"
             >
               <img
                 src={agroflex}

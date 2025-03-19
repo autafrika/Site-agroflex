@@ -9,7 +9,7 @@ function Footer() {
         id="contact"
         className="footer sm:footer-horizontal bg-base-200 text-base-content p-10"
       >
-        <aside className="w-[70%]">
+        <aside className="w-auto sm:w-[70%]">
           <img
             src={agroflex}
             className="w-24 -ml-2 bg-white rounded-xl"
@@ -17,10 +17,9 @@ function Footer() {
           />
           <p className="text-base/6">
             Agro flex une solution numerique specialement conçue pour les
-            agriculteurs et les fermiers
-            <br />
-            Fourni de puis 2025
+            agriculteurs et les fermiers Fourni de puis 2025
           </p>
+          {/* <div className="flex sociaux"></div> */}
         </aside>
         <nav className="flex flex-col gap-4">
           <h6 className="footer-title text-black">Liens</h6>

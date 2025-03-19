@@ -5,7 +5,7 @@ import champ from "../../assets/champ1.webp";
 import plantHand from "../../assets/plante-hand.jpg";
 import solmonitor from "../../assets/solmonitor.jpg";
 import croissant from "../../assets/croissant.jpg";
-// import Weather from "../Weather/Weather";
+
 import RainEffect from "../Rain/Rain";
 import { motion } from "framer-motion";
 
@@ -24,7 +24,7 @@ function Hero() {
         <RainEffect />
       </div>
       <Header />
-      <div className="h-left h-full  flex flex-col justify-center items-center  text-white p-10 gap-5 bg-black/50">
+      <div className="h-left h-full   flex flex-col justify-center items-center  text-white p-10 gap-5 bg-black/50">
         <motion.h1
           initial={{ opacity: 0, y: 50 }} // Départ en bas avec une opacité 0
           whileInView="visible"

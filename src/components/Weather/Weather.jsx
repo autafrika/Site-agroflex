@@ -33,7 +33,7 @@ const Weather = () => {
           <p className="text-2xl font-bold">{weather.main.temp}°C</p>
         </div>
       ) : (
-        <p>
+        <p className="text-sm">
           Chargement <span></span>
         </p>
       )}
