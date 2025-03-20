@@ -66,7 +66,7 @@ function Header() {
         </a>
       </nav>
       {!isOpen ? (
-        <div className="flex justify-between w-screen backdrop-blur-3xl fixed items-center left-0 lg:hidden px-4 top-0 z-50">
+        <div className="flex bg-gradient-to-r justify-between w-screen backdrop-blur-3xl fixed from-white/30 items-center left-0 lg:hidden px-4 to-white/20 top-0 z-50">
           <div className="flex rounded-s-md text-white w-full items-center lg:hidden">
             <a
               className="bg- text-3xl font-bold leading-none mr-auto py-2"
@@ -75,7 +75,7 @@ function Header() {
             >
               <img
                 src={agroflex}
-                className="bg-white border h-11 rounded-full w-auto cursor-pointer drop-shadow-xl lg:h-[4.5rem] lg:w-auto px-3 py-1"
+                className="h-11 rounded-full w-auto cursor-pointer drop-shadow-xl lg:h-[4.5rem] lg:w-auto px-3 py-1"
                 alt="logo autafrika"
               />
             </a>
@@ -100,19 +100,19 @@ function Header() {
           <span className="h-screen w-screen backdrop-blur-[4px] fixed z-40"></span>
 
           <nav
-            className="flex flex-col bg-white/80 h-fit m-auto shadow-xl w-screen backdrop-blur-md fixed gap-4 left-0 lg:hidden max-w-md overflow-y-auto pt-3 px-5 py-6 top-0 z-50"
+            className="flex flex-col bg-white/80 h-fit m-auto shadow-xl w-screen backdrop-blur-md fixed gap-4 left-0 lg:hidden max-w-md overflow-y-auto pt-2 px-5 py-6 top-0 z-50"
             ref={menuRef}
           >
             <div className="flex bg-green-400/40 justify-between rounded-md shadow-md items-center">
               <div className="flex rounded-s-md text-white w-full items-center lg:hidden">
                 <a
-                  className="text-3xl font-bold leading-none mr-auto py-2"
+                  className="text-3xl font-bold leading-none mr-auto"
                   aria-label="accueil"
                   href=""
                 >
                   <img
                     src={agroflex}
-                    className="h-10 p-1 w-auto drop-shadow-xl lg:h-[4.5rem] lg:w-auto"
+                    className="h-11 p-1 w-auto drop-shadow-xl lg:h-[4.5rem] lg:w-auto px-2"
                     alt="logo autafrika"
                   />
                 </a>
