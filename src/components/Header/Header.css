@@ -1,11 +1,20 @@
 @import "tailwindcss";
 
-.link {
-  color: black;
+.h-links .link {
+  @apply relative;
+
   text-decoration: none;
   transition: 200ms;
 }
 .link:hover {
-  color: green;
   transition: 200ms;
+}
+.h-links .link span {
+  @apply bg-gradient-to-br h-2 rounded-full w-5 -bottom-[9px] absolute from-gray-600 right-1/2 to-black translate-x-1/2;
+  opacity: 0;
+  transition: 0.5s;
+}
+.h-links .link:hover > span {
+  opacity: 1;
+  transition: 0.4s;
 }

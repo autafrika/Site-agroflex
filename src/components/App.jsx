@@ -9,8 +9,8 @@ import Meteo from "./Meteo/Meteo";
 import Vente from "./Vente/Vente";
 import Footer from "./Footer/Footer";
 import Functionnalities from "./Functionnalites/Functionnalities";
-import Gallerie from "./Gallerie/Gallerie";
-import Img from "./img";
+import DetectionMaladie from "./DetectionMaladie/DetectionMaladie";
+// import Img from "./img";
 
 function App() {
   return (
@@ -20,7 +20,7 @@ function App() {
       <Services />
       <Scan />
       <Meteo />
-      <Gallerie />
+      <DetectionMaladie />
       <Diagnostic />
       <Vente />
       <Newsletter />

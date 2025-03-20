@@ -13,49 +13,45 @@ function Hero() {
   return (
     <div
       id="home"
-      className="h-hero h-screen overflow-hidden relative z-10  flexColumn w-full "
+      className="flexColumn h-hero h-screen w-full overflow-hidden relative z-10"
     >
-      <div className="flex h-screen -z-5 absolute object-cover top-0 left-0 w-full">
-        <img
-          className=" object-cover object-bottom w-full "
-          src={champ}
-          alt=""
-        />
+      <div className="flex h-screen w-full -z-5 absolute left-0 object-cover top-0">
+        <img className="w-full object-bottom object-cover" src={champ} alt="" />
         <RainEffect />
       </div>
       <Header />
-      <div className="h-left h-full   flex flex-col justify-center items-center  text-white p-10 gap-5 bg-black/50">
+      <div className="flex flex-col bg-black/50 h-full h-left justify-center p-10 text-white gap-5 items-center">
         <motion.h1
           initial={{ opacity: 0, y: 50 }} // Départ en bas avec une opacité 0
           whileInView="visible"
           animate={{ opacity: 1, y: 0 }} // Arrive en haut avec opacité 1
           exit={{ opacity: 0, y: 50 }} // Redescend en disparaissant
           transition={{ duration: 0.5, ease: "easeOut" }} // Animation fluide
-          className="font-extrabold  transform text-center text-4xl/11 md:text-5xl/12 2xl:text-6xl/17 p-4 "
+          className="p-4 text-4xl/11 text-center 2xl:text-6xl/17 font-extrabold md:text-5xl/12"
         >
           Optimisez Votre Production Agricole
         </motion.h1>
 
-        <p className="text-lg lg:text-xl text-center text-gray-100">
+        <p className="text-center text-gray-100 text-lg lg:text-xl">
           Utilisez la technologie pour améliorer vos rendements et réduire les
           coûts.
         </p>
-        <div className="flex justify-center items-center gap-6 mt-5">
-          <button className="btn enable ">Commencer </button>
+        <div className="flex justify-center gap-6 items-center mt-5">
+          <button className="btn enable">Commencer </button>
           <button className="btn disable">Savoir plus</button>
         </div>
       </div>
 
       <div className="hidden lg:block">
-        <div className="lg:w-[310px] lg:h-[99px] xl:w-[410px] xl:h-[130px]  flex flex-row p-1 xl:p-3 backdrop-blur-sm bg-gradient-to-br from-gray-700/30 to-green-800/10 border border-gray-400  absolute bottom-8 left-8 rounded-lg">
-          <div className="h-full w-2/3 rounded-md flex items-end overflow-hidden">
+        <div className="flex flex-row bg-gradient-to-br border border-gray-400 p-1 rounded-lg absolute backdrop-blur-sm bottom-8 from-gray-700/30 left-8 lg:h-[99px] lg:w-[310px] to-green-800/10 xl:h-[130px] xl:p-3 xl:w-[410px]">
+          <div className="flex h-full rounded-md w-2/3 items-end overflow-hidden">
             <img
               className="h-[120%] w-full object-cover"
               src={solmonitor}
               alt=""
             />
           </div>
-          <div className="w-full h-full px-1 p-1 xl:px-2 flex flex-col justify-between ">
+          <div className="flex flex-col h-full justify-between p-1 w-full px-1 xl:px-2">
             <h2 className="lg:text-sm">
               Controllez la qualité et l&apos;état du sol
             </h2>
@@ -64,8 +60,8 @@ function Hero() {
             </p>
           </div>
         </div>
-        <div className="lg:w-[310px] lg:h-[99px]  xl:w-[410px] xl:h-[130px] p-1 xl:p-3 flex  backdrop-blur-sm from-gray-700/30 to-green-800/10 border border-gray-400  absolute bottom-8 left-1/2 rounded-lg -translate-x-1/2 ">
-          <div className="h-full w-1/2 rounded-md flex items-end overflow-hidden">
+        <div className="flex border border-gray-400 p-1 rounded-lg -translate-x-1/2 absolute backdrop-blur-sm bottom-8 from-gray-700/30 left-1/2 lg:h-[99px] lg:w-[310px] to-green-800/10 xl:h-[130px] xl:p-3 xl:w-[410px]">
+          <div className="flex h-full rounded-md w-1/2 items-end overflow-hidden">
             <img
               className="h-[120%] w-full object-cover"
               src={plantHand}
@@ -73,29 +69,29 @@ function Hero() {
             />
           </div>
 
-          <div className="w-full h-full px-2  p-1 xl:p-2 flex flex-col justify-between ">
+          <div className="flex flex-col h-full justify-between p-1 w-full px-2 xl:p-2">
             <h2 className="lg:text-sm">
-              Donnez à vos les réels besoins qu&apos;ils ont
+              Donnez à vos plantes ce dont elles ont besoin
             </h2>
             <p className="text-gray-100 text-xs">
-              Soyez au courant des besoins de vos plantes
+              Soyez au courant des réels besoins de vos plantes
             </p>
           </div>
         </div>
-        <div className="lg:w-[310px] lg:h-[99px] xl:w-[410px] xl:h-[130px]  flex p-1 xl:p-3  bg-green-500/20 border border-gray-400 backdrop-blur-md absolute bottom-8 right-8 rounded-lg">
-          <div className="h-full w-1/2 rounded-md flex items-end overflow-hidden">
+        <div className="flex bg-green-500/20 border border-gray-400 p-1 rounded-lg absolute backdrop-blur-md bottom-8 lg:h-[99px] lg:w-[310px] right-8 xl:h-[130px] xl:p-3 xl:w-[410px]">
+          <div className="flex h-full rounded-md w-1/2 items-end overflow-hidden">
             <img
               className="h-[120%] w-full object-cover"
               src={croissant}
               alt=""
             />
           </div>
-          <div className="w-full h-full p-1 xl:p-2 flex flex-col justify-between ">
+          <div className="flex flex-col h-full justify-between p-1 w-full xl:p-2">
             <h2 className="lg:text-sm">
-              Multipliez vos rendement et vos chiffre d&apos;affaires
+              Multipliez vos rendements et vos chiffres d&apos;affaires
             </h2>
             <p className="text-gray-100 text-xs">
-              Le rendement est consequent avec les informations cruciales
+              Le rendement est conséquent avec les informations cruciales
             </p>
           </div>
         </div>

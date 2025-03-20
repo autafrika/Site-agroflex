@@ -8,7 +8,6 @@ import { useRef } from "react";
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const menuRef = useRef(null); // Référence pour détecter les clics externes
-
   // Fermer le menu si on clique à l'extérieur
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -30,59 +29,64 @@ function Header() {
 
   return (
     <>
-      <nav className=" hidden lg:flex flex-row justify-between items-center  h-auto gap-6 px-10 py-5  backdrop-blur-3xl absolute w-full">
+      <nav className="bg-gradient-to-r h-auto justify-between shadow-2xl shadow-green-950/15 w-full backdrop-blur-2xl fixed from-white/85 gap-6 header hidden items-center lg:flex lg:flex-row px-10 py-2 to-white/70 top-0 via-blue-200/30 z-50">
         <a
           href="#home"
-          className="logo flex w-36 cursor-pointer flexCenter rounded-full overflow-hidden p-1 bg-white"
+          className="flex flexCenter p-1 rounded-full w-36 cursor-pointer logo overflow-hidden"
         >
-          <img className="h-10 align-center" src={agroflex} alt="gim" />
+          <img className="align-center h-10" src={agroflex} alt="gim" />
         </a>
 
-        <ul className="hidden lg:flex lg:justify-center lg:items-center h-links w-[80%]  h-12 lg:flexCenter gap-10 font-semibold rounded-full bg-white">
+        <ul className="h-13 h-links rounded-full text-black w-[80%] font-semibold gap-10 hidden lg:flex lg:flexCenter lg:items-center lg:justify-center">
           <li className="link">
             <a href="#home">Accueil</a>
+            <span className=""></span>
           </li>
           <li className="link">
             <a href="#fonctionnalites">Fonctionnalites</a>
+            <span className=""></span>
           </li>
           <li className="link">
             <a href="#services">Services</a>
+            <span className=""></span>
           </li>
           <li className="link">
             <a href="#newsletter">Newsletter</a>
+            <span className=""></span>
           </li>
           <li className="link">
             <a href="#contact">Contact</a>
+            <span className=""></span>
           </li>
         </ul>
         <a href="" className="hidden lg:flex">
-          <button className=" lg:flex btn enable font-semibold mr-5 w-36 h-12 hover:text-white   rounded-full bg-white">
+          <button className="btn bg-white h-12 rounded-full w-36 enable font-semibold hover:text-white lg:flex mr-5">
             Télécharger
           </button>
         </a>
       </nav>
       {!isOpen ? (
-        <div className="fixed z-10 top-0 left-0 w-screen flex lg:hidden justify-between items-center  px-4  backdrop-blur-3xl">
-          <div className="flex items-center rounded-s-md w-full lg:hidden text-white ">
+        <div className="flex justify-between w-screen backdrop-blur-3xl fixed items-center left-0 lg:hidden px-4 top-0 z-50">
+          <div className="flex rounded-s-md text-white w-full items-center lg:hidden">
             <a
-              className="mr-auto py-2 text-3xl font-bold leading-none bg-"
+              className="bg- text-3xl font-bold leading-none mr-auto py-2"
               aria-label="accueil"
               href="#home"
             >
               <img
                 src={agroflex}
-                className="h-11 px-3 py-1 cursor-pointer bg-white  border rounded-full w-auto lg:h-[4.5rem] drop-shadow-xl lg:w-auto "
+                className="bg-white border h-11 rounded-full w-auto cursor-pointer drop-shadow-xl lg:h-[4.5rem] lg:w-auto px-3 py-1"
                 alt="logo autafrika"
               />
             </a>
           </div>
 
           <button
-            className="navbar-burger flex items-center p-1 font-bold  rounded-md  "
+            className="flex navbar-burger p-1 rounded-md font-bold items-center"
             onClick={() => setIsOpen(true)}
           >
             <svg
-              className="h-10 w-10 p-2  border border-white/70 bg-gray-600 fill-white rounded-lg  cursor-pointer   hover:bg-gray-700 hover:transition-colors duration-100"
+              className="bg-gray-600 border border-white/70 h-10 p-2 rounded-lg w-10 cursor-pointer duration-100 fill-white hover:bg-gray-700 hover:transition-colors"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -93,22 +97,22 @@ function Header() {
         </div>
       ) : (
         <>
-          <span className="fixed z-10 w-screen h-screen  backdrop-blur-[4px]"></span>
+          <span className="h-screen w-screen backdrop-blur-[4px] fixed z-40"></span>
 
           <nav
-            className=" fixed lg:hidden z-50 top-0 left-0 w-screen max-w-md h-fit py-6 px-5 pt-3 gap-4 flex flex-col m-auto  bg-white/80 shadow-xl backdrop-blur-md overflow-y-auto  "
+            className="flex flex-col bg-white/80 h-fit m-auto shadow-xl w-screen backdrop-blur-md fixed gap-4 left-0 lg:hidden max-w-md overflow-y-auto pt-3 px-5 py-6 top-0 z-50"
             ref={menuRef}
           >
-            <div className="flex justify-between items-center rounded-md shadow-md bg-green-400/40">
-              <div className="flex items-center rounded-s-md w-full lg:hidden text-white ">
+            <div className="flex bg-green-400/40 justify-between rounded-md shadow-md items-center">
+              <div className="flex rounded-s-md text-white w-full items-center lg:hidden">
                 <a
-                  className="mr-auto py-2 text-3xl font-bold leading-none"
+                  className="text-3xl font-bold leading-none mr-auto py-2"
                   aria-label="accueil"
                   href=""
                 >
                   <img
                     src={agroflex}
-                    className="h-10 p-1 w-auto lg:h-[4.5rem] drop-shadow-xl lg:w-auto "
+                    className="h-10 p-1 w-auto drop-shadow-xl lg:h-[4.5rem] lg:w-auto"
                     alt="logo autafrika"
                   />
                 </a>
@@ -119,7 +123,7 @@ function Header() {
                 onClick={() => setIsOpen(false)}
               >
                 <svg
-                  className="h-8 w-8 p-1  cursor-pointer  hover:rounded-full hover:bg-gray-400/30 hover:transition-colors duration-100"
+                  className="h-8 p-1 w-8 cursor-pointer duration-100 hover:bg-gray-400/30 hover:rounded-full hover:transition-colors"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
@@ -140,7 +144,7 @@ function Header() {
                 <a
                   href="#home"
                   aria-label="accueil"
-                  className="block py-3 px-4 text-sm font-normal text-gray-500 hover:bg-gray-600/10 hover:text-black rounded"
+                  className="rounded text-gray-500 text-sm block font-normal hover:bg-gray-600/10 hover:text-black px-4 py-3"
                 >
                   Accueil
                 </a>
@@ -149,7 +153,7 @@ function Header() {
                 <a
                   href="#fonctionnalites"
                   aria-label="à propos"
-                  className="block py-3 px-4 text-sm font-normal text-gray-500 hover:bg-gray-600/10 hover:text-black rounded"
+                  className="rounded text-gray-500 text-sm block font-normal hover:bg-gray-600/10 hover:text-black px-4 py-3"
                 >
                   Fonctionnalites
                 </a>
@@ -158,7 +162,7 @@ function Header() {
                 <a
                   href="#services"
                   aria-label="services"
-                  className="block py-3 px-4 text-sm font-normal text-gray-500 hover:bg-gray-600/10 hover:text-black rounded"
+                  className="rounded text-gray-500 text-sm block font-normal hover:bg-gray-600/10 hover:text-black px-4 py-3"
                 >
                   Services
                 </a>
@@ -167,7 +171,7 @@ function Header() {
                 <a
                   href="#newsletter"
                   aria-label="newsletter"
-                  className="block py-3 px-4 text-sm font-normal text-gray-500 hover:bg-gray-600/10 hover:text-black rounded-md"
+                  className="rounded-md text-gray-500 text-sm block font-normal hover:bg-gray-600/10 hover:text-black px-4 py-3"
                 >
                   Newsletter
                 </a>
@@ -176,7 +180,7 @@ function Header() {
                 <a
                   href="#contact"
                   aria-label="contact"
-                  className="block py-3 px-4 text-sm font-normal text-gray-500 hover:bg-gray-600/10 hover:text-black rounded"
+                  className="rounded text-gray-500 text-sm block font-normal hover:bg-gray-600/10 hover:text-black px-4 py-3"
                 >
                   Contact
                 </a>
@@ -187,7 +191,7 @@ function Header() {
               <div className="pt-6">
                 <a
                   href="#"
-                  className="block px-4 py-4 mb-2 leading-loose text-sm text-center text-white font-semibold btn enable  rounded-lg"
+                  className="btn rounded-lg text-center text-sm text-white block enable font-semibold leading-loose mb-2 px-4 py-4"
                   aria-label="prendre inscription"
                 >
                   Télécharger l&apos;app

@@ -1,0 +1,8 @@
+@import "tailwindcss";
+footer .link {
+  @apply text-black transition-colors duration-300;
+}
+
+footer .link:hover {
+  @apply text-green-600 no-underline duration-200;
+}
