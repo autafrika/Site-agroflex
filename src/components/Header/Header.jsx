@@ -187,8 +187,8 @@ function Header() {
               </li>
             </ul>
 
-            <div className="mt-auto">
-              <div className="pt-6">
+            <div className="mt-auto w-full">
+              <div className="pt-6 w-full">
                 <a
                   href="#"
                   className="btn rounded-lg text-center text-sm text-white block enable font-semibold leading-loose mb-2 px-4 py-4"

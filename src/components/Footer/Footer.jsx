@@ -7,9 +7,9 @@ function Footer() {
     <div>
       <footer
         id="contact"
-        className="flex flex-col md:flex-row gap-10 px-10 lg:py-20 lg:px-24 flex-wrap md:flex-nowrap text-base-content footer justify-between "
+        className="flex flex-col md:flex-row gap-10 px-10 py-10 lg:py-20 lg:px-24 flex-wrap md:flex-nowrap text-base-content footer justify-between "
       >
-        <aside className="w-auto sm:w-[60%]">
+        <aside className="w-auto md:w-[60%]">
           <img
             src={agroflex}
             className="rounded-xl w-24 -left-3 pb-2 relative"
@@ -51,7 +51,7 @@ function Footer() {
           </a>
         </nav>
       </footer>
-      <footer className="text-center text-sm w-full py-4">
+      <footer className="text-center text-xs w-full py-5 text-gray-500">
         Designed & provided by{" "}
         <a
           href="https://www.autafrika.com"
