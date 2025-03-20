@@ -7,15 +7,15 @@ function Footer() {
     <div>
       <footer
         id="contact"
-        className="bg-base-200 p-10 text-base-content footer sm:footer-horizontal"
+        className="flex flex-col md:flex-row gap-10 px-10 lg:py-20 lg:px-24 flex-wrap md:flex-nowrap text-base-content footer justify-between "
       >
-        <aside className="w-auto sm:w-[70%]">
+        <aside className="w-auto sm:w-[60%]">
           <img
             src={agroflex}
             className="rounded-xl w-24 -left-3 pb-2 relative"
             alt="agroflex"
           />
-          <p className="text-base/6">
+          <p className="text-base/6 ">
             AgroFlex une solution numérique spécialement conçue pour les
             agriculteurs et les fermiers. <br />
             Le produit sera fourni dès ce 2025

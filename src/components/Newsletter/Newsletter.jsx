@@ -14,7 +14,7 @@ function Newsletter() {
         </p>
         <form className="flex justify-normal gap-2 items-start lg:gap-5 lg:justify-center lg:w-[50%]">
           <input
-            className="bg-green-50/30 h-10 p-2 rounded-lg text-sm w-[60%] lg:h-12 lg:p-4 lg:w-[80%] outline-none placeholder:text-gray-200"
+            className="bg-green-50/30 border border-white/50 h-10 p-2 rounded-lg text-sm w-[60%] lg:h-12 lg:p-4 lg:w-[80%] outline-none placeholder:text-gray-200"
             type="email"
             placeholder="Entrez votre email"
           />

@@ -51,6 +51,7 @@ function Hero() {
               alt=""
             />
           </div>
+
           <div className="flex flex-col h-full justify-between p-1 w-full px-1 xl:px-2">
             <h2 className="lg:text-sm">
               Controllez la qualité et l&apos;état du sol
@@ -60,7 +61,7 @@ function Hero() {
             </p>
           </div>
         </div>
-        <div className="flex border border-gray-400 p-1 rounded-lg -translate-x-1/2 absolute backdrop-blur-sm bottom-8 from-gray-700/30 left-1/2 lg:h-[99px] lg:w-[310px] to-green-800/10 xl:h-[130px] xl:p-3 xl:w-[410px]">
+        <div className="flex border border-gray-400 p-1 rounded-lg -translate-x-[50%] absolute backdrop-blur-sm bottom-8 from-gray-700/30 left-1/2 lg:h-[99px] lg:w-[310px] to-green-800/10 xl:h-[130px] xl:p-3 xl:w-[410px]">
           <div className="flex h-full rounded-md w-1/2 items-end overflow-hidden">
             <img
               className="h-[120%] w-full object-cover"

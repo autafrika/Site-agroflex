@@ -10,7 +10,10 @@
 }
 
 .card figure {
-  @apply rounded-sm;
+  @apply flex object-center rounded-sm;
+}
+.card figure img {
+  @apply object-cover h-auto;
 }
 
 .card:hover {
@@ -23,6 +26,9 @@
 }
 .card-body p {
   @apply text-xs/5 lg:text-sm/6 text-gray-500;
+}
+.card-actions {
+  @apply flex;
 }
 .card-actions .btn {
   @apply text-xs lg:text-sm;
