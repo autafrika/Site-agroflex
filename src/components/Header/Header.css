@@ -14,7 +14,7 @@
   opacity: 0;
   transition: 0.5s;
 }
-.h-links .link:hover > span {
+.h-links .link a:hover ~ span {
   opacity: 1;
   transition: 0.4s;
 }

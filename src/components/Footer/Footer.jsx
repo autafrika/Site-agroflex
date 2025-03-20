@@ -7,22 +7,23 @@ function Footer() {
     <div>
       <footer
         id="contact"
-        className="footer sm:footer-horizontal bg-base-200 text-base-content p-10"
+        className="bg-base-200 p-10 text-base-content footer sm:footer-horizontal"
       >
         <aside className="w-auto sm:w-[70%]">
           <img
             src={agroflex}
-            className="w-24 -ml-2 bg-white rounded-xl"
+            className="rounded-xl w-24 -left-3 pb-2 relative"
             alt="agroflex"
           />
           <p className="text-base/6">
-            Agro flex une solution numerique specialement conçue pour les
-            agriculteurs et les fermiers Fourni de puis 2025
+            AgroFlex une solution numérique spécialement conçue pour les
+            agriculteurs et les fermiers. <br />
+            Le produit sera fourni dès ce 2025
           </p>
           {/* <div className="flex sociaux"></div> */}
         </aside>
         <nav className="flex flex-col gap-4">
-          <h6 className="footer-title text-black">Liens</h6>
+          <h6 className="text-black footer-title">Liens</h6>
           <a className="link link-hover" href="#home">
             Accueil
           </a>
@@ -50,11 +51,11 @@ function Footer() {
           </a>
         </nav>
       </footer>
-      <footer className="w-full text-center py-4 text-sm">
+      <footer className="text-center text-sm w-full py-4">
         Designed & provided by{" "}
         <a
           href="https://www.autafrika.com"
-          className="hover:text-[#f016fe] font-semibold "
+          className="font-semibold hover:text-[#f016fe]"
         >
           Autafrika
         </a>
