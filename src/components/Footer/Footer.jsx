@@ -4,12 +4,12 @@ import agroflex from "../../assets/agroflex.png";
 
 function Footer() {
   return (
-    <div>
+    <div className="bg-gray-100">
       <footer
         id="contact"
-        className="flex flex-col md:flex-row gap-10 px-10 py-10 lg:py-20 lg:px-24 flex-wrap md:flex-nowrap text-base-content footer justify-between "
+        className="flex  flex-col md:flex-row gap-10 px-10 py-10 lg:py-20 lg:px-24 flex-wrap md:flex-nowrap text-base-content footer justify-between "
       >
-        <aside className="w-auto md:w-[60%]">
+        <aside className="w-auto md:w-[60%] leading-loose ">
           <img
             src={agroflex}
             className="rounded-xl w-24 -left-3 pb-2 relative"
@@ -28,7 +28,7 @@ function Footer() {
             Accueil
           </a>
           <a className="link link-hover" href="#fonctionnalites">
-            Fonctionnalites
+            Fonctionnalités
           </a>
           <a className="link link-hover" href="#services">
             Services

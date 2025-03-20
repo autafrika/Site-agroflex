@@ -43,7 +43,7 @@ function Header() {
             <span className=""></span>
           </li>
           <li className="link">
-            <a href="#fonctionnalites">Fonctionnalites</a>
+            <a href="#fonctionnalites">Fonctionnalités</a>
             <span className=""></span>
           </li>
           <li className="link">
@@ -155,7 +155,7 @@ function Header() {
                   aria-label="à propos"
                   className="rounded text-gray-500 text-sm block font-normal hover:bg-gray-600/10 hover:text-black px-4 py-3"
                 >
-                  Fonctionnalites
+                  Fonctionnalités
                 </a>
               </li>
               <li className="mb-1">
