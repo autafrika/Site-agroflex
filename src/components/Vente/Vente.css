@@ -1,7 +1,6 @@
 @import "tailwindcss";
 .card {
   @apply w-60 lg:w-64 p-1 lg:p-2;
-  margin: 10px;
 
   border: 1px solid #12121212;
 
