@@ -66,7 +66,7 @@ function Header() {
         </a>
       </nav>
       {!isOpen ? (
-        <div className="flex bg-gradient-to-r justify-between w-screen backdrop-blur-3xl fixed from-white/30 items-center left-0 lg:hidden px-4 to-white/20 top-0 z-50">
+        <div className="flex bg-gradient-to-r justify-between w-screen backdrop-blur-3xl fixed from-white/90 items-center left-0 lg:hidden px-4 to-white/20 top-0 z-50">
           <div className="flex rounded-s-md text-white w-full items-center lg:hidden">
             <a
               className="bg- text-3xl font-bold leading-none mr-auto py-2"
