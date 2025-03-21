@@ -16,8 +16,8 @@ function Vente() {
         produits, en facilitant la gestion, l&apos;optimisation des rendements
         et la mise en relation avec les acheteurs.
       </p>
-      <div className="flex justify-start p-3 gap-16 items-center overflow-x-auto overflow-y-hidden pb-5">
-        <div className="h-auto w-auto">
+      <div className="snap-x  flex justify-start p-3 gap-16 items-center overflow-x-auto overflow-y-hidden pb-5">
+        <div className="snap-start h-auto w-auto">
           <div className="card bg-base-100 p-2">
             <figure className="h-36 lg:h-42 overflow-hidden">
               <img src={carotte} className="w-full object-center" alt="plant" />
@@ -38,7 +38,7 @@ function Vente() {
           </div>
         </div>
 
-        <div>
+        <div className="snap-start h-auto w-auto">
           <div className="card bg-base-100 p-2">
             <figure className="h-36 lg:h-42 overflow-hidden">
               <img src={onions} className="w-full object-center" alt="plant" />
@@ -59,7 +59,7 @@ function Vente() {
           </div>
         </div>
 
-        <div>
+        <div className="snap-start h-auto w-auto">
           <div className="card bg-base-100 p-2">
             <figure className="h-36 lg:h-42 overflow-hidden">
               <img src={courge} className="w-full object-center" alt="plant" />
@@ -80,7 +80,7 @@ function Vente() {
           </div>
         </div>
 
-        <div>
+        <div className="snap-start h-auto w-auto">
           <div className="card bg-base-100 p-2">
             <figure className="h-36 lg:h-42 object-cover overflow-hidden">
               <img
