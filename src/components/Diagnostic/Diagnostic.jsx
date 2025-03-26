@@ -38,9 +38,9 @@ function Diagnostic() {
             <p className="text-sm lg:text-base">
               L&apos;application fournit des informations détaillées sur les
               besoins en nutriments, les saisons idéales, et d&apos;autres
-              facteurs clés pour chaque culture, permettant ainsi
-              d&apos;optimiser les conditions de croissance et d&apos;assurer
-              une récolte réussie.
+              facteurs clés pour chaque culture, ce qui permet d&apos;optimiser
+              les conditions de croissance et d&apos;assurer une récolte
+              réussie.
             </p>
             <div className="btns flex flex-wrap lg:flex-nowrap justify-center lg:justify-normal ">
               <button className="btn enable w-fit text-xs lg:text-sm ">
