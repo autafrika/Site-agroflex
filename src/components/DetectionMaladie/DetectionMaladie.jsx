@@ -132,7 +132,7 @@ const Gallery = () => {
                   />
                   <hr className="border-dashed text-gray-400 w-[30vw] -z-10 absolute md:top-10 right-1/2 top-6" />
                   <p className="text-[10px] text-center text-gray-500 text-wrap md:text-xs/5">
-                    Plante en bonne santée
+                    Plante en bonne santé
                   </p>
                 </div>
                 <div className="flex flex-col justify-center w-17 gap-1 items-center lg:w-32 relative">
