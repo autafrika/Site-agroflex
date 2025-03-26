@@ -1,0 +1,5 @@
+@import "tailwindcss";
+.detection .left img,
+.detection .right img {
+  @apply hover:scale-110 duration-200 hover:duration-100;
+}

@@ -7,6 +7,7 @@ import reponse1 from "../../assets/detectionReponse/reponsePasMalade1.png";
 import reponse2 from "../../assets/detectionReponse/reponseMalade1.png";
 import reponse3 from "../../assets/detectionReponse/reponseMalade2.png";
 import reponse4 from "../../assets/detectionReponse/reponseMalade3.png";
+import "./DetectionMaladie.css";
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -16,7 +17,7 @@ const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState(null);
 
   return (
-    <div className="h-fit p-6 w-full overflow-hidden">
+    <div className="detection h-fit p-6 w-full overflow-hidden">
       <div className="w-full relative">
         <div>
           <h2 className="text-2xl text-center text-slate-600 font-semibold lg:text-3xl pb-10 pt-4 px-5">
@@ -29,9 +30,10 @@ const Gallery = () => {
         <div className="flex flex-col h-auto w-full gap-4 items-center py-14">
           <div className="h-full w-full detection">
             <div className="flex grid-rows-1 h-full justify-between w-full lg:grid lg:grid-cols-4">
-              <div className="flex flex-col h-full justify-center rounded-2xl text-wrap gap-y-4 items-center lg:col-span-1 lg:gap-5 lg:items-end lg:py-6 py-3">
+              <div className=" left flex flex-col h-full justify-center rounded-2xl text-wrap gap-y-4 items-center lg:col-span-1 lg:gap-5 lg:items-end lg:py-6 py-3">
                 <div className="flex flex-col justify-center w-17 gap-1 items-center lg:w-32 relative">
                   <motion.img
+                    title="Ouvrir l'image"
                     onClick={() => setSelectedImage(detection3)}
                     className="bg-white h-12 p-[2px] rounded-full w-12 cursor-pointer lg:h-20 lg:p-1 lg:w-20 object-cover z-0"
                     src={detection3}
@@ -44,6 +46,7 @@ const Gallery = () => {
                 </div>
                 <div className="flex flex-col justify-center w-17 gap-1 items-center lg:w-32 relative">
                   <motion.img
+                    title="Ouvrir l'image"
                     onClick={() => setSelectedImage(reponse2)}
                     className="bg-white h-12 p-[2px] rounded-full w-12 cursor-pointer lg:h-20 lg:p-1 lg:w-20 object-cover z-0"
                     src={reponse2}
@@ -57,6 +60,7 @@ const Gallery = () => {
 
                 <div className="flex flex-col justify-center w-17 gap-1 items-center lg:w-32 relative">
                   <motion.img
+                    title="Ouvrir l'image"
                     onClick={() => setSelectedImage(reponse3)}
                     className="bg-white h-12 p-[2px] rounded-full w-12 cursor-pointer lg:h-20 lg:p-1 lg:w-20 object-cover z-0"
                     src={reponse3}
@@ -69,6 +73,7 @@ const Gallery = () => {
                 </div>
                 <div className="flex flex-col justify-center w-17 gap-1 items-center lg:w-32 relative">
                   <motion.img
+                    title="Ouvrir l'image"
                     onClick={() => setSelectedImage(reponse4)}
                     className="bg-white h-12 p-[2px] rounded-full w-12 cursor-pointer lg:h-20 lg:p-1 lg:w-20 object-cover z-0"
                     src={reponse4}
@@ -86,6 +91,7 @@ const Gallery = () => {
                   Scanner la plante
                 </span>
                 <motion.img
+                  title="Ouvrir l'image"
                   initial={{ y: 100, opacity: 0 }} // Position initiale (plus bas)
                   whileInView={{ y: 0, opacity: 1 }} // Position finale
                   transition={{
@@ -102,9 +108,10 @@ const Gallery = () => {
                 />
               </div>
 
-              <div className="flex flex-col h-full justify-center rounded-2xl gap-4 items-center lg:col-span-1 lg:gap-5 lg:items-start lg:py-6 py-3">
+              <div className="right flex flex-col h-full justify-center rounded-2xl gap-4 items-center lg:col-span-1 lg:gap-5 lg:items-start lg:py-6 py-3">
                 <div className="flex flex-col justify-center w-17 gap-1 items-center lg:w-32 relative">
                   <motion.img
+                    title="Ouvrir l'image"
                     onClick={() => setSelectedImage(detection1)}
                     className="bg-white h-12 p-[2px] rounded-full w-12 cursor-pointer lg:h-20 lg:p-1 lg:w-20 object-cover z-0"
                     src={detection1}
@@ -117,6 +124,7 @@ const Gallery = () => {
                 </div>
                 <div className="flex flex-col justify-center w-17 gap-1 items-center lg:w-32 relative">
                   <motion.img
+                    title="Ouvrir l'image"
                     onClick={() => setSelectedImage(reponse1)}
                     className="bg-white h-12 p-[2px] rounded-full w-12 cursor-pointer lg:h-20 lg:p-1 lg:w-20 object-cover z-0"
                     src={reponse1}
@@ -129,6 +137,7 @@ const Gallery = () => {
                 </div>
                 <div className="flex flex-col justify-center w-17 gap-1 items-center lg:w-32 relative">
                   <motion.img
+                    title="Ouvrir l'image"
                     onClick={() => setSelectedImage(detection1)}
                     className="bg-white h-12 p-[2px] rounded-full w-12 cursor-pointer lg:h-20 lg:p-1 lg:w-20 object-cover z-0"
                     src={detection1}
