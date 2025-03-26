@@ -16,7 +16,7 @@ function Functionnalities() {
     >
       <div className="w-full px-4 lg:w-[70%] h-fit text-center">
         <h2 className="font-semibold py-4 px-10 text-slate-600 text-2xl lg:text-3xl">
-          Nos Fonctionnalites
+          Nos Fonctionnalités
         </h2>
         <p className="text-center  text-sm/6 lg:text-medium text-gray-500">
           {" "}
@@ -35,7 +35,7 @@ function Functionnalities() {
             />
           </div>
           <div>
-            <h3 className=" func">Creation & gestion des projets</h3>
+            <h3 className=" func">Création & gestion des projets</h3>
             <p>
               Notre systeme doté de L&apos;IA se base sur vos attentes, analyse
               vos besoins et propose un plan détaillé avec des échéances
