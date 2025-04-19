@@ -54,7 +54,7 @@ const Gallery = () => {
                   />
                   <hr className="border-dashed text-gray-400 w-[30vw] -z-10 absolute left-1/2 md:top-10 top-6" />
                   <p className="text-[10px] text-center text-gray-500 text-wrap md:text-xs/5">
-                    Descrit la maladie
+                    Décrit la maladie
                   </p>
                 </div>
 
