@@ -2,7 +2,7 @@ import React from "react";
 export default function RainEffect() {
   return (
     <div className="absolute w-screen h-screen overflow-hidden bg-transparent">
-      {Array.from({ length: 70 }).map((_, i) => (
+      {Array.from({ length: 1 }).map((_, i) => (
         <div
           key={i}
           className="absolute bg-white opacity-50 "
