@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 function Diagnostic() {
   return (
-    <div className="px-4 lg:px-32 py-14 flex flex-col justify-start items-center w-full h-auto ">
+    <section className="diagnostic px-4 lg:px-32 py-14 flex flex-col justify-start items-center w-full h-auto ">
       <h2 className="font-semibold pt-4  pb-10 px-5 text-center text-slate-600 text-2xl lg:text-3xl">
         Gestion Optimale des Cultures
       </h2>
@@ -53,7 +53,7 @@ function Diagnostic() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
