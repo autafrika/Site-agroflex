@@ -148,6 +148,53 @@
     border-radius: 19% 81% 15% 85% / 22% 50% 50% 78%;
   }
 }
+
+.services {
+  .btns {
+    display: flex;
+    gap: 1rem;
+  }
+  .bulb1 {
+    border-radius: 73% 27% 29% 71% / 34% 34% 66% 66%;
+  }
+}
+.vente {
+  .card {
+    @apply w-60 lg:w-64 p-1 lg:p-2;
+
+    border: 1px solid #12121212;
+
+    border-radius: 10px;
+    background-color: #fff;
+    transition: 100ms;
+  }
+
+  .card figure {
+    @apply flex object-center rounded-sm;
+  }
+  .card figure img {
+    @apply object-cover h-auto;
+  }
+
+  .card:hover {
+    @apply shadow-green-950/20 shadow-lg;
+    transform: scale(1.01);
+    transition: 100ms;
+  }
+  .card-body {
+    @apply px-2 gap-2 lg:gap-2 py-3  lg:py-4;
+  }
+  .card-body p {
+    @apply text-xs/5 lg:text-sm/6 text-gray-500;
+  }
+  .card-actions {
+    @apply flex;
+  }
+  .card-actions .btn {
+    @apply text-xs lg:text-sm;
+  }
+}
+
 footer .link {
   @apply text-black/90 text-sm transition-colors duration-300;
 }

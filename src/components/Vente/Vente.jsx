@@ -7,7 +7,7 @@ import onions from "../../assets/envente/onions.jpeg";
 
 function Vente() {
   return (
-    <div className="bg-slate-400/10 h-auto lg:px-32 pb-14 pt-14 px-4">
+    <section className="vente bg-slate-400/10 h-auto lg:px-32 pb-14 pt-14 px-4">
       <h2 className="flex-none text-2xl text-center text-slate-600 font-semibold lg:text-3xl pb-6">
         De la Production à la Commercialisation
       </h2>
@@ -105,7 +105,7 @@ function Vente() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
