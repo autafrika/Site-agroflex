@@ -12,7 +12,7 @@ function Functionnalities() {
   return (
     <div
       id="fonctionnalites"
-      className="w-full relative z-0 h-auto px-4 py-10 lg:py-16 flex flex-col justify-center items-center "
+      className=" functionnalities w-full relative z-0 h-auto px-4 py-10 lg:py-16 flex flex-col justify-center items-center "
     >
       <div className="w-full px-4 lg:w-[70%] h-fit text-center">
         <h2 className="font-semibold py-4 px-10 text-slate-600 text-2xl lg:text-3xl">

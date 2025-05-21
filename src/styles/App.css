@@ -93,6 +93,18 @@
   }
 }
 
+.functionnalities {
+  .func {
+    @apply text-sm pb-1  text-gray-600 font-semibold;
+  }
+  .funct {
+    @apply text-center px-5;
+  }
+  .funct p {
+    @apply text-xs/5 lg:text-sm/6 text-gray-500;
+  }
+}
+
 footer .link {
   @apply text-black/90 text-sm transition-colors duration-300;
 }
