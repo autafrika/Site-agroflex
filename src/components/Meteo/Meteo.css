@@ -1,9 +1,0 @@
-@import "tailwindcss";
-
-.btns {
-  display: flex;
-  gap: 1rem;
-}
-.bulb8 {
-  border-radius: 70% 30% 76% 24% / 57% 39% 61% 43%;
-}
