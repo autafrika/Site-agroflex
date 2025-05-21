@@ -77,3 +77,8 @@
 .bul8 {
   border-radius: 67% 33% 61% 41% / 35% 30% 70% 53%;
 }
+
+.detection .left img,
+.detection .right img {
+  @apply hover:scale-110 duration-200 hover:duration-100;
+}
