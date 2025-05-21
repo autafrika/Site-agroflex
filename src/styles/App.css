@@ -139,6 +139,15 @@
   }
 }
 
+.scan {
+  .btns {
+    display: flex;
+    gap: 1rem;
+  }
+  .bulb2 {
+    border-radius: 19% 81% 15% 85% / 22% 50% 50% 78%;
+  }
+}
 footer .link {
   @apply text-black/90 text-sm transition-colors duration-300;
 }

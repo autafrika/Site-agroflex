@@ -5,9 +5,9 @@ import { motion } from "framer-motion";
 
 function Services() {
   return (
-    <div
+    <section
       id="services"
-      className="px-4 lg:px-32 py-14 flex flex-col justify-start items-center w-full h-auto "
+      className="services px-4 lg:px-32 py-14 flex flex-col justify-start items-center w-full h-auto "
     >
       <h2 className="font-semibold pt-4  pb-10 px-5 text-center text-slate-600 text-2xl lg:text-3xl">
         Informations Complètes sur Chaque Culture
@@ -55,7 +55,7 @@ function Services() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
