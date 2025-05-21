@@ -1,5 +1,4 @@
 import React from "react";
-import "./Scan.css";
 import astuce from "../../assets/astuces.png";
 import { motion } from "framer-motion";
 

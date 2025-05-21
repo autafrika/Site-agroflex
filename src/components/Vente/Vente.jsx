@@ -1,5 +1,4 @@
 import React from "react";
-import "./Vente.css";
 import carotte from "../../assets/envente/carotte.jpeg";
 import courge from "../../assets/envente/courge.jpeg";
 import aubergine from "../../assets/envente/aubergine.jpeg";

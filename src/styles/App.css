@@ -92,7 +92,8 @@
     display: flex;
     gap: 1rem;
   }
-  .bulb3 {
+  .bulb3,
+  .bul2 {
     border-radius: 70% 30% 76% 24% / 57% 39% 61% 43%;
   }
 }

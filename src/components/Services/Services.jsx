@@ -1,5 +1,4 @@
 import React from "react";
-import "./Services.css";
 import home from "../../assets/home1.png";
 import { motion } from "framer-motion";
 

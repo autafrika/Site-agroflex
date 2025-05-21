@@ -1,5 +1,4 @@
 import React from "react";
-import "./Meteo.css";
 import meteo from "../../assets/meteo1.png";
 import { motion } from "framer-motion";
 

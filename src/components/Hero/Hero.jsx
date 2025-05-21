@@ -1,6 +1,5 @@
 import React from "react";
 import Header from "../Header/Header";
-import "./Hero.css";
 import champ from "../../assets/champ1.png";
 import plantHand from "../../assets/plante-hand.jpg";
 import solmonitor from "../../assets/solmonitor.jpg";
