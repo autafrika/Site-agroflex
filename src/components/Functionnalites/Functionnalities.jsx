@@ -35,11 +35,13 @@ function Functionnalities() {
             />
           </div>
           <div>
-            <h3 className=" func">Création & gestion des projets</h3>
+            <h3 className=" func">
+              Chat intelligent avec l&apos;expert IA agricole
+            </h3>
             <p>
-              Notre systeme doté de L&apos;IA se base sur vos attentes, analyse
-              vos besoins et propose un plan détaillé avec des échéances
-              réalistes.
+              Posez toutes vos questions liées à l&apos;agriculture (Semences,
+              engrais, rendements, etc) et recevez des réponses et des
+              orientations précises
             </p>
           </div>
         </div>
@@ -48,11 +50,13 @@ function Functionnalities() {
             <img className="h-full drop-shadow-lg" src={prescriptions} alt="" />
           </div>
           <div>
-            <h3 className=" func">Prescription de Traitements</h3>
+            <h3 className=" func">
+              Détection des maladies et prescriptions des traiments
+            </h3>
             <p>
-              Des traitements adaptés sont proposés pour les plantes malades, en
-              se basant sur l&apos;analyse des symptômes et des conditions
-              environnementales.
+              Faites le scan video ou capturez des images des vos plantes pour
+              être informé de leur état de santé et recevez des prescriptions de
+              traitements adaptés
             </p>
           </div>
         </div>
@@ -65,10 +69,12 @@ function Functionnalities() {
             />
           </div>
           <div>
-            <h3 className=" func">Prévisions Météorologiques</h3>
+            <h3 className=" func">
+              Astuces personnalisées pour l&apos;agriculture durable
+            </h3>
             <p>
-              Fournir des prévisions météorologiques précises en temps réel,
-              basées sur l&apos;analyse des données climatiques
+              Des astuces basées sur les objectifs des agriculteurs et les
+              conditions spécifiques de chaque culture
             </p>
           </div>
         </div>
@@ -76,25 +82,25 @@ function Functionnalities() {
           <div className="w-32 h-32 bul1 flex justify-center bg-red-500/15">
             <img className="h-full drop-shadow-lg" src={scanPlant} alt="" />
           </div>{" "}
-          <div>
-            <h3 className=" func">Analyse des Plantes</h3>
+          <dblieriv>
+            <h3 className=" func">Marché virtuel agricole (e-commerce)</h3>
             <p>
-              L&apos;IA permet d&apos;analyser les plantes pour détecter et
-              reconnaître leurs maladies à partir de leurs symptômes et
-              caractéristiques visuelles.
+              Les producteurs pourront publier leurs produits agricoles. Les
+              acheteurs pourront consulter et contacter les producteurs
+              directement pour acheter.
             </p>
-          </div>
+          </dblieriv>
         </div>
         <div className="funct flex flex-col items-center gap-4">
           <div className="w-32 h-32 bul4 flex justify-center bg-slate-600/40">
             <img className="h-full drop-shadow-lg" src={suivieChamps} alt="" />
           </div>
           <div>
-            <h3 className=" func">Analyse de l&apos;État du Sol</h3>
+            <h3 className="func">Création & Gestion des projets</h3>
             <p>
-              L&apos;état du sol est analysé à l&apos;aide de capteurs IoT,
-              fournissant des données précises sur son humidité, sa température
-              et sa composition.
+              Créez des projet pour chaque culture, la plateforme vous fournit
+              un plan détaillé et des recommandations pour atteindre vos
+              objectifs
             </p>
           </div>
         </div>
@@ -107,7 +113,7 @@ function Functionnalities() {
             />
           </div>
           <div>
-            <h3 className=" func">Monitoring du Champ</h3>
+            <h3 className=" func">Système d&apos;irrigation intelligent</h3>
             <p>
               Automatisez l&apos;irrigation de vos cultures pour économiser de
               l&apos;eau et améliorer les rendements.

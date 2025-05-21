@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../Header/Header";
 import "./Hero.css";
-import champ from "../../assets/champ1.webp";
+import champ from "../../assets/champ1.png";
 import plantHand from "../../assets/plante-hand.jpg";
 import solmonitor from "../../assets/solmonitor.jpg";
 import croissant from "../../assets/croissant.jpg";
@@ -43,7 +43,7 @@ function Hero() {
       </div>
 
       <div className="hidden lg:block">
-        <div className="flex flex-row bg-gradient-to-br border border-gray-400 p-1 rounded-lg absolute backdrop-blur-sm bottom-8 from-gray-700/30 left-8 lg:h-[99px] lg:w-[310px] to-green-800/10 xl:h-[130px] xl:p-3 xl:w-[410px]">
+        <div className="flex flex-row bg-gradient-to-br border border-gray-400 p-1 rounded-lg absolute backdrop-blur-sm bottom-8 from-gray-700/30 left-8 lg:h-[100px] lg:w-[310px] to-green-800/10 xl:h-[130px] xl:p-3 xl:w-[410px]">
           <div className="flex h-full rounded-md w-2/3 items-end overflow-hidden">
             <img
               className="h-[120%] w-full object-cover"
@@ -53,15 +53,13 @@ function Hero() {
           </div>
 
           <div className="flex flex-col h-full justify-between p-1 w-full px-1 xl:px-2">
-            <h2 className="lg:text-sm">
-              Controllez la qualité et l&apos;état du sol
-            </h2>
-            <p className="text-gray-100 text-xs">
-              Sol bien entretenu, croissance en bonne qualité
+            <h2 className="lg:text-sm">Chat avec l&apos;expert IA agricole</h2>
+            <p className="text-gray-100 text-[11px]">
+              Ecrivez lui vos problèmes et récevez des conseils précis
             </p>
           </div>
         </div>
-        <div className="flex border border-gray-400 p-1 rounded-lg -translate-x-[50%] absolute backdrop-blur-sm bottom-8 from-gray-700/30 left-1/2 lg:h-[99px] lg:w-[310px] to-green-800/10 xl:h-[130px] xl:p-3 xl:w-[410px]">
+        <div className="flex border border-gray-400 p-1 rounded-lg -translate-x-[50%] absolute backdrop-blur-sm bottom-8 from-gray-700/30 left-1/2 lg:h-[100px] lg:w-[310px] to-green-800/10 xl:h-[130px] xl:p-3 xl:w-[410px]">
           <div className="flex h-full rounded-md w-1/2 items-end overflow-hidden">
             <img
               className="h-[120%] w-full object-cover"
@@ -72,14 +70,15 @@ function Hero() {
 
           <div className="flex flex-col h-full justify-between p-1 w-full px-2 xl:p-2">
             <h2 className="lg:text-sm">
-              Donnez à vos plantes ce dont elles ont besoin
+              Détecter les maladies de vos plantes en 1 clic
             </h2>
-            <p className="text-gray-100 text-xs">
-              Soyez au courant des réels besoins de vos plantes
+            <p className="text-gray-100 text-[11px]">
+              Prenez une photo de votre plante, notre IA détermine l&apos;état
+              des plantes
             </p>
           </div>
         </div>
-        <div className="flex bg-green-500/20 border border-gray-400 p-1 rounded-lg absolute backdrop-blur-md bottom-8 lg:h-[99px] lg:w-[310px] right-8 xl:h-[130px] xl:p-3 xl:w-[410px]">
+        <div className="flex bg-green-500/20 border border-gray-400 p-1 rounded-lg absolute backdrop-blur-md bottom-8 lg:h-[100px] lg:w-[310px] right-8 xl:h-[130px] xl:p-3 xl:w-[410px]">
           <div className="flex h-full rounded-md w-1/2 items-end overflow-hidden">
             <img
               className="h-[120%] w-full object-cover"
@@ -88,11 +87,10 @@ function Hero() {
             />
           </div>
           <div className="flex flex-col h-full justify-between p-1 w-full xl:p-2">
-            <h2 className="lg:text-sm">
-              Multipliez vos rendements et vos chiffres d&apos;affaires
-            </h2>
-            <p className="text-gray-100 text-xs">
-              Le rendement est conséquent avec les informations cruciales
+            <h2 className="lg:text-sm">Surveillez vos champs en direct</h2>
+            <p className="text-gray-100 text-[11px]">
+              Grâce à la video, notre IA analyse vos cultures et vous alerte en
+              cas de soucis
             </p>
           </div>
         </div>
