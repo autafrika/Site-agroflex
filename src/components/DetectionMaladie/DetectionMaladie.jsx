@@ -7,7 +7,6 @@ import reponse1 from "../../assets/detectionReponse/reponsePasMalade1.png";
 import reponse2 from "../../assets/detectionReponse/reponseMalade1.png";
 import reponse3 from "../../assets/detectionReponse/reponseMalade2.png";
 import reponse4 from "../../assets/detectionReponse/reponseMalade3.png";
-import "./DetectionMaladie.css";
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";

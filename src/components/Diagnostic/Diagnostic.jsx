@@ -1,5 +1,4 @@
 import React from "react";
-import "./Diagnostic.css";
 import allplant from "../../assets/all-plants.png";
 import { motion } from "framer-motion";
 
