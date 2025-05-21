@@ -105,6 +105,26 @@
   }
 }
 
+.navbar {
+  .h-links .link {
+    @apply relative;
+
+    text-decoration: none;
+    transition: 200ms;
+  }
+  .link:hover {
+    transition: 200ms;
+  }
+  .h-links .link span {
+    @apply bg-gradient-to-br h-2 rounded-full w-5 -bottom-[9px] absolute from-gray-600 right-1/2 to-black translate-x-1/2;
+    opacity: 0;
+    transition: 0.5s;
+  }
+  .h-links .link a:hover ~ span {
+    opacity: 1;
+    transition: 0.4s;
+  }
+}
 footer .link {
   @apply text-black/90 text-sm transition-colors duration-300;
 }

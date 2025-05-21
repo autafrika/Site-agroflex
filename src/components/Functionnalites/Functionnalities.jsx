@@ -10,7 +10,7 @@ import "./Functionnalities.css";
 
 function Functionnalities() {
   return (
-    <div
+    <section
       id="fonctionnalites"
       className=" functionnalities w-full relative z-0 h-auto px-4 py-10 lg:py-16 flex flex-col justify-center items-center "
     >
@@ -121,7 +121,7 @@ function Functionnalities() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

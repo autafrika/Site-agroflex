@@ -29,7 +29,7 @@ function Header() {
 
   return (
     <>
-      <nav className="bg-gradient-to-r h-auto justify-between shadow-2xl shadow-green-950/15 w-full backdrop-blur-2xl fixed from-white/85 gap-6 header hidden items-center lg:flex lg:flex-row px-10 py-2 to-white/70 top-0 via-blue-200/30 z-50">
+      <nav className=" navbar bg-gradient-to-r h-auto justify-between shadow-2xl shadow-green-950/15 w-full backdrop-blur-2xl fixed from-white/85 gap-6 header hidden items-center lg:flex lg:flex-row px-10 py-2 to-white/70 top-0 via-blue-200/30 z-50">
         <a
           href="#home"
           className="flex flexCenter p-1 rounded-full w-36 cursor-pointer logo overflow-hidden"
