@@ -78,6 +78,10 @@
   border-radius: 67% 33% 61% 41% / 35% 30% 70% 53%;
 }
 
+.h-hero h2 {
+  @apply text-sm xl:text-base font-bold text-white;
+}
+
 .detection .left img,
 .detection .right img {
   @apply hover:scale-110 duration-200 hover:duration-100;
@@ -125,6 +129,7 @@
     transition: 0.4s;
   }
 }
+
 footer .link {
   @apply text-black/90 text-sm transition-colors duration-300;
 }

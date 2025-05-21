@@ -11,7 +11,7 @@ import { motion } from "framer-motion";
 
 function Hero() {
   return (
-    <div
+    <section
       id="home"
       className="flexColumn h-hero h-screen w-full overflow-hidden relative z-10"
     >
@@ -95,7 +95,7 @@ function Hero() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
