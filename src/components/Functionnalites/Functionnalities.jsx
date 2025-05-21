@@ -6,7 +6,6 @@ import prescriptions from "../../assets/svg/prescriptions.svg";
 import previsionsMeteo from "../../assets/svg/prevision_meteo.svg";
 import scanPlant from "../../assets/svg/scan_deseases.svg";
 import suivieChamps from "../../assets/svg/suivie_du_champs.svg";
-import "./Functionnalities.css";
 
 function Functionnalities() {
   return (
