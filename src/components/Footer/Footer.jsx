@@ -39,6 +39,9 @@ function Footer() {
           <a className="link link-hover" href="#contact">
             Contact
           </a>
+          <a className="link link-hover" href="/privacy">
+            Politique de confidentialité
+          </a>
         </nav>
         <nav className="flex flex-col gap-4">
           <h6 className="footer-title">Contact</h6>

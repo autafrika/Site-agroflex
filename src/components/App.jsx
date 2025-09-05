@@ -1,4 +1,5 @@
 import React from "react";
+import { Routes, Route } from "react-router-dom";
 import "../styles/App.css";
 import Hero from "./Hero/Hero";
 import Services from "./Services/Services";
@@ -10,23 +11,30 @@ import Vente from "./Vente/Vente";
 import Footer from "./Footer/Footer";
 import Functionnalities from "./Functionnalites/Functionnalities";
 import DetectionMaladie from "./DetectionMaladie/DetectionMaladie";
-// import Img from "./img";
+import PrivacyPolicy from "./PrivacyPolicy/PrivacyPolicy";
 
 function App() {
   return (
-    <div>
-      <Hero />
-      <Functionnalities />
-      <Services />
-      <Scan />
-      <Meteo />
-      <DetectionMaladie />
-      <Diagnostic />
-      <Vente />
-      <Newsletter />
-      <Footer />
-    </div>
+    <Routes>
+      <Route path="/" element={<MainPage />} />
+      <Route path="/privacy" element={<PrivacyPolicy />} />
+    </Routes>
   );
 }
+
+const MainPage = () => (
+  <div>
+    <Hero />
+    <Functionnalities />
+    <Services />
+    <Scan />
+    <Meteo />
+    <DetectionMaladie />
+    <Diagnostic />
+    <Vente />
+    <Newsletter />
+    <Footer />
+  </div>
+);
 
 export default App;
