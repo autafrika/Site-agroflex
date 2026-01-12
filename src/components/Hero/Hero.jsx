@@ -37,7 +37,7 @@ function Hero() {
           coûts.
         </p>
         <div className="flex justify-center gap-6 items-center mt-5">
-          <button className="btn enable">Commencer </button>
+          <a href="https://play.google.com/store/apps/details?id=com.autafrika.agroflex"><button className="btn enable">Commencer </button></a>
           <button className="btn disable">Savoir plus</button>
         </div>
       </div>

@@ -41,12 +41,16 @@ function Meteo() {
               dangers et de protéger les cultures.
             </p>
             <div className="btns flex flex-wrap lg:flex-nowrap justify-center lg:justify-normal ">
-              <button className="btn enable w-fit text-xs lg:text-sm ">
-                Télécharger l&apos;app
-              </button>
-              <button className="btn disable w-fit text-xs lg:text-sm">
-                Tester l&apos;application
-              </button>
+              <a href="https://play.google.com/store/apps/details?id=com.autafrika.agroflex">
+                <button className="btn enable w-fit text-xs lg:text-sm ">
+                  Télécharger l&apos;app
+                </button>
+              </a>
+              <a href="https://play.google.com/store/apps/details?id=com.autafrika.agroflex">
+                <button className="btn disable w-fit text-xs lg:text-sm">
+                  Tester l&apos;application
+                </button>
+              </a>
             </div>
           </div>
         </div>
