@@ -17,7 +17,7 @@ function Functionnalities() {
         <h2 className="font-semibold py-4 px-10 text-slate-600 text-2xl lg:text-3xl">
           Nos Fonctionnalités
         </h2>
-        <p className="text-center  text-sm/6 lg:text-medium text-gray-500">
+        <p className="text-center  text-sm/6 md:text-lg font-normal text-gray-400">
           {" "}
           Voici une présentation des principales fonctionnalités de notre
           système, conçu pour optimiser la gestion agricole grâce à des
