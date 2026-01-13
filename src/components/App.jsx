@@ -1,4 +1,5 @@
 import React from "react";
+import { Analytics } from "@vercel/analytics/react";
 import { Routes, Route } from "react-router-dom";
 import "../styles/App.css";
 import Hero from "./Hero/Hero";
@@ -34,6 +35,7 @@ const MainPage = () => (
     <Vente />
     <Newsletter />
     <Footer />
+    <Analytics />
   </div>
 );
 
