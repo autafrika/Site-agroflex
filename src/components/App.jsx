@@ -14,7 +14,7 @@ import DetectionMaladie from "./DetectionMaladie/DetectionMaladie";
 
 function App() {
   return (
-    <div>
+    <div className="w-[100vm] overflow-hidden">
       <Hero />
       <Functionnalities />
       <Services />

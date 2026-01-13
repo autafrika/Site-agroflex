@@ -10,7 +10,7 @@ function Diagnostic() {
       </h2>
 
       <div className="w-full h-fit gap-5 flex flex-col items-center justify-center lg:flex-row-reverse ">
-        <div className="serv-left relative h-full flex justify-center items-center  w-full lg:w-1/2 ">
+        <div className="serv-left scan relative h-full flex justify-center items-center  w-full lg:w-1/2 ">
           <span className="absolute bulb2 w-[20rem] h-[20rem] lg:w-[32rem] lg:h-[32rem] bg-red-500/15 "></span>
           <motion.div
             initial="hidden"
@@ -19,7 +19,7 @@ function Diagnostic() {
               hidden: { opacity: 0, y: 100 },
               visible: { opacity: 1, y: 0, transition: { duration: 0.7 } },
             }}
-            className=" flex justify-center items-center border-none w-full   lg:w-auto h-auto "
+            className=" flex justify-center items-center border-none w-full lg:w-auto h-auto "
           >
             <img
               alt="wallpaper"

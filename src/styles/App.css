@@ -25,6 +25,10 @@
   flex-direction: row;
 }
 
+.logo-googleplay {
+  font-family: "Google Sans", sans-serif;
+}
+
 .btn {
   @apply text-xs md:text-sm py-[10px] px-6 min-w-max;
   box-shadow: none;
