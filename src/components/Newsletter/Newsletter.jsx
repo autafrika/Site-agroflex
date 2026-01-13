@@ -1,5 +1,6 @@
 import React from "react";
 import flech from "../../assets/svg/flesh_excalidraw.svg";
+import { LuSend } from "react-icons/lu";
 function Newsletter() {
   return (
     <div
@@ -67,19 +68,22 @@ function Newsletter() {
           <div className="w-full h-full rounded-[50%] bg-green-900"></div>
         </div>
 
-        <h3 className="text-2xl font-bold lg:text-4xl">Newsletter</h3>
-        <p className="z-10 text-gray-100 text-sm lg:px-20 lg:text-center lg:text-lg md:text-center">
+        <h3 className="text-2xl font-bold lg:text-4xl z-3">Newsletter</h3>
+        <p className="z-3 text-gray-100 text-sm lg:px-20 lg:text-center lg:text-lg md:text-center">
           Recevez des notifications dans votre boîte mail sur des nouveautés de
           l&apos;application et des astuces pour l&apos;optimisation de vos
           cultures.
         </p>
         <form className="flex justify-normal z-10 gap-2 items-start lg:gap-5 lg:justify-center lg:w-[50%]">
           <input
-            className="bg-green-50/30 border border-white/50 h-10 p-2 rounded-lg text-sm w-[60%] lg:h-12 lg:p-4 lg:w-[80%] outline-none placeholder:text-gray-200"
+            className="bg-green-50/30 border border-white/50 h-10 p-2 rounded-lg text-sm w-[60%] lg:h-12 lg:p-4 lg:w-[80%] outline-none placeholder:text-gray-200 placeholder:text-xs  md:placeholder:text-sm focus:ring-1  focus:ring-green-300 transition-all duration-300"
             type="email"
             placeholder="Entrez votre email"
           />
-          <button className="btn h-10 enable lg:h-12">Subscribe</button>
+
+          <button className="btn h-10 enable flex lg:h-12 !hover:shadow-sm !shadow-green-800">
+            <LuSend className="size-5" />
+          </button>
         </form>
       </div>
     </div>

@@ -1,11 +1,12 @@
 import React from "react";
 
-import creationProjet from "../../assets/svg/creation_projet_assiste.svg";
-import monitoringField from "../../assets/svg/monitoring.svg";
+import chatAi from "../../assets/svg/chat_ai.svg";
+import createProject from "../../assets/svg/create_project.svg";
+import irrigationField from "../../assets/svg/irrigation_field.svg";
 import prescriptions from "../../assets/svg/prescriptions.svg";
 import previsionsMeteo from "../../assets/svg/prevision_meteo.svg";
 import scanPlant from "../../assets/svg/scan_deseases.svg";
-import suivieChamps from "../../assets/svg/suivie_du_champs.svg";
+// import suivieChamps from "../../assets/svg/suivie_du_champs.svg";
 
 function Functionnalities() {
   return (
@@ -17,7 +18,7 @@ function Functionnalities() {
         <h2 className="font-semibold py-4 px-10 text-slate-600 text-2xl lg:text-3xl">
           Nos Fonctionnalités
         </h2>
-        <p className="text-center  text-sm/6 md:text-lg font-normal text-gray-400">
+        <p className="text-center  text-sm/6 md:text-lg font-normal text-gray-500">
           {" "}
           Voici une présentation des principales fonctionnalités de notre
           système, conçu pour optimiser la gestion agricole grâce à des
@@ -27,11 +28,7 @@ function Functionnalities() {
       <div className="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 lg:gap-10 w-full px-10 relative z-0 h-full  text-sm text-gray-600  flex-wrap justify-center items-center pt-14 gap-y-10 gap-x-9">
         <div className="funct flex flex-col items-center gap-4">
           <div className="w-32 h-32 bul3 bg-green-400/20">
-            <img
-              className="h-full drop-shadow-lg "
-              src={creationProjet}
-              alt=""
-            />
+            <img className="h-full drop-shadow-lg " src={chatAi} alt="" />
           </div>
           <div>
             <h3 className=" func">
@@ -92,7 +89,7 @@ function Functionnalities() {
         </div>
         <div className="funct flex flex-col items-center gap-4">
           <div className="w-32 h-32 bul4 flex justify-center bg-slate-600/40">
-            <img className="h-full drop-shadow-lg" src={suivieChamps} alt="" />
+            <img className="h-full drop-shadow-lg" src={createProject} alt="" />
           </div>
           <div>
             <h3 className="func">Création & Gestion des projets</h3>
@@ -107,7 +104,7 @@ function Functionnalities() {
           <div className="w-32 h-32 bul5 flex justify-center bg-blue-500/20">
             <img
               className="h-full drop-shadow-lg"
-              src={monitoringField}
+              src={irrigationField}
               alt=""
             />
           </div>

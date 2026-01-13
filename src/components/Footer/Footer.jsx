@@ -24,17 +24,19 @@ function Footer() {
           </div>
           <div className="flex sociaux  ">
             <a
-              href="https://play.google.com/apps/testing/com.autafrika.agroflex"
-              className="!py-2 !px-2 btn enable !border !border-gray-400 bg-white flex items-center justify-center gap-1"
+              href="https://play.google.com/store/apps/details?id=com.autafrika.agroflex"
+              className="!py-1 !px-3 btn enable !border !border-gray-500 bg-white flex items-center justify-center gap-1"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <img
-                className="w-8"
+                className="w-7"
                 src={googleplaylogo}
                 alt="google play logo"
               />
               <div className="flex flex-col  justify-center  ">
-                <p className="font-normal text-[10px]/3 ">GET IT ON</p>
-                <p className="font-semibold text-lg/5 text-gray-100 logo-googleplay ">
+                <p className="font-normal text-[9px]/3 ">GET IT ON</p>
+                <p className="font-semibold text-[15px/5 text-gray-100 logo-googleplay ">
                   <span>G</span>oogle Play
                 </p>
               </div>
@@ -74,13 +76,14 @@ function Footer() {
         </nav>
       </footer>
       <footer className="text-center text-xs w-full py-5 text-gray-500">
-        Designed & provided by{" "}
+        &copy; 2026. Designed & provided by{" "}
         <a
           href="https://www.autafrika.com"
           className="font-semibold hover:text-[#f016fe]"
         >
           Autafrika
         </a>
+        . All rights reserved.
       </footer>
     </div>
   );

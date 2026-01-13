@@ -43,7 +43,9 @@ function Hero() {
         <div className="flex justify-center gap-6 items-center mt-5">
           <a
             href="https://play.google.com/store/apps/details?id=com.autafrika.agroflex"
-            className="!py-1 !px-3 btn enable !border !border-gray-400 bg-white flex items-center justify-center gap-1"
+            className="!py-1 !px-3 btn enable !border !border-gray-500 bg-white flex items-center justify-center gap-1"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <img className="w-7" src={googleplaylogo} alt="google play logo" />
             <div className="flex flex-col  justify-center  ">
@@ -53,7 +55,7 @@ function Hero() {
               </p>
             </div>
           </a>
-          <button className="btn disable">Savoir plus</button>
+          <button className="btn disable ">Savoir plus</button>
         </div>
       </div>
 
