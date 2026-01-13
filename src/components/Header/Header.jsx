@@ -58,7 +58,7 @@ function Header() {
             <span className=""></span>
           </li>
         </ul>
-        <a href="" className="hidden lg:flex">
+        <a href="https://play.google.com/store/apps/details?id=com.autafrika.agroflex" className="hidden lg:flex">
           <button className="btn bg-white h-12 rounded-full w-36 enable font-semibold hover:text-white lg:flex mr-5">
             Télécharger
           </button>
@@ -189,7 +189,7 @@ function Header() {
             <div className="mt-auto w-full">
               <div className="pt-6 w-full">
                 <a
-                  href="#"
+                  href="https://play.google.com/store/apps/details?id=com.autafrika.agroflex"
                   className="btn rounded-lg text-center text-sm text-white block enable font-semibold leading-loose mb-2 px-4 py-4"
                   aria-label="prendre inscription"
                 >
