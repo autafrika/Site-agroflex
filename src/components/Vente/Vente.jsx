@@ -1,9 +1,9 @@
 import React from "react";
-import screen1 from "../../assets/envente/1.png";
-import screen2 from "../../assets/envente/2.png";
-import screen3 from "../../assets/envente/3.png";
-import screen4 from "../../assets/envente/4.png";
-import screen5 from "../../assets/envente/5.png";
+import screen1 from "../../assets/images/envente/1.png";
+import screen2 from "../../assets/images/envente/2.png";
+import screen3 from "../../assets/images/envente/3.png";
+import screen4 from "../../assets/images/envente/4.png";
+import screen5 from "../../assets/images/envente/5.png";
 import BlurImage from "../BlurImage/BlurImage";
 
 function Vente() {

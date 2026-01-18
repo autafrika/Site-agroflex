@@ -1,10 +1,10 @@
 import React from "react";
 import Header from "../Header/Header";
-import champ from "../../assets/champ1.webp";
-import plantHand from "../../assets/plante-hand.jpg";
-import solmonitor from "../../assets/solmonitor.jpg";
-import croissant from "../../assets/croissant.jpg";
-import googleplaylogo from "../../assets/googleplaylogo.png";
+import champ from "../../assets/images/champ1.webp";
+import plantHand from "../../assets/images/plante-hand.jpg";
+import solmonitor from "../../assets/images/solmonitor.jpg";
+import croissant from "../../assets/images/croissant.jpg";
+import googleplaylogo from "../../assets/images/googleplaylogo.png";
 
 import RainEffect from "../Rain/Rain";
 import { motion } from "framer-motion";
@@ -21,7 +21,7 @@ function Hero() {
           className="w-full  object-bottom object-cover"
           src={champ}
           alt="champ d'agriculture"
-          ratio="aspect-[16/9]"
+          ratio=""
         />
         <RainEffect />
       </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import allplant from "../../assets/details/detail_0.png";
+import allplant from "../../assets/images/details/detail_0.png";
 import { motion } from "framer-motion";
 
 function Diagnostic() {

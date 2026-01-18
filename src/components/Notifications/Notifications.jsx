@@ -1,5 +1,5 @@
 import React from "react";
-import astuce from "../../assets/details/astuce_1.png";
+import astuce from "../../assets/images/details/astuce_1.png";
 import { motion } from "framer-motion";
 
 function Scan() {

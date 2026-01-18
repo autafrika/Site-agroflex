@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import agroflex from "../../assets/agroflex.png";
+import agroflex from "../../assets/images/agroflex.png";
 import { useEffect } from "react";
 import { useRef } from "react";
 

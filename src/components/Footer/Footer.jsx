@@ -1,6 +1,6 @@
 import React from "react";
-import agroflex from "../../assets/agroflex.png";
-import googleplaylogo from "../../assets/googleplaylogo.png";
+import agroflex from "../../assets/images/agroflex.png";
+import googleplaylogo from "../../assets/images/googleplaylogo.png";
 
 function Footer() {
   return (

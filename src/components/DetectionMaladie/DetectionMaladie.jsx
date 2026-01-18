@@ -1,13 +1,13 @@
 import React from "react";
-import scan from "../../assets/detectionResponse/scan_0.png";
-import detection1 from "../../assets/detectionResponse/sick_1.png";
-import detection2 from "../../assets/detectionResponse/sick_2.png";
-import detection3 from "../../assets/detectionResponse/sick_3.png";
-// import detection4 from "../../assets/detectionResponse/sick_3.png";
-import healthy_1 from "../../assets/detectionResponse/healthy_1.png";
-import healthy_2 from "../../assets/detectionResponse/healthy_2.png";
-import healthy_3 from "../../assets/detectionResponse/healthy_3.png";
-// import reponse4 from "../../assets/detectionResponse/scan_0.png";
+import scan from "../../assets/images/detectionResponse/scan_0.png";
+import detection1 from "../../assets/images/detectionResponse/sick_1.png";
+import detection2 from "../../assets/images/detectionResponse/sick_2.png";
+import detection3 from "../../assets/images/detectionResponse/sick_3.png";
+// import detection4 from "../../assets/images/detectionResponse/sick_3.png";
+import healthy_1 from "../../assets/images/detectionResponse/healthy_1.png";
+import healthy_2 from "../../assets/images/detectionResponse/healthy_2.png";
+import healthy_3 from "../../assets/images/detectionResponse/healthy_3.png";
+// import reponse4 from "../../assets/images/detectionResponse/scan_0.png";
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";

@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../assets/agroflex.png";
+import logo from "../../assets/images/agroflex.png";
 import { Link } from "react-router-dom";
 
 const PrivacyPolicy = () => {
