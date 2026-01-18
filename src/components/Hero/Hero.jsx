@@ -31,7 +31,7 @@ function Hero() {
           animate={{ opacity: 1, y: 0 }} // Arrive en haut avec opacité 1
           exit={{ opacity: 0, y: 50 }} // Redescend en disparaissant
           transition={{ duration: 0.5, ease: "easeOut" }} // Animation fluide
-          className="p-4 text-4xl/11 text-center 2xl:text-6xl/17 font-extrabold md:text-5xl/12"
+          className="p-4 text-4xl/11 text-center 2xl:text-6xl/10 font-extrabold md:text-5xl/12"
         >
           Optimisez Votre Production Agricole
         </motion.h1>

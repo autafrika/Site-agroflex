@@ -1,5 +1,5 @@
 import React from "react";
-import flech from "../../assets/svg/flesh_excalidraw.svg";
+import flesh from "../../assets/svg/flesh_excalidraw.svg";
 import { LuSend } from "react-icons/lu";
 function Newsletter() {
   return (
@@ -7,7 +7,7 @@ function Newsletter() {
       id="newsletter"
       className="flex h-[46vh] justify-center w-full items-center lg:h-[60vh] lg:p-10 px-2 py-14"
     >
-      <div className="flex flex-col overflow-hidden relative z-2 bg-gradient-to-tr h-full justify-center rounded-xl text-white w-full from-green-950 gap-2 items-start lg:gap-5 lg:rounded-3xl lg:w-[80%] md:items-center news px-5 to-green-800">
+      <div className="flex flex-col overflow-hidden relative z-2 bg-gradient-to-tr h-full justify-center rounded-xl text-white w-full from-green-950  to-green-800 gap-2 items-center lg:gap-5 lg:rounded-3xl lg:w-[80%] md:items-center news px-5">
         <svg
           className=" h-26 md:h-48 absolute z-1 left-[2%] md:left-[10%] -translate-y-1/2 top-3/10 lg:top-2/5"
           viewBox="0 0 900 900"
@@ -48,8 +48,8 @@ function Newsletter() {
         </svg>
         <img
           className="absolute w-15 md:w-22 lg:w-25 top-[18%] right-[20%] lg:right-50"
-          src={flech}
-          alt="flech manuelle"
+          src={flesh}
+          alt="flesh manuelle"
         />
         <svg
           viewBox="0 -4 32 32"
@@ -64,19 +64,19 @@ function Newsletter() {
             fill="#d1d1d1"
           />
         </svg>
-        <div className="absolute z-10 top-[85%] w-500 h-3600 rounded-[50%] py-2  bg-yellow-500/80  ">
+        <div className="absolute z-10 top-[90%] md:top-[85%] w-300 md:w-500 h-3500 md:h-3600 rounded-[50%] py-2  bg-yellow-500/80  ">
           <div className="w-full h-full rounded-[50%] bg-green-900"></div>
         </div>
 
         <h3 className="text-2xl font-bold lg:text-4xl z-3">Newsletter</h3>
-        <p className="z-3 text-gray-100 text-sm lg:px-20 lg:text-center lg:text-lg md:text-center">
+        <p className="z-3 text-gray-100 text-sm lg:px-20 text-center lg:text-lg md:text-center">
           Recevez des notifications dans votre boîte mail sur des nouveautés de
           l&apos;application et des astuces pour l&apos;optimisation de vos
           cultures.
         </p>
-        <form className="flex justify-normal z-10 gap-2 items-start lg:gap-5 lg:justify-center lg:w-[50%]">
+        <form className="flex justify-center flex-wrap md:flex-nowrap z-10 gap-2  lg:gap-5 lg:justify-center w-full md:w-[70%] lg:w-[60%]">
           <input
-            className="bg-green-50/30 border border-white/50 h-10 p-2 rounded-lg text-sm w-[60%] lg:h-12 lg:p-4 lg:w-[80%] outline-none placeholder:text-gray-200 placeholder:text-xs  md:placeholder:text-sm focus:ring-1  focus:ring-green-300 transition-all duration-300"
+            className="bg-green-50/30 border border-white/50 h-10 p-2 rounded-lg text-sm w-auto md:w-[85%] lg:h-12 lg:p-4 lg:w-[86%] xl:w-[70%] outline-none placeholder:text-gray-200 placeholder:text-xs  md:placeholder:text-sm focus:ring-1  focus:ring-green-300 transition-all duration-300"
             type="email"
             placeholder="Entrez votre email"
           />

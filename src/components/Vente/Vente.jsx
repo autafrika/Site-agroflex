@@ -65,7 +65,7 @@ function Vente() {
             <div className="bg-black/25 w-full h-4 rounded-[50%] blur-sm"></div>
           </div>
 
-          <div className=" h-auto w-auto">
+          <div className=" snap-end h-auto w-auto">
             <div className="h-auto bg-none p-2 ">
               <img
                 className="h-80 min-w-40 lg:h-100 lg:min-w-48"

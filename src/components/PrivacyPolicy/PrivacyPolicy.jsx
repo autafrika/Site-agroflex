@@ -1,7 +1,6 @@
 import React from "react";
 import logo from "../../assets/agroflex.png";
 import { Link } from "react-router-dom";
-import "./PrivacyPolicy.css";
 
 const PrivacyPolicy = () => {
   return (
