@@ -8,6 +8,7 @@ import googleplaylogo from "../../assets/googleplaylogo.png";
 
 import RainEffect from "../Rain/Rain";
 import { motion } from "framer-motion";
+import BlurImage from "../BlurImage/BlurImage";
 
 function Hero() {
   return (
@@ -16,10 +17,11 @@ function Hero() {
       className="flexColumn h-hero h-screen w-full overflow-hidden relative z-10"
     >
       <div className="flex h-screen w-full -z-5 absolute left-0 object-cover top-0">
-        <img
+        <BlurImage
           className="w-full  object-bottom object-cover"
           src={champ}
-          alt=""
+          alt="champ d'agriculture"
+          ratio="aspect-[16/9]"
         />
         <RainEffect />
       </div>
@@ -62,7 +64,7 @@ function Hero() {
       <div className=" hidden lg:flex lg:justify-around">
         <div className="flex flex-row bg-gradient-to-br border border-gray-400 p-1 rounded-lg absolute backdrop-blur-sm bottom-8 from-gray-700/30 left-24 lg:h-[100px] lg:w-[310px] to-green-800/10 xl:h-[130px] xl:p-3 xl:w-[410px]">
           <div className="flex h-full rounded-md w-2/3 items-end overflow-hidden">
-            <img
+            <BlurImage
               className="h-[120%] w-full object-cover"
               src={solmonitor}
               alt=""
@@ -78,7 +80,7 @@ function Hero() {
         </div>
         <div className="flex border border-gray-400 p-1 rounded-lg -translate-x-[50%] absolute backdrop-blur-sm bottom-8 from-gray-700/30 left-1/2 lg:h-[100px] lg:w-[310px] to-green-800/10 xl:h-[130px] xl:p-3 xl:w-[410px]">
           <div className="flex h-full rounded-md w-1/2 items-end overflow-hidden">
-            <img
+            <BlurImage
               className="h-[120%] w-full object-cover"
               src={plantHand}
               alt=""
@@ -97,7 +99,7 @@ function Hero() {
         </div>
         <div className="flex bg-green-500/20 border border-gray-400 p-1 rounded-lg absolute backdrop-blur-md bottom-8 lg:h-[100px] lg:w-[310px] right-24 xl:h-[130px] xl:p-3 xl:w-[410px]">
           <div className="flex h-full rounded-md w-1/2 items-end overflow-hidden">
-            <img
+            <BlurImage
               className="h-[120%] w-full object-cover"
               src={croissant}
               alt=""

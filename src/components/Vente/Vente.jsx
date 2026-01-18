@@ -4,6 +4,7 @@ import screen2 from "../../assets/envente/2.png";
 import screen3 from "../../assets/envente/3.png";
 import screen4 from "../../assets/envente/4.png";
 import screen5 from "../../assets/envente/5.png";
+import BlurImage from "../BlurImage/BlurImage";
 
 function Vente() {
   return (
@@ -23,7 +24,7 @@ function Vente() {
         <div className="snap-x w-auto flex p-3 gap-8 lg:gap-16 items-center  overflow-y-hidden pb-5">
           <div className="snap-start h-auto w-auto">
             <div className="h-auto w-auto bg-none p-2 pb-3">
-              <img
+              <BlurImage
                 className="h-80 min-w-40 lg:h-100 lg:min-w-48 "
                 src={screen1}
                 alt=""
@@ -34,7 +35,7 @@ function Vente() {
 
           <div className=" h-auto w-auto">
             <div className="h-auto bg-none p-2 pb-3">
-              <img
+              <BlurImage
                 className="h-80 min-w-40 lg:h-100 lg:min-w-48"
                 src={screen2}
                 alt=""
@@ -45,7 +46,7 @@ function Vente() {
 
           <div className=" h-auto w-auto">
             <div className="h-auto bg-none p-2 pb-3">
-              <img
+              <BlurImage
                 className="h-80 min-w-40 lg:h-100 lg:min-w-48"
                 src={screen3}
                 alt=""
@@ -56,7 +57,7 @@ function Vente() {
 
           <div className=" h-auto w-auto">
             <div className="h-auto bg-none p-2 pb-3">
-              <img
+              <BlurImage
                 className="h-80 min-w-40 lg:h-100 lg:min-w-48"
                 src={screen4}
                 alt=""
@@ -67,7 +68,7 @@ function Vente() {
 
           <div className=" snap-end h-auto w-auto">
             <div className="h-auto bg-none p-2 ">
-              <img
+              <BlurImage
                 className="h-80 min-w-40 lg:h-100 lg:min-w-48"
                 src={screen5}
                 alt=""

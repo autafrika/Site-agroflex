@@ -16,10 +16,13 @@ function Footer() {
               className="rounded-xl w-24 -left-3 pb-2 relative"
               alt="agroflex"
             />
-            <p className="text-base/6 ">
-              AgroFlex une solution numérique spécialement conçue pour les
-              agriculteurs et les fermiers. <br />
-              Le produit sera fourni dès ce 2025
+            <p className="text-[15px]/7  lg:w-8/10 ">
+              Agroflex connecte les agriculteurs et les acteurs agricoles aux
+              outils et aux données nécessaires pour produire mieux, réduire les
+              pertes et acccéder aux marchés. Grâce à la technologie et à
+              l&apos;innovation, il optimise les pratiques agricoles , renforce
+              la résilience des exploitations et contribue à une agriculture
+              plus durable, éfficace et équitable:
             </p>
           </div>
           <div className="flex sociaux  ">
