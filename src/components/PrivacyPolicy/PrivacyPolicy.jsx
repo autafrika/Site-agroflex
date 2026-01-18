@@ -84,7 +84,7 @@ const PrivacyPolicy = () => {
           <p>
             Si vous avez des questions ou des commentaires concernant cette
             politique de confidentialité, veuillez nous contacter à :
-            contact@agroflex.com
+            <a className="text-blue-600"> contact@agroflex.com</a>
           </p>
         </section>
       </main>
