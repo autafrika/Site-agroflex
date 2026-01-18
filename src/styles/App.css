@@ -161,11 +161,11 @@
 }
 
 .privacy-policy-header h1 {
-  @apply text-3xl md:text-4xl lg:text-5xl/16 mb-2.5 font-medium;
+  @apply text-3xl md:text-4xl lg:text-5xl/16 mb-2.5 font-normal;
 }
 
 .privacy-policy-content section {
-  @apply text-[14px] md:text-lg lg:text-xl;
+  @apply text-[14px] md:text-base lg:text-lg;
   margin-bottom: 30px;
 }
 
