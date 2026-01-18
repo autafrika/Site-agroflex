@@ -76,7 +76,7 @@ function Newsletter() {
         </p>
         <form className="flex justify-center flex-wrap md:flex-nowrap z-10 gap-2  lg:gap-5 lg:justify-center w-full md:w-[70%] lg:w-[60%]">
           <input
-            className="bg-green-50/30 border border-white/50 h-10 p-2 rounded-lg text-sm w-auto md:w-[85%] lg:h-12 lg:p-4 lg:w-[86%] xl:w-[70%] outline-none placeholder:text-gray-200 placeholder:text-xs  md:placeholder:text-sm focus:ring-1  focus:ring-green-300 transition-all duration-300"
+            className="bg-green-50/30 border border-white/50 h-10 p-2 rounded-lg text-sm w-[62%] md:w-[85%] lg:h-12 lg:p-4 lg:w-[86%] xl:w-[70%] outline-none placeholder:text-gray-200 placeholder:text-xs  md:placeholder:text-sm focus:ring-1  focus:ring-green-300 transition-all duration-300"
             type="email"
             placeholder="Entrez votre email"
           />
