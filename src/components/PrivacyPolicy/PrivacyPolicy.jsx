@@ -1,11 +1,12 @@
 import React from "react";
 import logo from "../../assets/images/agroflex.png";
 import { Link } from "react-router-dom";
+import BlurImage from "../BlurImage/BlurImage";
 
 const PrivacyPolicy = () => {
   return (
     <div className="privacy-policy-container relative">
-      <img
+      <BlurImage
         src={logo}
         alt="Agroflex Logo"
         className="privacy-policy-logo badge flex  opacity-7 justify-self-center w-[30rem] md:w-[40rem] lg:w-[46rem] fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2  -z-1  "
