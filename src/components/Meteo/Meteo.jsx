@@ -1,5 +1,5 @@
 import React from "react";
-import meteo from "../../assets/meteo1.png";
+import meteo from "../../assets/meteo/meteo_1.png";
 import { motion } from "framer-motion";
 
 function Meteo() {

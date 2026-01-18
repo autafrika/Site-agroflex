@@ -1,12 +1,13 @@
 import React from "react";
-import detection1 from "../../assets/detectionReponse/detection.png";
-import detection2 from "../../assets/detectionReponse/detectionMalade.png";
-import detection3 from "../../assets/detectionReponse/detectionPlanteMalade.png";
-// import detection4 from "../../assets/detectionReponse/detectionPasMalade.png";
-import reponse1 from "../../assets/detectionReponse/reponsePasMalade1.png";
-import reponse2 from "../../assets/detectionReponse/reponseMalade1.png";
-import reponse3 from "../../assets/detectionReponse/reponseMalade2.png";
-import reponse4 from "../../assets/detectionReponse/reponseMalade3.png";
+import scan from "../../assets/detectionResponse/scan_0.png";
+import detection1 from "../../assets/detectionResponse/sick_1.png";
+import detection2 from "../../assets/detectionResponse/sick_2.png";
+import detection3 from "../../assets/detectionResponse/sick_3.png";
+// import detection4 from "../../assets/detectionResponse/sick_3.png";
+import healthy_1 from "../../assets/detectionResponse/healthy_1.png";
+import healthy_2 from "../../assets/detectionResponse/healthy_2.png";
+import healthy_3 from "../../assets/detectionResponse/healthy_3.png";
+// import reponse4 from "../../assets/detectionResponse/scan_0.png";
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -33,9 +34,9 @@ const Gallery = () => {
                 <div className="flex flex-col justify-center w-17 gap-1 items-center lg:w-32 relative">
                   <motion.img
                     title="Ouvrir l'image"
-                    onClick={() => setSelectedImage(detection3)}
+                    onClick={() => setSelectedImage(detection1)}
                     className="bg-white h-12 p-[2px] rounded-full w-12 cursor-pointer lg:h-20 lg:p-1 lg:w-20 object-cover z-0"
-                    src={detection3}
+                    src={detection1}
                     alt="plante"
                   />
                   <hr className="border-dashed text-gray-400 w-[30vw] -z-10 absolute left-1/2 md:top-10 top-6" />
@@ -46,9 +47,9 @@ const Gallery = () => {
                 <div className="flex flex-col justify-center w-17 gap-1 items-center lg:w-32 relative">
                   <motion.img
                     title="Ouvrir l'image"
-                    onClick={() => setSelectedImage(reponse2)}
+                    onClick={() => setSelectedImage(detection2)}
                     className="bg-white h-12 p-[2px] rounded-full w-12 cursor-pointer lg:h-20 lg:p-1 lg:w-20 object-cover z-0"
-                    src={reponse2}
+                    src={detection2}
                     alt="plante"
                   />
                   <hr className="border-dashed text-gray-400 w-[30vw] -z-10 absolute left-1/2 md:top-10 top-6" />
@@ -60,9 +61,9 @@ const Gallery = () => {
                 <div className="flex flex-col justify-center w-17 gap-1 items-center lg:w-32 relative">
                   <motion.img
                     title="Ouvrir l'image"
-                    onClick={() => setSelectedImage(reponse3)}
+                    onClick={() => setSelectedImage(detection3)}
                     className="bg-white h-12 p-[2px] rounded-full w-12 cursor-pointer lg:h-20 lg:p-1 lg:w-20 object-cover z-0"
-                    src={reponse3}
+                    src={detection3}
                     alt="plante"
                   />
                   <hr className="border-dashed text-gray-400 w-[30vw] -z-10 absolute left-1/2 md:top-10 top-6" />
@@ -70,19 +71,19 @@ const Gallery = () => {
                     Symptomes et causes
                   </p>
                 </div>
-                <div className="flex flex-col justify-center w-17 gap-1 items-center lg:w-32 relative">
+                {/* <div className="flex flex-col justify-center w-17 gap-1 items-center lg:w-32 relative">
                   <motion.img
                     title="Ouvrir l'image"
-                    onClick={() => setSelectedImage(reponse4)}
+                    onClick={() => setSelectedImage(detection4)}
                     className="bg-white h-12 p-[2px] rounded-full w-12 cursor-pointer lg:h-20 lg:p-1 lg:w-20 object-cover z-0"
-                    src={reponse4}
+                    src={detection4}
                     alt="plante"
                   />
                   <hr className="border-dashed text-gray-400 w-[30vw] -z-10 absolute left-1/2 md:top-10 top-6" />
                   <p className="text-[10px] text-center text-gray-500 text-wrap md:text-xs/5">
                     Traitements et astuces
                   </p>
-                </div>
+                </div> */}
               </div>
 
               <div className="flex h-full justify-center items-center lg:col-span-2 relative">
@@ -100,9 +101,9 @@ const Gallery = () => {
                     mass: 0.4,
                     bounce: 2,
                   }}
-                  onClick={() => setSelectedImage(detection2)}
+                  onClick={() => setSelectedImage(scan)}
                   className="h-auto w-[10rem] cursor-pointer md:w-[16rem] sm:h-auto sm:w-[14rem] z-0"
-                  src={detection2}
+                  src={scan}
                   alt=""
                 />
               </div>
@@ -111,9 +112,9 @@ const Gallery = () => {
                 <div className="flex flex-col justify-center w-17 gap-1 items-center lg:w-32 relative">
                   <motion.img
                     title="Ouvrir l'image"
-                    onClick={() => setSelectedImage(detection1)}
+                    onClick={() => setSelectedImage(healthy_1)}
                     className="bg-white h-12 p-[2px] rounded-full w-12 cursor-pointer lg:h-20 lg:p-1 lg:w-20 object-cover z-0"
-                    src={detection1}
+                    src={healthy_1}
                     alt="plante"
                   />
                   <hr className="border-dashed text-gray-400 w-[30vw] -z-10 absolute md:top-10 right-1/2 top-6" />
@@ -124,9 +125,9 @@ const Gallery = () => {
                 <div className="flex flex-col justify-center w-17 gap-1 items-center lg:w-32 relative">
                   <motion.img
                     title="Ouvrir l'image"
-                    onClick={() => setSelectedImage(reponse1)}
+                    onClick={() => setSelectedImage(healthy_2)}
                     className="bg-white h-12 p-[2px] rounded-full w-12 cursor-pointer lg:h-20 lg:p-1 lg:w-20 object-cover z-0"
-                    src={reponse1}
+                    src={healthy_2}
                     alt="plante"
                   />
                   <hr className="border-dashed text-gray-400 w-[30vw] -z-10 absolute md:top-10 right-1/2 top-6" />
@@ -137,9 +138,9 @@ const Gallery = () => {
                 <div className="flex flex-col justify-center w-17 gap-1 items-center lg:w-32 relative">
                   <motion.img
                     title="Ouvrir l'image"
-                    onClick={() => setSelectedImage(detection1)}
+                    onClick={() => setSelectedImage(healthy_3)}
                     className="bg-white h-12 p-[2px] rounded-full w-12 cursor-pointer lg:h-20 lg:p-1 lg:w-20 object-cover z-0"
-                    src={detection1}
+                    src={healthy_3}
                     alt="plante"
                   />
                   <hr className="border-dashed text-gray-400 w-[30vw] -z-10 absolute md:top-10 right-1/2 top-6" />
