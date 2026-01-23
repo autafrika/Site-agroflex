@@ -17,7 +17,7 @@ const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState(null);
 
   return (
-    <section className="detection h-fit p-6 w-full overflow-hidden">
+    <section className="detection h-fit p-6 lg:py-7 w-full overflow-hidden">
       <div className="w-full relative">
         <div>
           <h2 className="text-2xl text-center text-slate-600 font-semibold lg:text-3xl pb-10 pt-4 px-5">
