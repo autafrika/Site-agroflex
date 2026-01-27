@@ -4,6 +4,7 @@ import { Routes, Route } from "react-router-dom";
 import "../styles/App.css";
 import Hero from "./Hero/Hero";
 import Services from "./Services/Services";
+// import ChatAi from "./ChatAi/ChatAi";
 import Notifications from "./Notifications/Notifications";
 import Diagnostic from "./Diagnostic/Diagnostic";
 import Newsletter from "./Newsletter/Newsletter";
@@ -29,6 +30,7 @@ const MainPage = () => (
     <Functionnalities />
     <Services />
     <Notifications />
+    {/* <ChatAi /> */}
     <Meteo />
     <DetectionMaladie />
     <Diagnostic />
