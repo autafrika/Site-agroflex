@@ -1,7 +1,35 @@
 import React from "react";
+import { motion } from "framer-motion";
+
 import flesh from "../../assets/svg/flesh_excalidraw.svg";
 import { LuSend } from "react-icons/lu";
-function Newsletter() {
+import { useState } from "react";
+import { MdClear } from "react-icons/md";
+
+export default function Newsletter() {
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleClick = () => {
+    setMessage("");
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    // document.body.style.cursor = "progress";
+    // const res = await fetch("http://127.0.0.1:8000/api/subscribe/", {
+    //   method: "POST",
+    //   headers: {
+    //     "Content-Type": "application/json",
+    //   },
+    //   body: JSON.stringify({ email }),
+    // });
+
+    // const data = await res.json();
+    // setMessage(data.message || data.detail);
+    // document.body.style.cursor = "default";
+  };
+
   return (
     <div
       id="newsletter"
@@ -74,20 +102,54 @@ function Newsletter() {
           l&apos;application et des astuces pour l&apos;optimisation de vos
           cultures.
         </p>
-        <form className="flex justify-center flex-wrap md:flex-nowrap z-10 gap-2  lg:gap-5 lg:justify-center w-full md:w-[70%] lg:w-[60%]">
+        <form
+          onSubmit={handleSubmit}
+          className="flex justify-center flex-wrap md:flex-nowrap z-10 gap-2  lg:gap-5 lg:justify-center w-full md:w-[70%] lg:w-[60%]"
+        >
           <input
             className="bg-green-50/30 border border-white/50 h-10 p-2 rounded-lg text-sm w-[62%] md:w-[85%] lg:h-12 lg:p-4 lg:w-[86%] xl:w-[70%] outline-none placeholder:text-gray-200 placeholder:text-xs  md:placeholder:text-sm focus:ring-1  focus:ring-green-300 transition-all duration-300"
             type="email"
             placeholder="Entrez votre email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
           />
 
-          <button className="btn h-10 enable flex lg:h-12 !hover:shadow-sm !shadow-green-800">
+          <button
+            type="submit"
+            className="btn h-10 enable flex lg:h-12 !hover:shadow-sm !shadow-green-800"
+          >
             <LuSend className="size-5" />
           </button>
+
+          {message && (
+            <motion.div
+              initial={{ opacity: 1, y: 50 }}
+              animate={{ opacity: 1, y: 0 }} // Arrive en haut avec opacité 1
+              transition={{ duration: 0.3 }} // Animation fluide
+              className="p-4 flex gap-2 items-center rounded-md shadow-xl  bg-green-700  text-white text-xs md:text-sm fixed bottom-3 left-3"
+            >
+              <p>{message}</p>
+              <MdClear
+                className="text-xl font-extrabold   text-amber-400 hover:scale-112 hover:bg-green-300/20 transition-all duration-150 rounded-sm p-[1px] cursor-pointer m-2 "
+                onClick={handleClick}
+              />
+            </motion.div>
+          )}
+          {/* <motion.div
+            initial={{ opacity: 1, y: 50 }}
+            animate={{ opacity: 1, y: 0 }} // Arrive en haut avec opacité 1
+            transition={{ duration: 0.3 }} // Animation fluide
+            className="p-4 flex gap-2 items-center rounded-md shadow-xl  bg-red-700  text-white text-xs md:text-sm fixed bottom-3 left-3"
+          >
+            <p>Erreur lors de la souscription</p>
+            <MdClear
+              className="text-xl font-extrabold   text-white hover:scale-112 hover:bg-green-300/20 transition-all duration-150 rounded-sm p-[1px] cursor-pointer m-2 "
+              onClick={handleClick}
+            />
+          </motion.div> */}
         </form>
       </div>
     </div>
   );
 }
-
-export default Newsletter;

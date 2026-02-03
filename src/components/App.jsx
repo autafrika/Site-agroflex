@@ -14,12 +14,14 @@ import Footer from "./Footer/Footer";
 import Functionnalities from "./Functionnalites/Functionnalities";
 import DetectionMaladie from "./DetectionMaladie/DetectionMaladie";
 import PrivacyPolicy from "./PrivacyPolicy/PrivacyPolicy";
+// import Confirm from "./Newsletter/Confirm";
 
 function App() {
   return (
     <Routes>
       <Route path="/" element={<MainPage />} />
       <Route path="/privacy" element={<PrivacyPolicy />} />
+      {/* <Route path="/confirm" element={<Confirm />} /> */}
     </Routes>
   );
 }
