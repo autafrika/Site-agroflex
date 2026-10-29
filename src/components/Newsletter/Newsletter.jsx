@@ -119,12 +119,11 @@ export default function Newsletter() {
           <div className="w-full h-full rounded-[50%] bg-green-900"></div>
         </div>
 
-        <h3 className="text-2xl font-bold lg:text-4xl z-3">Newsletter</h3>
+        <h3 className="text-3xl font-bold lg:text-4xl z-3">Newsletter</h3>
         <p className="z-3 text-gray-100 font-light text-sm lg:px-20 text-center lg:text-lg md:text-center">
-          Inscrivez-vous pour rejoindre la liste d&apos;attente et être parmi
-          les premières personnes à tester nos nouvelles fonctionnalités en
-          avant-première, tout en recevant nos meilleures astuces pour optimiser
-          vos cultures.
+          Inscrivez-vous pour faire partie des premiers testeurs de
+          l&apos;application et recevoir nos astuces d&apos;optimisation de vos
+          cultures.
         </p>
         <form
           onSubmit={handleSubmit}
@@ -157,7 +156,7 @@ export default function Newsletter() {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.25 }}
-            className={`z-20 flex max-w-full items-center gap-2 rounded-md px-4 py-3 text-center text-sm shadow-lg ${
+            className={`z-20 flex max-w-full items-center gap-2 rounded-md px-4 py-3 text-center text-xs shadow-lg ${
               status.type === "error"
                 ? "bg-red-700 text-white"
                 : "bg-green-700 text-white"
