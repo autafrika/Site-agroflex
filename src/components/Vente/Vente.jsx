@@ -1,10 +1,12 @@
 import React from "react";
 import screen1 from "../../assets/images/envente/1.png";
 import screen2 from "../../assets/images/envente/2.png";
-import screen3 from "../../assets/images/envente/3.png";
 import screen4 from "../../assets/images/envente/4.png";
+import screen3 from "../../assets/images/envente/3.png";
 import screen5 from "../../assets/images/envente/5.png";
 import BlurImage from "../BlurImage/BlurImage";
+
+const screens = [screen1, screen2, screen3, screen4, screen5];
 
 function Vente() {
   return (
@@ -20,62 +22,25 @@ function Vente() {
         produits, en facilitant la gestion, l&apos;optimisation des rendements
         et la mise en relation avec les acheteurs.
       </p>
-      <div className="flex justify-center w-full overflow-x-auto h-auto">
-        <div className="snap-x w-auto flex p-3 gap-8 lg:gap-16 items-center  overflow-y-hidden pb-5">
-          <div className="snap-start h-auto w-auto">
-            <div className="h-auto w-auto bg-none p-2 pb-3">
-              <BlurImage
-                className="h-80 min-w-40 lg:h-100 lg:min-w-48 "
-                src={screen1}
-                alt=""
-              />
+      <div
+        className="w-full overflow-x-auto overscroll-x-contain scroll-smooth snap-x snap-mandatory"
+        role="region"
+        aria-label="Captures de l’application, défilement horizontal"
+        tabIndex={0}
+      >
+        <div className="mx-auto flex w-max min-w-full flex-nowrap items-center justify-center gap-8 p-3 pb-5 lg:gap-16">
+          {screens.map((screen, index) => (
+            <div key={screen} className="h-auto w-auto shrink-0 snap-start">
+              <div className="h-auto bg-none p-2 pb-3">
+                <BlurImage
+                  className="h-80 min-w-40 lg:h-100 lg:min-w-48"
+                  src={screen}
+                  alt={`Capture d’écran ${index + 1} de l’application Agroflex`}
+                />
+              </div>
+              <div className="bg-black/25 w-full h-4 rounded-[50%] blur-sm"></div>
             </div>
-            <div className="bg-black/25 w-full h-4 rounded-[50%] blur-sm"></div>
-          </div>
-
-          <div className=" h-auto w-auto">
-            <div className="h-auto bg-none p-2 pb-3">
-              <BlurImage
-                className="h-80 min-w-40 lg:h-100 lg:min-w-48"
-                src={screen2}
-                alt=""
-              />
-            </div>
-            <div className="bg-black/25 w-full h-4 rounded-[50%] blur-sm"></div>
-          </div>
-
-          <div className=" h-auto w-auto">
-            <div className="h-auto bg-none p-2 pb-3">
-              <BlurImage
-                className="h-80 min-w-40 lg:h-100 lg:min-w-48"
-                src={screen3}
-                alt=""
-              />
-            </div>
-            <div className="bg-black/25 w-full h-4 rounded-[50%] blur-sm"></div>
-          </div>
-
-          <div className=" h-auto w-auto">
-            <div className="h-auto bg-none p-2 pb-3">
-              <BlurImage
-                className="h-80 min-w-40 lg:h-100 lg:min-w-48"
-                src={screen4}
-                alt=""
-              />
-            </div>
-            <div className="bg-black/25 w-full h-4 rounded-[50%] blur-sm"></div>
-          </div>
-
-          <div className=" snap-end h-auto w-auto">
-            <div className="h-auto bg-none p-2 ">
-              <BlurImage
-                className="h-80 min-w-40 lg:h-100 lg:min-w-48"
-                src={screen5}
-                alt=""
-              />
-            </div>
-            <div className="bg-black/25 w-full h-4 rounded-[50%] blur-sm"></div>
-          </div>
+          ))}
         </div>
       </div>
     </section>

@@ -1,41 +1,64 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
-
-import flesh from "../../assets/svg/flesh_excalidraw.svg";
-import { LuSend } from "react-icons/lu";
-import { useState } from "react";
+// import { LuSend } from "react-icons/lu";
 import { MdClear } from "react-icons/md";
+import flesh from "../../assets/svg/flesh_excalidraw.svg";
+
+const WAITLIST_API_URL = "https://api.autafrika.com/waitlist/join/";
 
 export default function Newsletter() {
   const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [status, setStatus] = useState({ type: "", message: "" });
 
-  const handleClick = () => {
-    setMessage("");
-  };
+  async function handleSubmit(event) {
+    event.preventDefault();
+    setIsSubmitting(true);
+    setStatus({ type: "", message: "" });
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    // document.body.style.cursor = "progress";
-    // const res = await fetch("http://127.0.0.1:8000/api/subscribe/", {
-    //   method: "POST",
-    //   headers: {
-    //     "Content-Type": "application/json",
-    //   },
-    //   body: JSON.stringify({ email }),
-    // });
+    try {
+      const response = await fetch(WAITLIST_API_URL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email }),
+      });
 
-    // const data = await res.json();
-    // setMessage(data.message || data.detail);
-    // document.body.style.cursor = "default";
-  };
+      if (!response.ok) {
+        throw new Error(
+          "La demande n’a pas pu être envoyée. Réessayez plus tard.",
+        );
+      }
+
+      setEmail("");
+      setStatus({
+        type: "success",
+        message: "Votre adresse a bien été ajoutée à la liste d’attente.",
+      });
+    } catch (error) {
+      setStatus({
+        type: "error",
+        message:
+          error instanceof TypeError
+            ? "Impossible de contacter le serveur. Vérifiez votre connexion et réessayez."
+            : error instanceof Error
+              ? error.message
+              : "Une erreur est survenue. Veuillez réessayer.",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
+  }
+
+  function dismissStatus() {
+    setStatus({ type: "", message: "" });
+  }
 
   return (
     <div
       id="newsletter"
-      className="flex h-[46vh] justify-center w-full items-center lg:h-[60vh] lg:p-10 px-2 py-14"
+      className="flex min-h-[46vh] justify-center w-full items-center lg:min-h-[60vh] lg:p-10 px-2 py-14"
     >
-      <div className="flex flex-col overflow-hidden relative z-2 bg-gradient-to-tr h-full justify-center rounded-xl text-white w-full from-green-950  to-green-800 gap-2 items-center lg:gap-5 lg:rounded-3xl lg:w-[80%] md:items-center news px-5">
+      <div className="flex min-h-[46vh] flex-col overflow-hidden relative z-2 bg-gradient-to-tr justify-center rounded-xl text-white w-full from-green-950 to-green-800 gap-2 items-center lg:min-h-[60vh] lg:gap-5 lg:rounded-3xl lg:w-[80%] md:items-center news px-5">
         <svg
           className=" h-26 md:h-48 absolute z-1 left-[2%] md:left-[10%] -translate-y-1/2 top-3/10 lg:top-2/5"
           viewBox="0 0 900 900"
@@ -75,13 +98,13 @@ export default function Newsletter() {
           ></rect>
         </svg>
         <img
-          className="absolute w-15 md:w-22 lg:w-25 top-[18%] right-[20%] lg:right-50"
+          className="absolute w-15 md:w-22 lg:w-25 top-[12%] right-[18%] lg:right-50"
           src={flesh}
           alt="flesh manuelle"
         />
         <svg
           viewBox="0 -4 32 32"
-          className="stroke-none  w-8 h-8 lg:w-13 lg:h-13 -rotate-20 absolute z-1 right-[8%] md:right-[15%] lg:right-32 lg: top-[10%]"
+          className="stroke-none w-8 h-8 lg:w-13 lg:h-13 -rotate-20 absolute z-1 right-[8%] top-[10%] md:right-[15%] lg:right-32 lg:top-[10%]"
           xmlns="http://www.w3.org/2000/svg"
           fill="#000"
           stroke="#757575"
@@ -97,58 +120,62 @@ export default function Newsletter() {
         </div>
 
         <h3 className="text-2xl font-bold lg:text-4xl z-3">Newsletter</h3>
-        <p className="z-3 text-gray-100 text-sm lg:px-20 text-center lg:text-lg md:text-center">
-          Recevez des notifications dans votre boîte mail sur des nouveautés de
-          l&apos;application et des astuces pour l&apos;optimisation de vos
-          cultures.
+        <p className="z-3 text-gray-100 font-light text-sm lg:px-20 text-center lg:text-lg md:text-center">
+          Inscrivez-vous pour rejoindre la liste d&apos;attente et être parmi
+          les premières personnes à tester nos nouvelles fonctionnalités en
+          avant-première, tout en recevant nos meilleures astuces pour optimiser
+          vos cultures.
         </p>
         <form
           onSubmit={handleSubmit}
-          className="flex justify-center flex-wrap md:flex-nowrap z-10 gap-2  lg:gap-5 lg:justify-center w-full md:w-[70%] lg:w-[60%]"
+          className="flex justify-center flex-wrap md:flex-nowrap z-10 py-5 gap-2 lg:gap-5   lg:justify-center w-full md:w-[70%] lg:w-[60%]"
         >
           <input
-            className="bg-green-50/30 border border-white/50 h-10 p-2 rounded-lg text-sm w-[62%] md:w-[85%] lg:h-12 lg:p-4 lg:w-[86%] xl:w-[70%] outline-none placeholder:text-gray-200 placeholder:text-xs  md:placeholder:text-sm focus:ring-1  focus:ring-green-300 transition-all duration-300"
+            className="bg-green-50/30 border border-white/50 h-10 p-2 rounded-lg text-sm w-full md:w-[85%] lg:h-12 lg:p-4 lg:w-[86%] xl:w-[70%] outline-none placeholder:text-gray-200 placeholder:text-xs  md:placeholder:text-sm focus:ring-1  focus:ring-green-300 transition-all duration-300"
             type="email"
-            placeholder="Entrez votre email"
+            name="email"
             value={email}
-            onChange={(e) => setEmail(e.target.value)}
+            onChange={(event) => setEmail(event.target.value)}
+            placeholder="Entrez votre email"
+            aria-label="Votre adresse e-mail"
+            autoComplete="email"
             required
           />
 
           <button
             type="submit"
             className="btn h-10 enable flex lg:h-12 !hover:shadow-sm !shadow-green-800"
+            disabled={isSubmitting}
+            aria-label={isSubmitting ? "Inscription en cours" : "S’inscrire"}
           >
-            <LuSend className="size-5" />
+            S&apos;inscrire
+            {/* <LuSend className="size-5" aria-hidden="true" /> */}
           </button>
-
-          {message && (
-            <motion.div
-              initial={{ opacity: 1, y: 50 }}
-              animate={{ opacity: 1, y: 0 }} // Arrive en haut avec opacité 1
-              transition={{ duration: 0.3 }} // Animation fluide
-              className="p-4 flex gap-2 items-center rounded-md shadow-xl  bg-green-700  text-white text-xs md:text-sm fixed bottom-3 left-3"
-            >
-              <p>{message}</p>
-              <MdClear
-                className="text-xl font-extrabold   text-amber-400 hover:scale-112 hover:bg-green-300/20 transition-all duration-150 rounded-sm p-[1px] cursor-pointer m-2 "
-                onClick={handleClick}
-              />
-            </motion.div>
-          )}
-          {/* <motion.div
-            initial={{ opacity: 1, y: 50 }}
-            animate={{ opacity: 1, y: 0 }} // Arrive en haut avec opacité 1
-            transition={{ duration: 0.3 }} // Animation fluide
-            className="p-4 flex gap-2 items-center rounded-md shadow-xl  bg-red-700  text-white text-xs md:text-sm fixed bottom-3 left-3"
-          >
-            <p>Erreur lors de la souscription</p>
-            <MdClear
-              className="text-xl font-extrabold   text-white hover:scale-112 hover:bg-green-300/20 transition-all duration-150 rounded-sm p-[1px] cursor-pointer m-2 "
-              onClick={handleClick}
-            />
-          </motion.div> */}
         </form>
+        {status.message && (
+          <motion.div
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.25 }}
+            className={`z-20 flex max-w-full items-center gap-2 rounded-md px-4 py-3 text-center text-sm shadow-lg ${
+              status.type === "error"
+                ? "bg-red-700 text-white"
+                : "bg-green-700 text-white"
+            }`}
+            role={status.type === "error" ? "alert" : "status"}
+            aria-live={status.type === "error" ? "assertive" : "polite"}
+          >
+            <p>{status.message}</p>
+            <button
+              type="button"
+              onClick={dismissStatus}
+              className="shrink-0 rounded-sm p-1 transition-colors hover:bg-white/20"
+              aria-label="Fermer le message"
+            >
+              <MdClear className="text-xl" aria-hidden="true" />
+            </button>
+          </motion.div>
+        )}
       </div>
     </div>
   );
