@@ -143,7 +143,17 @@ function Newsletter() {
           </button>
         </form>
         <p
-          className={`z-10 text-sm text-center bg-gray-700 p-2 rounded-md ${status.type == "error" ? "text-red-500" : "text-green-500"} `}
+          className={`z-10 text-sm text-center font-medium
+             p-2 rounded-md ${status.type == "error" ? "text-red-500" : "text-green-500"} `}
+          role="status"
+          aria-live="polite"
+          aria-atomic="true"
+        >
+          {status.message}
+        </p>
+        <p
+          className={`z-10 fixed bottom-10 right-10 text-sm text-center font-medium
+             p-3 rounded-md ${status.type == "error" ? "text-red-500 bg-red-200" : "text-green-500"} `}
           role="status"
           aria-live="polite"
           aria-atomic="true"
