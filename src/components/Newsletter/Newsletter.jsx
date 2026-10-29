@@ -1,7 +1,50 @@
-import React from "react";
+import React, { useState } from "react";
 import flesh from "../../assets/svg/flesh_excalidraw.svg";
 import { LuSend } from "react-icons/lu";
+
+const WAITLIST_API_URL = "https://api.autafrika.com/waitlist/join/";
+
 function Newsletter() {
+  const [email, setEmail] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [status, setStatus] = useState({ type: "", message: "" });
+
+  async function handleSubmit(event) {
+    event.preventDefault();
+    setIsSubmitting(true);
+    setStatus({ type: "", message: "" });
+
+    try {
+      const response = await fetch(WAITLIST_API_URL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email }),
+      });
+
+      if (!response.ok) {
+        throw new Error(
+          "La demande n’a pas pu être envoyée. Réessayez plus tard.",
+        );
+      }
+
+      setEmail("");
+      setStatus({
+        type: "success",
+        message: "Votre adresse a bien été ajoutée à la liste d’attente.",
+      });
+    } catch (error) {
+      setStatus({
+        type: "error",
+        message:
+          error instanceof TypeError
+            ? "Impossible de contacter le serveur. Vérifiez votre connexion et réessayez."
+            : error.message,
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
+  }
+
   return (
     <div
       id="newsletter"
@@ -74,17 +117,39 @@ function Newsletter() {
           l&apos;application et des astuces pour l&apos;optimisation de vos
           cultures.
         </p>
-        <form className="flex justify-center flex-wrap md:flex-nowrap z-10 gap-2  lg:gap-5 lg:justify-center w-full md:w-[70%] lg:w-[60%]">
+        <form
+          onSubmit={handleSubmit}
+          className="flex justify-center flex-wrap md:flex-nowrap z-10 gap-2  lg:gap-5 lg:justify-center w-full md:w-[70%] lg:w-[60%]"
+        >
           <input
             className="bg-green-50/30 border border-white/50 h-10 p-2 rounded-lg text-sm w-[62%] md:w-[85%] lg:h-12 lg:p-4 lg:w-[86%] xl:w-[70%] outline-none placeholder:text-gray-200 placeholder:text-xs  md:placeholder:text-sm focus:ring-1  focus:ring-green-300 transition-all duration-300"
             type="email"
+            name="email"
+            value={email}
+            onChange={(event) => setEmail(event.target.value)}
             placeholder="Entrez votre email"
+            aria-label="Votre adresse e-mail"
+            autoComplete="email"
+            required
           />
 
-          <button className="btn h-10 enable flex lg:h-12 !hover:shadow-sm !shadow-green-800">
-            <LuSend className="size-5" />
+          <button
+            type="submit"
+            className="btn h-10 enable flex lg:h-12 !hover:shadow-sm !shadow-green-800"
+            disabled={isSubmitting}
+            aria-label={isSubmitting ? "Inscription en cours" : "S’inscrire"}
+          >
+            <LuSend className="size-5" aria-hidden="true" />
           </button>
         </form>
+        <p
+          className={`z-10 text-sm text-center bg-gray-700 p-2 rounded-md ${status.type == "error" ? "text-red-500" : "text-green-500"} `}
+          role="status"
+          aria-live="polite"
+          aria-atomic="true"
+        >
+          {status.message}
+        </p>
       </div>
     </div>
   );
