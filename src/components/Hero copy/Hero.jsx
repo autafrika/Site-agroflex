@@ -11,7 +11,7 @@ import RainEffect from "../Rain/Rain";
 // import Header from "../Header/Header";
 // import googleplaylogo from "../../assets/images/googleplaylogo.png";
 
-const AGRIWOTE = "https://agriwote.com";
+const AGRIWOTE = "https://web.agriwote.com";
 /* Données d'exemple pour le panneau "marché" : à remplacer par vos vrais produits/prix */
 // const listings = [
 //   {
@@ -106,7 +106,7 @@ function Hero() {
         </div>
 
         {/* Contenu principal */}
-        <div className="flex-1  grid lg:grid-cols-[1.5fr_1fr] gap-10 items-center px-6 md:px-12 lg:px-25 py-12 pt-20">
+        <div className="flex-1 z-2  grid lg:grid-cols-[1.5fr_1fr] gap-10 items-center px-6 md:px-12 lg:px-25 py-12 pt-20">
           <div className="flex  flex-col gap-6 max-w-[54rem]">
             <h1 className="text-4xl md:text-5xl 2xl:text-6xl font-[800] leading-[1.1]">
               Optimisez <span className="text-[#F2B632]">&</span> <br />
@@ -141,6 +141,8 @@ function Hero() {
               </a>
               <a
                 href={AGRIWOTE}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="btn disable !bg-white/10 !text-white rounded-lg border  !border-white/60 !px-4 py-3 font-semibold transition hover:!bg-white/20  focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
               >
                 Acheter sur le marché

@@ -3,7 +3,7 @@ import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { LuMenu, LuX } from "react-icons/lu";
 import agrowote from "../../../public/agro_transparent.png";
 
-const AGRIWOTE = "https://agriwote.com";
+const AGRIWOTE = "https://web.agriwote.com";
 
 /* Uniquement des sections réellement présentes sur la page */
 const links = [
