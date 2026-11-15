@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 // import { LuSend } from "react-icons/lu";
 import { MdClear } from "react-icons/md";
 import flesh from "../../assets/svg/flesh_excalidraw.svg";
+import { LuSend } from "react-icons/lu";
 
 const WAITLIST_API_URL = "https://api.autafrika.com/waitlist/join/";
 
@@ -122,12 +123,11 @@ export default function Newsletter() {
         <h3 className="text-3xl font-bold lg:text-4xl z-3">Newsletter</h3>
         <p className="z-3 text-gray-100 font-light text-sm lg:px-20 text-center lg:text-lg md:text-center">
           Inscrivez-vous pour faire partie des premiers testeurs de
-          l&apos;application et recevoir nos astuces d&apos;optimisation de vos
-          cultures.
+          l&apos;application et recevoir nos astuces et les nouveautés
         </p>
         <form
           onSubmit={handleSubmit}
-          className="flex justify-center flex-wrap md:flex-nowrap z-10 py-5 gap-2 lg:gap-5   lg:justify-center w-full md:w-[70%] lg:w-[60%]"
+          className="flex justify-center md:flex-nowrap z-10 py-5 gap-2 lg:gap-5   lg:justify-center w-[95%] md:w-[70%] lg:w-[60%]"
         >
           <input
             className="bg-green-50/30 border border-white/50 h-10 p-2 rounded-lg text-sm w-full md:w-[85%] lg:h-12 lg:p-4 lg:w-[86%] xl:w-[70%] outline-none placeholder:text-gray-200 placeholder:text-xs  md:placeholder:text-sm focus:ring-1  focus:ring-green-300 transition-all duration-300"
@@ -147,8 +147,8 @@ export default function Newsletter() {
             disabled={isSubmitting}
             aria-label={isSubmitting ? "Inscription en cours" : "S’inscrire"}
           >
-            S&apos;inscrire
-            {/* <LuSend className="size-5" aria-hidden="true" /> */}
+            <span className="hidden lg:block">S&apos;inscrire</span>
+            <LuSend className="size-5 block lg:hidden" aria-hidden="true" />
           </button>
         </form>
         {status.message && (

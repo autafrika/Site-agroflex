@@ -17,12 +17,12 @@ function Footer() {
               alt="agrowote"
             />
             <p className="text-[15px]/7  lg:w-7/10 ">
-              Agrowote est une place de marché virtuelle dédiée au monde
-              agricole : elle relie directement les producteurs aux acheteurs
-              pour vendre plus vite, limiter les pertes et sécuriser les
-              revenus. Appuyée par la technologie et les données, elle
-              accompagne également les acteurs agricoles pour produire mieux et
-              développer une agriculture durable, efficace et équitable.
+              Agriwote est un marché virtuel dédié au monde agricole : il relie
+              directement les producteurs aux acheteurs pour vendre plus vite,
+              limiter les pertes et sécuriser les revenus. Appuyé par la
+              technologie et les données, il accompagne également les acteurs
+              agricoles pour produire mieux et développer une agriculture
+              durable, efficace et équitable.
             </p>
           </div>
           {/* <div className="flex sociaux  ">
