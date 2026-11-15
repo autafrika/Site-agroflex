@@ -70,7 +70,7 @@ function Cooperative() {
 
           <div className="mt-2 flex flex-wrap items-center gap-3">
             <a
-              href="https://agroflex.autafrika.com"
+              href="https://web.agriwote.com"
               className="btn group gap-2 rounded-lg !bg-gold !px-5 py-3 font-semibold !text-forest-ink focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
             >
               Créer ma coopérative

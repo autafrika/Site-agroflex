@@ -7,7 +7,7 @@ import screen5 from "../../assets/images/envente/5.png";
 import BlurImage from "../BlurImage/BlurImage";
 
 const screens = [screen1, screen2, screen3, screen4, screen5];
-
+const AGRIWOTE = "https://agriwote.com";
 function Vente() {
   return (
     <section className="vente relative w-full  h-auto lg:px-32 pb-14 pt-14 px-4 ">
@@ -46,7 +46,7 @@ function Vente() {
       <div className=" pt-10  flex w-full justify-center items-center">
         <a
           className="btn disable !bg-green-800 !border-green-50/50 !text-white"
-          href="https://agroflex.autafrika.com"
+          href={AGRIWOTE}
         >
           Naviguer vers le marché
         </a>

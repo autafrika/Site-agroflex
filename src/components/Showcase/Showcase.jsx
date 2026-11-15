@@ -12,9 +12,11 @@ import { motion, useReducedMotion } from "framer-motion";
 export function PhoneFrame({ src, alt, className = "" }) {
   return (
     <div
-      className={`rounded-[2rem] bg-forest p-[6px] shadow-2xl shadow-black/30 ring-1 ring-white/10 ${className}`}
+      className={`rounded-[1rem] mg:rounded-[2rem] bg-forest p-[4px] shadow-2xl shadow-black/30 ring-1 ring-white/10 ${className}`}
     >
-      <div className="aspect-[1080/2165] overflow-hidden rounded-[1.6rem] bg-white">
+      <span className="w-4 h-[3px] z-50 bg-black rounded-full absolute top-2 right-1/2 translate-x-1/2 "></span>
+
+      <div className="aspect-[1080/2165] overflow-hidden rounded-[12px] bg-white">
         <img
           src={src}
           alt={alt}

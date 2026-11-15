@@ -153,7 +153,7 @@ const Gallery = () => {
           </div>
         </div>
         <div className="flex flex-wrap btns justify-center lg:flex-nowrap mt-14">
-          <a href="https://play.google.com/store/apps/details?id=com.autafrika.agroflex">
+          <a href="https://play.google.com/store/apps/details?id=com.autafrika.agriwote">
             <button className="btn text-xs w-fit enable lg:text-sm">
               Tester l&apos;application
             </button>

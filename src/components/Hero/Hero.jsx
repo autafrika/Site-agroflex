@@ -10,6 +10,8 @@ import RainEffect from "../Rain/Rain";
 import { motion } from "framer-motion";
 import BlurImage from "../BlurImage/BlurImage";
 
+const AGRIWOTE = "https://agriwote.com";
+
 function Hero() {
   return (
     <section
@@ -58,7 +60,7 @@ function Hero() {
             </div>
           </a>
           <a
-            // href="https://agroflex.autafrika.com"
+            href={AGRIWOTE}
             className="btn disable !bg-green-600 !border-white/50 !text-white  "
           >
             Aller sur le marché

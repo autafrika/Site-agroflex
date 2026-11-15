@@ -68,14 +68,14 @@ function Marche() {
         <Reveal delay={0.15} className="relative w-full  pb-24 md:pb-32">
           <BrowserFrame
             src={feedDesktop}
-            alt="Fil d'annonces AgroFlex : une offre de champignons avec boutons Contacter, Appeler et WhatsApp, et les prix près de chez vous"
-            url="agriwote.autafrika.com"
-            className="ml-auto w-[86%]"
+            alt="Fil d'annonces Agriwote : une offre de champignons avec boutons Contacter, Appeler et WhatsApp, et les prix près de chez vous"
+            url="web.agriwote.com"
+            className="m-auto -skew-6 lg:ml-auto w-full md:w-[86%]"
           />
           <PhoneFrame
             src={chatMobile}
             alt="Conversation entre un acheteur et un producteur au sujet du stock disponible"
-            className="absolute bottom-0 right-10 w-[30%] max-w-[180px] rotate-[5deg]"
+            className="absolute -bottom-10 md:bottom-0  left-10 w-[30%] max-w-[180px] rotate-[-5deg]"
           />
         </Reveal>
       </div>

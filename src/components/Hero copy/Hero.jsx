@@ -8,33 +8,34 @@ import solmonitor from "../../assets/images/solmonitor.jpg";
 import market from "../../assets/images/hero_market.png";
 import croissant from "../../assets/images/croissant.jpg";
 import RainEffect from "../Rain/Rain";
-import Header from "../Header/Header";
+// import Header from "../Header/Header";
 // import googleplaylogo from "../../assets/images/googleplaylogo.png";
 
+const AGRIWOTE = "https://agriwote.com";
 /* Données d'exemple pour le panneau "marché" : à remplacer par vos vrais produits/prix */
-const listings = [
-  {
-    name: "Maïs blanc",
-    qty: "2 tonnes",
-    price: "310 FCFA/kg",
-    status: "3 offres",
-    tone: "bg-[#F2B632] text-[#14301F]",
-  },
-  {
-    name: "Tomates",
-    qty: "400 kg",
-    price: "450 FCFA/kg",
-    status: "Vendu",
-    tone: "bg-white/20 text-white",
-  },
-  {
-    name: "Manioc",
-    qty: "1,5 tonne",
-    price: "180 FCFA/kg",
-    status: "1 offre",
-    tone: "bg-[#F2B632] text-[#14301F]",
-  },
-];
+// const listings = [
+//   {
+//     name: "Maïs blanc",
+//     qty: "2 tonnes",
+//     price: "310 FCFA/kg",
+//     status: "3 offres",
+//     tone: "bg-[#F2B632] text-[#14301F]",
+//   },
+//   {
+//     name: "Tomates",
+//     qty: "400 kg",
+//     price: "450 FCFA/kg",
+//     status: "Vendu",
+//     tone: "bg-white/20 text-white",
+//   },
+//   {
+//     name: "Manioc",
+//     qty: "1,5 tonne",
+//     price: "180 FCFA/kg",
+//     status: "1 offre",
+//     tone: "bg-[#F2B632] text-[#14301F]",
+//   },
+// ];
 
 const perks = [
   "Publiez votre récolte en 2 minutes",
@@ -131,7 +132,7 @@ function Hero() {
 
             <div className="flex  items-center gap-3 md:gap-4 mt-2">
               <a
-                href="https://play.google.com/store/apps/details?id=com.autafrika.agroflex"
+                href={AGRIWOTE}
                 target="_blank"
                 rel="noopener noreferrer"
                 className=" btn rounded-lg bg-[#F2B632] !px-4 py-3 font-semibold text-[#14301F] transition hover:brightness-95  focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
@@ -139,7 +140,7 @@ function Hero() {
                 Vendre mes produits
               </a>
               <a
-                href="https://agroflex.autafrika.com"
+                href={AGRIWOTE}
                 className="btn disable !bg-white/10 !text-white rounded-lg border  !border-white/60 !px-4 py-3 font-semibold transition hover:!bg-white/20  focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
               >
                 Acheter sur le marché
