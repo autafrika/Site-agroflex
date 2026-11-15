@@ -1,6 +1,6 @@
 import React from "react";
 import agrowote from "../../../public/agro_transparent.png";
-import googleplaylogo from "../../assets/images/googleplaylogo.png";
+// import googleplaylogo from "../../assets/images/googleplaylogo.png";
 
 function Footer() {
   return (
