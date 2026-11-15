@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { LuMenu, LuX } from "react-icons/lu";
-import agroflex from "../../assets/images/agroflex.png";
+import agroflex from "../../../public/agro_transparent.png";
 
 const PLAY_STORE =
   "https://play.google.com/store/apps/details?id=com.autafrika.agroflex";
@@ -131,11 +131,11 @@ function Header() {
           href="/"
           onClick={scrollTop}
           aria-label="AgroFlex, retour en haut de page"
-          className={`flex shrink-0 items-center rounded-full px-3 py-1 transition-colors ${
+          className={`flex shrink-0 items-center rounded-full px-3  lg:px-5 py-1 transition-colors ${
             solid ? "bg-transparent" : "bg-white/90 shadow-md"
           }`}
         >
-          <img className="h-9 w-auto lg:h-10" src={agroflex} alt="AgroFlex" />
+          <img className="h-9 w-auto lg:h-12" src={agroflex} alt="AgroFlex" />
         </a>
 
         {/* Liens desktop */}

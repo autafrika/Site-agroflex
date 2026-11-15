@@ -1,5 +1,5 @@
 import React from "react";
-import agroflex from "../../assets/images/agroflex.png";
+import agroflex from "../../../public/agro_transparent.png";
 import googleplaylogo from "../../assets/images/googleplaylogo.png";
 
 function Footer() {
