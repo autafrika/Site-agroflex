@@ -7,16 +7,16 @@ function Footer() {
     <div className="bg-gray-100">
       <footer
         id="contact"
-        className="flex h-auto flex-col md:flex-row gap-10 px-10 py-10 lg:py-20 lg:px-24 flex-wrap md:flex-nowrap text-base-content footer justify-between "
+        className="flex h-auto flex-col md:flex-row gap-10 px-10 py-10 lg:py-20 lg:px-24 flex-wrap md:flex-nowrap text-base-content footer  "
       >
-        <aside className="flex flex-col gap-12 w-auto md:w-[60%] leading-loose ">
+        <aside className="flex  flex-col gap-12 w-auto md:w-[50%] leading-loose ">
           <div className="">
             <img
               src={agroflex}
               className="rounded-xl w-24 -left-3 pb-2 relative"
               alt="agroflex"
             />
-            <p className="text-[15px]/7  lg:w-8/10 ">
+            <p className="text-[15px]/7  lg:w-7/10 ">
               Agroflex connecte les agriculteurs et les acteurs agricoles aux
               outils et aux données nécessaires pour produire mieux, réduire les
               pertes et acccéder aux marchés. Grâce à la technologie et à

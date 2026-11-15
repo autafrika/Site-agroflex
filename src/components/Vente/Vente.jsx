@@ -31,9 +31,9 @@ function Vente() {
         <div className="mx-auto flex w-max min-w-full flex-nowrap items-center justify-center gap-8 p-3 pb-5 lg:gap-16">
           {screens.map((screen, index) => (
             <div key={screen} className="h-auto w-auto shrink-0 snap-start">
-              <div className="h-auto bg-none p-2 pb-3">
+              <div className="h-auto  md:h-auto bg-none p-2 pb-3">
                 <BlurImage
-                  className="h-80 min-w-40 lg:h-100 lg:min-w-48"
+                  className="h-84 min-w-40 lg:h-100 lg:min-w-48"
                   src={screen}
                   alt={`Capture d’écran ${index + 1} de l’application Agroflex`}
                 />
@@ -42,6 +42,14 @@ function Vente() {
             </div>
           ))}
         </div>
+      </div>
+      <div className=" pt-10  flex w-full justify-center items-center">
+        <a
+          className="btn disable !bg-green-800 !border-green-50/50 !text-white"
+          href="https://agroflex.autafrika.com"
+        >
+          Naviguer vers le marché
+        </a>
       </div>
     </section>
   );

@@ -1,0 +1,698 @@
+{
+  "eslint.config.js": {
+    "mtime": 1741535904.1496022,
+    "seen": 1794512093.422865,
+    "ast_hash": "16650d52cb26289e694ed47c6492abf0",
+    "semantic_hash": "16650d52cb26289e694ed47c6492abf0"
+  },
+  "package.json": {
+    "mtime": 1768771344.585421,
+    "seen": 1794512093.4228733,
+    "ast_hash": "9b7b8b0ea5016250716e47cc9971a2ec",
+    "semantic_hash": "9b7b8b0ea5016250716e47cc9971a2ec"
+  },
+  "src/components/App.jsx": {
+    "mtime": 1794253688.3938603,
+    "seen": 1794512093.422878,
+    "ast_hash": "316ae456fa07f4ccaf11ab8024ee615a",
+    "semantic_hash": "316ae456fa07f4ccaf11ab8024ee615a"
+  },
+  "src/components/BlurImage/BlurImage.jsx": {
+    "mtime": 1793802468.9241261,
+    "seen": 1794512093.4228818,
+    "ast_hash": "a7c1ccd283df89cd67839832392b4041",
+    "semantic_hash": "a7c1ccd283df89cd67839832392b4041"
+  },
+  "src/components/ChatAi/ChatAi.jsx": {
+    "mtime": 1769621784.4541001,
+    "seen": 1794512093.4228857,
+    "ast_hash": "12ba88160e33d1d2f19ecf43e08e5ae6",
+    "semantic_hash": "12ba88160e33d1d2f19ecf43e08e5ae6"
+  },
+  "src/components/Cooperative/Cooperative.jsx": {
+    "mtime": 1794251908.9509757,
+    "seen": 1794512093.4228892,
+    "ast_hash": "9231ba2473603f34575ff51d291cacd1",
+    "semantic_hash": "9231ba2473603f34575ff51d291cacd1"
+  },
+  "src/components/DetectionMaladie/DetectionMaladie.jsx": {
+    "mtime": 1769530969.102849,
+    "seen": 1794512093.422893,
+    "ast_hash": "3b3f545e3c91d24a5ab37ef18e3cbf00",
+    "semantic_hash": "3b3f545e3c91d24a5ab37ef18e3cbf00"
+  },
+  "src/components/Diagnostic/Diagnostic.jsx": {
+    "mtime": 1794254360.3614714,
+    "seen": 1794512093.4228966,
+    "ast_hash": "7c51d8e6c5064cb44f4cf4974b54cfd5",
+    "semantic_hash": "7c51d8e6c5064cb44f4cf4974b54cfd5"
+  },
+  "src/components/Footer/Footer.jsx": {
+    "mtime": 1794254662.2907867,
+    "seen": 1794512093.4229002,
+    "ast_hash": "ba3f432c3ef777f4d496f04d509fc4e5",
+    "semantic_hash": "ba3f432c3ef777f4d496f04d509fc4e5"
+  },
+  "src/components/Functionnalites/Functionnalities.jsx": {
+    "mtime": 1794254150.3542016,
+    "seen": 1794512093.4229038,
+    "ast_hash": "b6c922884f2f6ac1c5bbaa3cb3558745",
+    "semantic_hash": "b6c922884f2f6ac1c5bbaa3cb3558745"
+  },
+  "src/components/Header/Header.jsx": {
+    "mtime": 1794253755.0058475,
+    "seen": 1794512093.4229076,
+    "ast_hash": "eb93916fecc4157867ebf4884c8cd7ba",
+    "semantic_hash": "eb93916fecc4157867ebf4884c8cd7ba"
+  },
+  "src/components/Hero copy/Hero.jsx": {
+    "mtime": 1794253564.747477,
+    "seen": 1794512093.4229116,
+    "ast_hash": "8978a8a4944a4eb3aaa7172b328c32a9",
+    "semantic_hash": "8978a8a4944a4eb3aaa7172b328c32a9"
+  },
+  "src/components/Hero/Hero.jsx": {
+    "mtime": 1794038442.7362113,
+    "seen": 1794512093.4229152,
+    "ast_hash": "5c9912fa853cd82cbc2c83d5d4cdfc08",
+    "semantic_hash": "5c9912fa853cd82cbc2c83d5d4cdfc08"
+  },
+  "src/components/Marche/Marche.jsx": {
+    "mtime": 1794254099.8942175,
+    "seen": 1794512093.4229188,
+    "ast_hash": "e6241c0c435d856f85305f9da5ccdb8c",
+    "semantic_hash": "e6241c0c435d856f85305f9da5ccdb8c"
+  },
+  "src/components/Meteo/Meteo.jsx": {
+    "mtime": 1794254330.0721488,
+    "seen": 1794512093.4229226,
+    "ast_hash": "1987eb165d27196bc5efabbcc68f0d0c",
+    "semantic_hash": "1987eb165d27196bc5efabbcc68f0d0c"
+  },
+  "src/components/Newsletter/Confirm.jsx": {
+    "mtime": 1793280222.3962753,
+    "seen": 1794512093.4229262,
+    "ast_hash": "6e36b43295ca47a1b0f950f1fbc415e5",
+    "semantic_hash": "6e36b43295ca47a1b0f950f1fbc415e5"
+  },
+  "src/components/Newsletter/Newsletter.jsx": {
+    "mtime": 1793290114.0548625,
+    "seen": 1794512093.4229298,
+    "ast_hash": "4af7c3a0e05cee1153df88f92b78d568",
+    "semantic_hash": "4af7c3a0e05cee1153df88f92b78d568"
+  },
+  "src/components/Notifications/Notifications.jsx": {
+    "mtime": 1794254385.3558345,
+    "seen": 1794512093.4229333,
+    "ast_hash": "68deba0d1ac05cf890bdee87d23af47e",
+    "semantic_hash": "68deba0d1ac05cf890bdee87d23af47e"
+  },
+  "src/components/PrivacyPolicy/PrivacyPolicy.jsx": {
+    "mtime": 1769530969.1080842,
+    "seen": 1794512093.422937,
+    "ast_hash": "8a9eb1cdbc5f84c2c4ff5508c212caf4",
+    "semantic_hash": "8a9eb1cdbc5f84c2c4ff5508c212caf4"
+  },
+  "src/components/Prix/Prix.jsx": {
+    "mtime": 1794251781.5907946,
+    "seen": 1794512093.4229405,
+    "ast_hash": "5cca6aae727ce3838e4eba9b3dc5a8b7",
+    "semantic_hash": "5cca6aae727ce3838e4eba9b3dc5a8b7"
+  },
+  "src/components/Rain/Rain.jsx": {
+    "mtime": 1794038300.2827187,
+    "seen": 1794512093.422944,
+    "ast_hash": "7cb469864c4f9de0d9589f19de975b7f",
+    "semantic_hash": "7cb469864c4f9de0d9589f19de975b7f"
+  },
+  "src/components/Services/Services.jsx": {
+    "mtime": 1794254404.554739,
+    "seen": 1794512093.422948,
+    "ast_hash": "c75f0c9f423dad8b36a4c4c02b1a490e",
+    "semantic_hash": "c75f0c9f423dad8b36a4c4c02b1a490e"
+  },
+  "src/components/Showcase/Showcase.jsx": {
+    "mtime": 1794252549.675527,
+    "seen": 1794512093.422952,
+    "ast_hash": "8ef745db75dafb503c31206fe95c0205",
+    "semantic_hash": "8ef745db75dafb503c31206fe95c0205"
+  },
+  "src/components/Vente/Vente.jsx": {
+    "mtime": 1793803606.7159588,
+    "seen": 1794512093.4229555,
+    "ast_hash": "fb779908458d2fd8178c0af0d606fc52",
+    "semantic_hash": "fb779908458d2fd8178c0af0d606fc52"
+  },
+  "src/components/Weather/Weather.jsx": {
+    "mtime": 1747735415.5754714,
+    "seen": 1794512093.422959,
+    "ast_hash": "bd11823102c7ce8f4251e39d5575dd82",
+    "semantic_hash": "bd11823102c7ce8f4251e39d5575dd82"
+  },
+  "src/components/img.jsx": {
+    "mtime": 1747735415.5754714,
+    "seen": 1794512093.4229627,
+    "ast_hash": "3478b04427da2c90adb69e073e2db53f",
+    "semantic_hash": "3478b04427da2c90adb69e073e2db53f"
+  },
+  "src/datas/plantList.jsx": {
+    "mtime": 1741535904.131602,
+    "seen": 1794512093.4229662,
+    "ast_hash": "9be01ddc309cdea7bf775ebe402482de",
+    "semantic_hash": "9be01ddc309cdea7bf775ebe402482de"
+  },
+  "src/main.jsx": {
+    "mtime": 1768310163.5907142,
+    "seen": 1794512093.4229698,
+    "ast_hash": "56b0dba1971b5fca3340adfa5d804f22",
+    "semantic_hash": "56b0dba1971b5fca3340adfa5d804f22"
+  },
+  "tailwind.config.js": {
+    "mtime": 1747735415.5774736,
+    "seen": 1794512093.4229734,
+    "ast_hash": "57e87ee37b0883893c6284b64d20dbcc",
+    "semantic_hash": "57e87ee37b0883893c6284b64d20dbcc"
+  },
+  "vercel.json": {
+    "mtime": 1768738507.695889,
+    "seen": 1794512093.422977,
+    "ast_hash": "61bd31a2b0ac08f10f13c932b32d6ca1",
+    "semantic_hash": "61bd31a2b0ac08f10f13c932b32d6ca1"
+  },
+  "vite.config.js": {
+    "mtime": 1768307900.9389372,
+    "seen": 1794512093.4229805,
+    "ast_hash": "adfe268905c5a47395c11547f49da3c4",
+    "semantic_hash": "adfe268905c5a47395c11547f49da3c4"
+  },
+  "README.md": {
+    "mtime": 1741535904.1666024,
+    "seen": 1794512093.4229841,
+    "ast_hash": "1dfcb98fb0236ca209793b23d90c2d2a",
+    "semantic_hash": "1dfcb98fb0236ca209793b23d90c2d2a"
+  },
+  "index.html": {
+    "mtime": 1769530969.007848,
+    "seen": 1794512093.422988,
+    "ast_hash": "77f50309fbf9167258ac5884ebda2ed7",
+    "semantic_hash": "77f50309fbf9167258ac5884ebda2ed7"
+  },
+  "public/agroflexBg.png": {
+    "mtime": 1747735415.4653435,
+    "seen": 1794512093.4229915,
+    "ast_hash": "0bd3125d9bd7affa084bfa51ee333aa2",
+    "semantic_hash": "0bd3125d9bd7affa084bfa51ee333aa2"
+  },
+  "public/favicon.png": {
+    "mtime": 1747735415.4673457,
+    "seen": 1794512093.422995,
+    "ast_hash": "13154de0a4106deb3c44cf73dbb4511d",
+    "semantic_hash": "13154de0a4106deb3c44cf73dbb4511d"
+  },
+  "public/vite.svg": {
+    "mtime": 1741535904.111602,
+    "seen": 1794512093.4229991,
+    "ast_hash": "8e3a10e157f75ada21ab742c022d5430",
+    "semantic_hash": "8e3a10e157f75ada21ab742c022d5430"
+  },
+  "src/assets/images/582shots_so.png": {
+    "mtime": 1794036822.375674,
+    "seen": 1794512093.4230027,
+    "ast_hash": "6eb2d2fae70f3945f4d818186eae2752",
+    "semantic_hash": "6eb2d2fae70f3945f4d818186eae2752"
+  },
+  "src/assets/images/Screenshot from 2026-10-29 13-25-16.png": {
+    "mtime": 1794250484.133797,
+    "seen": 1794512093.4230063,
+    "ast_hash": "3fd25945a3859718f37f1d54cbd3b045",
+    "semantic_hash": "3fd25945a3859718f37f1d54cbd3b045"
+  },
+  "src/assets/images/Screenshot from 2026-10-29 20-15-06.png": {
+    "mtime": 1794250484.0397956,
+    "seen": 1794512093.4230099,
+    "ast_hash": "e5d6d0cc9c44225ab4ee49465661854e",
+    "semantic_hash": "e5d6d0cc9c44225ab4ee49465661854e"
+  },
+  "src/assets/images/Screenshot from 2026-11-04 21-53-23.png": {
+    "mtime": 1794250483.939794,
+    "seen": 1794512093.4230134,
+    "ast_hash": "2e6c5c09ad60d4fba14ef7579e9349b8",
+    "semantic_hash": "2e6c5c09ad60d4fba14ef7579e9349b8"
+  },
+  "src/assets/images/Screenshot from 2026-11-04 21-53-44.png": {
+    "mtime": 1794250483.8576753,
+    "seen": 1794512093.4230173,
+    "ast_hash": "5d86406d4789113433b5f1866ff9181a",
+    "semantic_hash": "5d86406d4789113433b5f1866ff9181a"
+  },
+  "src/assets/images/Screenshot from 2026-11-04 21-55-38.png": {
+    "mtime": 1794250483.808684,
+    "seen": 1794512093.4230208,
+    "ast_hash": "ff3220070587612682a39b3d3d317226",
+    "semantic_hash": "ff3220070587612682a39b3d3d317226"
+  },
+  "src/assets/images/Screenshot from 2026-11-04 21-56-31.png": {
+    "mtime": 1794250483.7248423,
+    "seen": 1794512093.4230244,
+    "ast_hash": "d572f685a25883247ee7131dcc79c420",
+    "semantic_hash": "d572f685a25883247ee7131dcc79c420"
+  },
+  "src/assets/images/Screenshot_20261104_155105_Chrome.jpg": {
+    "mtime": 1794251300.093224,
+    "seen": 1794512093.4230306,
+    "ast_hash": "a61dffaeb975ff5edf19993062e856fa",
+    "semantic_hash": "a61dffaeb975ff5edf19993062e856fa"
+  },
+  "src/assets/images/Screenshot_20261104_155323_Chrome.jpg": {
+    "mtime": 1794251300.0229003,
+    "seen": 1794512093.4230342,
+    "ast_hash": "3f479cd20cbfa99a8929f840b745b096",
+    "semantic_hash": "3f479cd20cbfa99a8929f840b745b096"
+  },
+  "src/assets/images/Screenshot_20261104_221606_Chrome.jpg": {
+    "mtime": 1794251299.9608994,
+    "seen": 1794512093.4230378,
+    "ast_hash": "d5ee62a8d745a7aee68cd6f8823c14e7",
+    "semantic_hash": "d5ee62a8d745a7aee68cd6f8823c14e7"
+  },
+  "src/assets/images/Screenshot_20261104_221619_Chrome.jpg": {
+    "mtime": 1794251299.8975213,
+    "seen": 1794512093.4230413,
+    "ast_hash": "3a204e63d55ad17d63c26db924e8ddfb",
+    "semantic_hash": "3a204e63d55ad17d63c26db924e8ddfb"
+  },
+  "src/assets/images/Screenshot_20261104_221640_Chrome.jpg": {
+    "mtime": 1794251299.8278973,
+    "seen": 1794512093.4230452,
+    "ast_hash": "c0b4ac3b3ebb331921cda8af35897102",
+    "semantic_hash": "c0b4ac3b3ebb331921cda8af35897102"
+  },
+  "src/assets/images/Screenshot_20261104_221723_Chrome.jpg": {
+    "mtime": 1794251299.743166,
+    "seen": 1794512093.4230487,
+    "ast_hash": "15a8c027b900021d09107418fa85a48e",
+    "semantic_hash": "15a8c027b900021d09107418fa85a48e"
+  },
+  "src/assets/images/Screenshot_20261104_221729_Chrome.jpg": {
+    "mtime": 1794251299.6649494,
+    "seen": 1794512093.4230523,
+    "ast_hash": "5663c0e3bbf5b988f2ef4ee7d731f35f",
+    "semantic_hash": "5663c0e3bbf5b988f2ef4ee7d731f35f"
+  },
+  "src/assets/images/Screenshot_20261104_221841_Chrome.jpg": {
+    "mtime": 1794251299.5672936,
+    "seen": 1794512093.423056,
+    "ast_hash": "5a4dde65ff1d6e4bc8e62a2ac68d227f",
+    "semantic_hash": "5a4dde65ff1d6e4bc8e62a2ac68d227f"
+  },
+  "src/assets/images/Screenshot_20261104_221858_Chrome.jpg": {
+    "mtime": 1794251299.482544,
+    "seen": 1794512093.4230595,
+    "ast_hash": "393429374c9596c6ff01cdfa7545e18d",
+    "semantic_hash": "393429374c9596c6ff01cdfa7545e18d"
+  },
+  "src/assets/images/Screenshot_20261104_221907_Chrome.jpg": {
+    "mtime": 1794251299.4208913,
+    "seen": 1794512093.4230633,
+    "ast_hash": "cf7965782da095dc7212c967dd38d3c9",
+    "semantic_hash": "cf7965782da095dc7212c967dd38d3c9"
+  },
+  "src/assets/images/agroflex.png": {
+    "mtime": 1769530969.0088482,
+    "seen": 1794512093.4230669,
+    "ast_hash": "13154de0a4106deb3c44cf73dbb4511d",
+    "semantic_hash": "13154de0a4106deb3c44cf73dbb4511d"
+  },
+  "src/assets/images/agrophone.png": {
+    "mtime": 1769530969.009848,
+    "seen": 1794512093.4230704,
+    "ast_hash": "0dd974d4eb4067045314d0b86b692f81",
+    "semantic_hash": "0dd974d4eb4067045314d0b86b692f81"
+  },
+  "src/assets/images/ai/ai_res_1.png": {
+    "mtime": 1769530969.0128481,
+    "seen": 1794512093.423074,
+    "ast_hash": "9998981139830f9c303ff5115cfda074",
+    "semantic_hash": "9998981139830f9c303ff5115cfda074"
+  },
+  "src/assets/images/ai/ai_res_2.png": {
+    "mtime": 1769530969.0148482,
+    "seen": 1794512093.4230776,
+    "ast_hash": "1dc16ccbf8edf2eeacd27e1680667e26",
+    "semantic_hash": "1dc16ccbf8edf2eeacd27e1680667e26"
+  },
+  "src/assets/images/ai/landing.png": {
+    "mtime": 1769530969.0158482,
+    "seen": 1794512093.4230814,
+    "ast_hash": "48c5076ebe2d3ac36f1f2c0047287d85",
+    "semantic_hash": "48c5076ebe2d3ac36f1f2c0047287d85"
+  },
+  "src/assets/images/astuces.png": {
+    "mtime": 1769530969.016848,
+    "seen": 1794512093.423085,
+    "ast_hash": "dfe1781641fe3ff85bb933c79a4fc484",
+    "semantic_hash": "dfe1781641fe3ff85bb933c79a4fc484"
+  },
+  "src/assets/images/caddie_cutout.png": {
+    "mtime": 1793808980.481925,
+    "seen": 1794512093.4230886,
+    "ast_hash": "49a224c9431ec6fcc77a14ec848be4d5",
+    "semantic_hash": "49a224c9431ec6fcc77a14ec848be4d5"
+  },
+  "src/assets/images/champ1.png": {
+    "mtime": 1769530969.0188482,
+    "seen": 1794512093.4230921,
+    "ast_hash": "04bba0e170f82cc5893022eb6513f379",
+    "semantic_hash": "04bba0e170f82cc5893022eb6513f379"
+  },
+  "src/assets/images/champ1.webp": {
+    "mtime": 1769530969.0218482,
+    "seen": 1794512093.4230957,
+    "ast_hash": "4b281e28b65733b91d2d262a48c570e9",
+    "semantic_hash": "4b281e28b65733b91d2d262a48c570e9"
+  },
+  "src/assets/images/croissant.jpg": {
+    "mtime": 1769530969.0228481,
+    "seen": 1794512093.4230993,
+    "ast_hash": "f5e972d4876e54eed392de155b49a134",
+    "semantic_hash": "f5e972d4876e54eed392de155b49a134"
+  },
+  "src/assets/images/details/astuce_0.png": {
+    "mtime": 1769530969.0248482,
+    "seen": 1794512093.423103,
+    "ast_hash": "8af1f5a082ece4402d99f6963556e135",
+    "semantic_hash": "8af1f5a082ece4402d99f6963556e135"
+  },
+  "src/assets/images/details/astuce_1.png": {
+    "mtime": 1769530969.0268483,
+    "seen": 1794512093.4231067,
+    "ast_hash": "de77708a35fb823ebf96dc75dc391b11",
+    "semantic_hash": "de77708a35fb823ebf96dc75dc391b11"
+  },
+  "src/assets/images/details/detail_0.png": {
+    "mtime": 1769530969.0278482,
+    "seen": 1794512093.4231105,
+    "ast_hash": "f483134fb782dfb54018992ff786e048",
+    "semantic_hash": "f483134fb782dfb54018992ff786e048"
+  },
+  "src/assets/images/details/detail_1.png": {
+    "mtime": 1769530969.0298483,
+    "seen": 1794512093.423114,
+    "ast_hash": "a64597aa69414135bd89cdb418655131",
+    "semantic_hash": "a64597aa69414135bd89cdb418655131"
+  },
+  "src/assets/images/details/detail_11.png": {
+    "mtime": 1769530969.0308483,
+    "seen": 1794512093.4231176,
+    "ast_hash": "165c8d7720d16d4f57780517f531ffb2",
+    "semantic_hash": "165c8d7720d16d4f57780517f531ffb2"
+  },
+  "src/assets/images/details/detail_2.png": {
+    "mtime": 1769530969.0318484,
+    "seen": 1794512093.4231215,
+    "ast_hash": "3964522253a8d8811f6f6ad4c435fda9",
+    "semantic_hash": "3964522253a8d8811f6f6ad4c435fda9"
+  },
+  "src/assets/images/details/detail_3.png": {
+    "mtime": 1769530969.0338483,
+    "seen": 1794512093.423125,
+    "ast_hash": "d94ce841a6569f885f35801823400528",
+    "semantic_hash": "d94ce841a6569f885f35801823400528"
+  },
+  "src/assets/images/details/research_1.png": {
+    "mtime": 1769530969.0348485,
+    "seen": 1794512093.4231286,
+    "ast_hash": "3547a066227153463319517b515712be",
+    "semantic_hash": "3547a066227153463319517b515712be"
+  },
+  "src/assets/images/details/research_2.png": {
+    "mtime": 1769530969.0358484,
+    "seen": 1794512093.4231322,
+    "ast_hash": "6126bc66b6789593f6bdcace463d8373",
+    "semantic_hash": "6126bc66b6789593f6bdcace463d8373"
+  },
+  "src/assets/images/detectionResponse/healthy_1.png": {
+    "mtime": 1769530969.0397892,
+    "seen": 1794512093.423136,
+    "ast_hash": "b19f557be2703a10a02746bed006c5da",
+    "semantic_hash": "b19f557be2703a10a02746bed006c5da"
+  },
+  "src/assets/images/detectionResponse/healthy_2.png": {
+    "mtime": 1769530969.0408485,
+    "seen": 1794512093.4231396,
+    "ast_hash": "ba3ce52fa8b2befe86fa0a4d9b5ea440",
+    "semantic_hash": "ba3ce52fa8b2befe86fa0a4d9b5ea440"
+  },
+  "src/assets/images/detectionResponse/healthy_3.png": {
+    "mtime": 1769530969.0438485,
+    "seen": 1794512093.4231431,
+    "ast_hash": "d3afca82413542ed6c4294180b61069b",
+    "semantic_hash": "d3afca82413542ed6c4294180b61069b"
+  },
+  "src/assets/images/detectionResponse/scan_0.png": {
+    "mtime": 1769530969.047197,
+    "seen": 1794512093.4231467,
+    "ast_hash": "ead581514cfd05c9f6739076e3027568",
+    "semantic_hash": "ead581514cfd05c9f6739076e3027568"
+  },
+  "src/assets/images/detectionResponse/sick_1.png": {
+    "mtime": 1769530969.0498486,
+    "seen": 1794512093.4231503,
+    "ast_hash": "4b8ae2e74cf8047c77303935389ec4de",
+    "semantic_hash": "4b8ae2e74cf8047c77303935389ec4de"
+  },
+  "src/assets/images/detectionResponse/sick_2.png": {
+    "mtime": 1769530969.0534866,
+    "seen": 1794512093.423154,
+    "ast_hash": "d3afca82413542ed6c4294180b61069b",
+    "semantic_hash": "d3afca82413542ed6c4294180b61069b"
+  },
+  "src/assets/images/detectionResponse/sick_3.png": {
+    "mtime": 1769530969.0538485,
+    "seen": 1794512093.4231577,
+    "ast_hash": "2ca1d56cb829a0327b3d337a68b140e1",
+    "semantic_hash": "2ca1d56cb829a0327b3d337a68b140e1"
+  },
+  "src/assets/images/envente/1.png": {
+    "mtime": 1769530969.057157,
+    "seen": 1794512093.4231615,
+    "ast_hash": "54c7d438e8051a28465eb7613d954fc0",
+    "semantic_hash": "54c7d438e8051a28465eb7613d954fc0"
+  },
+  "src/assets/images/envente/2.png": {
+    "mtime": 1769530969.0588486,
+    "seen": 1794512093.4231653,
+    "ast_hash": "dac95333723069b4642910db6e5dd4f2",
+    "semantic_hash": "dac95333723069b4642910db6e5dd4f2"
+  },
+  "src/assets/images/envente/3.png": {
+    "mtime": 1769530969.0616868,
+    "seen": 1794512093.4231691,
+    "ast_hash": "a1ffe5eeb535076f7d47982d208454d4",
+    "semantic_hash": "a1ffe5eeb535076f7d47982d208454d4"
+  },
+  "src/assets/images/envente/4.png": {
+    "mtime": 1769530969.0618486,
+    "seen": 1794512093.4231727,
+    "ast_hash": "60c8f72b3b8f6aa822236991d589de41",
+    "semantic_hash": "60c8f72b3b8f6aa822236991d589de41"
+  },
+  "src/assets/images/envente/5.png": {
+    "mtime": 1769530969.0618486,
+    "seen": 1794512093.4231763,
+    "ast_hash": "cb31f98c5682e443d7b35af094ca69a2",
+    "semantic_hash": "cb31f98c5682e443d7b35af094ca69a2"
+  },
+  "src/assets/images/envente/oa__17_-removebg-preview.png": {
+    "mtime": 1769530969.0628486,
+    "seen": 1794512093.42318,
+    "ast_hash": "3547a066227153463319517b515712be",
+    "semantic_hash": "3547a066227153463319517b515712be"
+  },
+  "src/assets/images/envente/oa__20_-removebg-preview.png": {
+    "mtime": 1769530969.0688486,
+    "seen": 1794512093.4231837,
+    "ast_hash": "f393f9afef3fe7d0b3fe53c4937d4abd",
+    "semantic_hash": "f393f9afef3fe7d0b3fe53c4937d4abd"
+  },
+  "src/assets/images/envente/oa__21_-removebg-preview.png": {
+    "mtime": 1769530969.0698488,
+    "seen": 1794512093.4231882,
+    "ast_hash": "481a91200c702c5c932c3b11b8589879",
+    "semantic_hash": "481a91200c702c5c932c3b11b8589879"
+  },
+  "src/assets/images/envente/oa__22_-removebg-preview.png": {
+    "mtime": 1769530969.074313,
+    "seen": 1794512093.423192,
+    "ast_hash": "08106e802fb0295162d749b4abb01604",
+    "semantic_hash": "08106e802fb0295162d749b4abb01604"
+  },
+  "src/assets/images/envente/oa__23_-removebg-preview.png": {
+    "mtime": 1769530969.074849,
+    "seen": 1794512093.4231956,
+    "ast_hash": "dbbeaaede480513d68d0d25c41902dd8",
+    "semantic_hash": "dbbeaaede480513d68d0d25c41902dd8"
+  },
+  "src/assets/images/envente/oa__24_-removebg-preview.png": {
+    "mtime": 1769530969.079136,
+    "seen": 1794512093.4231992,
+    "ast_hash": "a1e857716e4af078d1851dd3068cdcef",
+    "semantic_hash": "a1e857716e4af078d1851dd3068cdcef"
+  },
+  "src/assets/images/envente/oa__25_-removebg-preview.png": {
+    "mtime": 1769530969.080849,
+    "seen": 1794512093.423203,
+    "ast_hash": "38b333583fa1aeeeaab831237b316f6b",
+    "semantic_hash": "38b333583fa1aeeeaab831237b316f6b"
+  },
+  "src/assets/images/envente/oa__26_-removebg-preview.png": {
+    "mtime": 1769530969.0840747,
+    "seen": 1794512093.4232066,
+    "ast_hash": "e9b5090699b914833cffb970f1ac0106",
+    "semantic_hash": "e9b5090699b914833cffb970f1ac0106"
+  },
+  "src/assets/images/envente/oa__27_-removebg-preview.png": {
+    "mtime": 1769530969.0840747,
+    "seen": 1794512093.4232104,
+    "ast_hash": "e58551e9022f463bedbab1dd8be5de44",
+    "semantic_hash": "e58551e9022f463bedbab1dd8be5de44"
+  },
+  "src/assets/images/envente/oa__28_-removebg-preview.png": {
+    "mtime": 1769530969.087849,
+    "seen": 1794512093.4232142,
+    "ast_hash": "ff57c0ff1cc089487b0f19f904b610cb",
+    "semantic_hash": "ff57c0ff1cc089487b0f19f904b610cb"
+  },
+  "src/assets/images/envente/oa__5_-removebg-preview.png": {
+    "mtime": 1769530969.091031,
+    "seen": 1794512093.4232178,
+    "ast_hash": "e58551e9022f463bedbab1dd8be5de44",
+    "semantic_hash": "e58551e9022f463bedbab1dd8be5de44"
+  },
+  "src/assets/images/flesh_excalidraw.png": {
+    "mtime": 1769530969.093849,
+    "seen": 1794512093.4232216,
+    "ast_hash": "78e364c847faddb9d0a913dbb8d4b1f3",
+    "semantic_hash": "78e364c847faddb9d0a913dbb8d4b1f3"
+  },
+  "src/assets/images/googleplay.png": {
+    "mtime": 1769530969.093849,
+    "seen": 1794512093.4232254,
+    "ast_hash": "491305afa569ec801ac42bf151ef13a8",
+    "semantic_hash": "491305afa569ec801ac42bf151ef13a8"
+  },
+  "src/assets/images/googleplaylogo.png": {
+    "mtime": 1769530969.093849,
+    "seen": 1794512093.423229,
+    "ast_hash": "d6048f9f8f1f78e2043157dc63f37217",
+    "semantic_hash": "d6048f9f8f1f78e2043157dc63f37217"
+  },
+  "src/assets/images/hero_market.png": {
+    "mtime": 1794034626.8059793,
+    "seen": 1794512093.4232328,
+    "ast_hash": "d4721337889751f1b160435dbf101d8d",
+    "semantic_hash": "d4721337889751f1b160435dbf101d8d"
+  },
+  "src/assets/images/image.png": {
+    "mtime": 1769530969.095849,
+    "seen": 1794512093.4232364,
+    "ast_hash": "a16c34f83ba536619a1ba918b8073566",
+    "semantic_hash": "a16c34f83ba536619a1ba918b8073566"
+  },
+  "src/assets/images/meteo/meteo_1.png": {
+    "mtime": 1769530969.098506,
+    "seen": 1794512093.42324,
+    "ast_hash": "c65e48d5f36af4d792c9a606fc900a42",
+    "semantic_hash": "c65e48d5f36af4d792c9a606fc900a42"
+  },
+  "src/assets/images/meteo/meteo_2.png": {
+    "mtime": 1769530969.100035,
+    "seen": 1794512093.4232435,
+    "ast_hash": "21d13b75590fd4cd107ff89aca6567e3",
+    "semantic_hash": "21d13b75590fd4cd107ff89aca6567e3"
+  },
+  "src/assets/images/plante-hand.jpg": {
+    "mtime": 1769530969.1009355,
+    "seen": 1794512093.4232473,
+    "ast_hash": "c9f63cdab248cee8efca7bdda96dd4f6",
+    "semantic_hash": "c9f63cdab248cee8efca7bdda96dd4f6"
+  },
+  "src/assets/images/solmonitor.jpg": {
+    "mtime": 1769530969.101554,
+    "seen": 1794512093.423251,
+    "ast_hash": "68bcf4a2363c1c7c490906ef69c945d2",
+    "semantic_hash": "68bcf4a2363c1c7c490906ef69c945d2"
+  },
+  "src/assets/svg/chat_ai.svg": {
+    "mtime": 1768307900.9299371,
+    "seen": 1794512093.4232545,
+    "ast_hash": "7e814753d27afbc0a56f6264b4c487df",
+    "semantic_hash": "7e814753d27afbc0a56f6264b4c487df"
+  },
+  "src/assets/svg/create_project.svg": {
+    "mtime": 1768307900.9299371,
+    "seen": 1794512093.423258,
+    "ast_hash": "ca5f430bbf7902c6370eb72056f347ba",
+    "semantic_hash": "ca5f430bbf7902c6370eb72056f347ba"
+  },
+  "src/assets/svg/flesh_excalidraw.svg": {
+    "mtime": 1768307900.930937,
+    "seen": 1794512093.4232688,
+    "ast_hash": "bd4c5d53c253801bea151592dc771b8d",
+    "semantic_hash": "bd4c5d53c253801bea151592dc771b8d"
+  },
+  "src/assets/svg/irrigation_field.svg": {
+    "mtime": 1768307900.930937,
+    "seen": 1794512093.4232738,
+    "ast_hash": "518b5e9a16d7798224ad1fe48de09924",
+    "semantic_hash": "518b5e9a16d7798224ad1fe48de09924"
+  },
+  "src/assets/svg/monitoring.svg": {
+    "mtime": 1747735415.5584517,
+    "seen": 1794512093.4232776,
+    "ast_hash": "40fa113e055268821f34a183e0896b0c",
+    "semantic_hash": "40fa113e055268821f34a183e0896b0c"
+  },
+  "src/assets/svg/prescriptions.svg": {
+    "mtime": 1747735415.5594528,
+    "seen": 1794512093.4232814,
+    "ast_hash": "57c67fe25d2ff73d592bc76b5192f762",
+    "semantic_hash": "57c67fe25d2ff73d592bc76b5192f762"
+  },
+  "src/assets/svg/prevision_meteo.svg": {
+    "mtime": 1747735415.5594528,
+    "seen": 1794512093.423285,
+    "ast_hash": "aae28b862080c2768492b48ba935fdfc",
+    "semantic_hash": "aae28b862080c2768492b48ba935fdfc"
+  },
+  "src/assets/svg/react.svg": {
+    "mtime": 1769530969.101554,
+    "seen": 1794512093.4232886,
+    "ast_hash": "f0402b67b6ce880f65666bb49e841696",
+    "semantic_hash": "f0402b67b6ce880f65666bb49e841696"
+  },
+  "src/assets/svg/scan_deseases.svg": {
+    "mtime": 1747735415.560454,
+    "seen": 1794512093.4232922,
+    "ast_hash": "4445f6c0d827f0d1a6610ed696b75937",
+    "semantic_hash": "4445f6c0d827f0d1a6610ed696b75937"
+  },
+  "src/assets/svg/suivie_du_champs.svg": {
+    "mtime": 1747735415.561455,
+    "seen": 1794512093.4232957,
+    "ast_hash": "8a12c82d9ef7debe3ea8946412fce478",
+    "semantic_hash": "8a12c82d9ef7debe3ea8946412fce478"
+  },
+  "src/assets/svg/sun.svg": {
+    "mtime": 1769530969.101554,
+    "seen": 1794512093.4232993,
+    "ast_hash": "dbda652cf00285b28df522d3d72ff3b0",
+    "semantic_hash": "dbda652cf00285b28df522d3d72ff3b0"
+  },
+  "src/assets/svg/water.svg": {
+    "mtime": 1769530969.101554,
+    "seen": 1794512093.423303,
+    "ast_hash": "01fd98f09feb17e58392cb1973b45c82",
+    "semantic_hash": "01fd98f09feb17e58392cb1973b45c82"
+  }
+}

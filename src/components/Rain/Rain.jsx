@@ -5,7 +5,7 @@ export default function RainEffect() {
       {Array.from({ length: 30 }).map((_, i) => (
         <div
           key={i}
-          className="absolute bg-white opacity-50 "
+          className="absolute bg-white/40 opacity-30 "
           style={{
             width: "2px",
             height: `${Math.random() * 20 + 10}px`,

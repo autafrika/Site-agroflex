@@ -12,7 +12,7 @@ function Services() {
         Informations Complètes sur Chaque Culture
       </h2>
 
-      <div className="w-full h-fit gap-5 flex flex-col items-center justify-center lg:flex-row ">
+      <div className="w-full max-w-7xl h-fit gap-5 flex flex-col items-center justify-center lg:flex-row ">
         <div className="serv-left relative h-full flex justify-center items-center  w-full lg:w-1/2 ">
           <span className="absolute bulb1 w-[20rem] h-[20rem] lg:w-[32rem] lg:h-[32rem] bg-green-300/20 "></span>
           <motion.div

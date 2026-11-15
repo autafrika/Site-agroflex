@@ -9,7 +9,7 @@ function Diagnostic() {
         Gestion Optimale des Cultures
       </h2>
 
-      <div className="w-full h-fit gap-5 flex flex-col items-center justify-center lg:flex-row-reverse ">
+      <div className="w-full max-w-7xl h-fit gap-5 flex flex-col items-center justify-center lg:flex-row-reverse ">
         <div className="serv-left scan relative h-full flex justify-center items-center  w-full lg:w-1/2 ">
           <span className="absolute bulb2 w-[20rem] h-[20rem] lg:w-[32rem] lg:h-[32rem] bg-red-500/15 "></span>
           <motion.div

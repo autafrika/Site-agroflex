@@ -2,6 +2,7 @@ import React from "react";
 import { Analytics } from "@vercel/analytics/react";
 import { Routes, Route } from "react-router-dom";
 import "../styles/App.css";
+import Hero_copy from "./Hero copy/Hero";
 import Hero from "./Hero/Hero";
 import Services from "./Services/Services";
 // import ChatAi from "./ChatAi/ChatAi";
@@ -14,6 +15,10 @@ import Footer from "./Footer/Footer";
 import Functionnalities from "./Functionnalites/Functionnalities";
 import DetectionMaladie from "./DetectionMaladie/DetectionMaladie";
 import PrivacyPolicy from "./PrivacyPolicy/PrivacyPolicy";
+import Marche from "./Marche/Marche";
+import Prix from "./Prix/Prix";
+import Cooperative from "./Cooperative/Cooperative";
+import Header from "./Header/Header";
 // import Confirm from "./Newsletter/Confirm";
 
 function App() {
@@ -28,8 +33,13 @@ function App() {
 
 const MainPage = () => (
   <div className="w-[100vm] overflow-hidden">
-    <Hero />
-    <Functionnalities />
+    <Header />
+    <Hero_copy />
+    {/* <Hero /> */}
+    <Marche />
+    <Prix />
+    <Cooperative />
+    {/* <Functionnalities /> */}
     <Services />
     <Notifications />
     {/* <ChatAi /> */}

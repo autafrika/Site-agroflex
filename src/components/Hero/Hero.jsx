@@ -23,17 +23,17 @@ function Hero() {
           alt="champ d'agriculture"
           ratio=""
         />
-        <RainEffect />
+        {/* <RainEffect /> */}
       </div>
       <Header />
-      <div className="flex flex-col bg-black/50 h-full w-full h-left justify-center p-10 text-white gap-5 items-center">
+      <div className="flex flex-col bg-black/40 h-full w-full h-left justify-center p-10 text-white gap-5 items-center">
         <motion.h1
           initial={{ opacity: 0, y: 50 }} // Départ en bas avec une opacité 0
           whileInView="visible"
           animate={{ opacity: 1, y: 0 }} // Arrive en haut avec opacité 1
           exit={{ opacity: 0, y: 50 }} // Redescend en disparaissant
           transition={{ duration: 0.5, ease: "easeOut" }} // Animation fluide
-          className="p-4 text-4xl/11 text-center 2xl:text-6xl/10 font-extrabold md:text-5xl/12"
+          className="p-4 text-4xl/11 text-center 2xl:text-6xl/10 font-[900] md:text-5xl/12"
         >
           Optimisez Votre Production Agricole
         </motion.h1>
@@ -45,7 +45,7 @@ function Hero() {
         <div className="flex justify-center gap-6 items-center mt-5">
           <a
             href="https://play.google.com/store/apps/details?id=com.autafrika.agroflex"
-            className="!py-1 !px-3 btn enable !border !border-gray-500 bg-white flex items-center justify-center gap-1"
+            className="!py-[5px] !px-[15px] btn enable !border !border-gray-500 bg-white flex items-center justify-center gap-1"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -57,7 +57,19 @@ function Hero() {
               </p>
             </div>
           </a>
-          <button className="btn disable ">Savoir plus</button>
+          <a
+            // href="https://agroflex.autafrika.com"
+            className="btn disable !bg-green-600 !border-white/50 !text-white  "
+          >
+            Aller sur le marché
+          </a>
+        </div>
+        <div>
+          <img
+            className="hidden w-[300px] h-[150px] md:w-[500px] md:h-[500px] rounded-2xl object-cover"
+            src={plantHand}
+            alt="main tenant une plante"
+          />
         </div>
       </div>
 
@@ -74,7 +86,7 @@ function Hero() {
           <div className="flex flex-col h-full justify-between p-1 w-full px-1 xl:px-2">
             <h2 className="lg:text-sm">Chat avec l&apos;expert IA agricole</h2>
             <p className="text-gray-100 text-[11px]">
-              Ecrivez lui vos problèmes et récevez des conseils précis
+              Partagez lui vos problèmes et récevez des conseils précis
             </p>
           </div>
         </div>

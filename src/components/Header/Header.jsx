@@ -1,211 +1,270 @@
-import React from "react";
-import { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
+import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
+import { LuMenu, LuX } from "react-icons/lu";
 import agroflex from "../../assets/images/agroflex.png";
-import { useEffect } from "react";
-import { useRef } from "react";
+
+const PLAY_STORE =
+  "https://play.google.com/store/apps/details?id=com.autafrika.agroflex";
+
+/* Uniquement des sections réellement présentes sur la page */
+const links = [
+  { id: "marche", label: "Marché" },
+  { id: "prix", label: "Prix" },
+  { id: "cooperative", label: "Coopérative" },
+  { id: "services", label: "Services" },
+  { id: "newsletter", label: "Newsletter" },
+  { id: "contact", label: "Contact" },
+];
+const LINK_IDS = links.map((l) => l.id);
+
+/* Section visible à l'écran -> lien actif */
+function useActiveSection(ids) {
+  const [active, setActive] = useState("");
+
+  useEffect(() => {
+    const targets = ids
+      .map((id) => document.getElementById(id))
+      .filter(Boolean);
+    if (!targets.length) return undefined;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) setActive(entry.target.id);
+        });
+      },
+      /* bande au tiers haut de l'écran : une seule section à la fois */
+      { rootMargin: "-35% 0px -60% 0px" },
+    );
+    targets.forEach((t) => observer.observe(t));
+
+    const onTop = () => {
+      if (window.scrollY < 200) setActive("");
+    };
+    window.addEventListener("scroll", onTop, { passive: true });
+
+    return () => {
+      observer.disconnect();
+      window.removeEventListener("scroll", onTop);
+    };
+  }, [ids]);
+
+  return active;
+}
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
-  const menuRef = useRef(null); // Référence pour détecter les clics externes
-  // Fermer le menu si on clique à l'extérieur
+  const [scrolled, setScrolled] = useState(false);
+  const menuRef = useRef(null);
+  const burgerRef = useRef(null);
+  const reduce = useReducedMotion();
+  const active = useActiveSection(LINK_IDS);
+
+  /* Transparente sur le hero, opaque dès qu'on défile */
   useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (menuRef.current && !menuRef.current.contains(event.target)) {
+    const onScroll = () => setScrolled(window.scrollY > 24);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  /* Menu mobile : clic extérieur, Échap, blocage du scroll */
+  useEffect(() => {
+    if (!isOpen) return undefined;
+
+    const onPointer = (e) => {
+      if (
+        !menuRef.current?.contains(e.target) &&
+        !burgerRef.current?.contains(e.target)
+      ) {
         setIsOpen(false);
       }
     };
+    const onKey = (e) => {
+      if (e.key === "Escape") {
+        setIsOpen(false);
+        burgerRef.current?.focus();
+      }
+    };
 
-    if (isOpen) {
-      document.addEventListener("mousedown", handleClickOutside);
-      document.body.style.overflow = "hidden";
-    } else {
-      document.removeEventListener("mousedown", handleClickOutside);
-      document.body.style.overflow = "auto";
-    }
+    document.addEventListener("pointerdown", onPointer);
+    document.addEventListener("keydown", onKey);
+    document.body.style.overflow = "hidden";
 
-    return () => document.removeEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("pointerdown", onPointer);
+      document.removeEventListener("keydown", onKey);
+      document.body.style.overflow = "";
+    };
   }, [isOpen]);
 
+  /* Repasse en mode desktop -> on ferme le menu mobile */
+  useEffect(() => {
+    const mq = window.matchMedia("(min-width: 1024px)");
+    const onChange = (e) => e.matches && setIsOpen(false);
+    mq.addEventListener("change", onChange);
+    return () => mq.removeEventListener("change", onChange);
+  }, []);
+
+  const scrollTop = (e) => {
+    e.preventDefault();
+    setIsOpen(false);
+    window.scrollTo({ top: 0, behavior: reduce ? "auto" : "smooth" });
+    history.replaceState(null, "", window.location.pathname);
+  };
+
+  const solid = scrolled || isOpen;
+
   return (
-    <>
-      <nav className=" navbar bg-gradient-to-r h-auto justify-between shadow-2xl shadow-green-950/15 w-full backdrop-blur-2xl fixed from-white/85 gap-6 header hidden items-center lg:flex lg:flex-row px-10 py-2 to-white/70 top-0 via-blue-200/30 z-50">
+    <header
+      className={`fixed inset-x-0 top-0 z-50 transition-[background-color,box-shadow,backdrop-filter] duration-300 ${
+        solid
+          ? "bg-white/90 shadow-lg shadow-forest/10 backdrop-blur-xl"
+          : "bg-transparent"
+      }`}
+    >
+      <nav
+        aria-label="Navigation principale"
+        className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-6 px-4 md:px-8 lg:h-[4.5rem]"
+      >
         <a
-          href="#home"
-          className="flex flexCenter p-1 rounded-full w-36 cursor-pointer logo overflow-hidden"
+          href="/"
+          onClick={scrollTop}
+          aria-label="AgroFlex, retour en haut de page"
+          className={`flex shrink-0 items-center rounded-full px-3 py-1 transition-colors ${
+            solid ? "bg-transparent" : "bg-white/90 shadow-md"
+          }`}
         >
-          <img className="align-center h-10" src={agroflex} alt="gim" />
+          <img className="h-9 w-auto lg:h-10" src={agroflex} alt="AgroFlex" />
         </a>
 
-        <ul className="h-13 h-links rounded-full text-black w-[80%] font-semibold gap-10 hidden lg:flex lg:flexCenter lg:items-center lg:justify-center">
-          <li className="link">
-            <a href="#home">Accueil</a>
-            <span className=""></span>
-          </li>
-          <li className="link">
-            <a href="#fonctionnalites">Fonctionnalités</a>
-            <span className=""></span>
-          </li>
-          <li className="link">
-            <a href="#services">Services</a>
-            <span className=""></span>
-          </li>
-          <li className="link">
-            <a href="#newsletter">Newsletter</a>
-            <span className=""></span>
-          </li>
-          <li className="link">
-            <a href="#contact">Contact</a>
-            <span className=""></span>
-          </li>
+        {/* Liens desktop */}
+        <ul className="hidden items-center gap-1 lg:flex">
+          {links.map(({ id, label }) => {
+            const isActive = active === id;
+            return (
+              <li key={id}>
+                <a
+                  href={`#${id}`}
+                  aria-current={isActive ? "true" : undefined}
+                  className={`relative rounded-full px-3 py-2 text-sm font-medium transition-colors xl:px-4 ${
+                    solid
+                      ? isActive
+                        ? "text-forest"
+                        : "text-gray-600 hover:text-forest"
+                      : isActive
+                        ? "text-gold"
+                        : "text-white/85 hover:text-white"
+                  }`}
+                >
+                  {label}
+                  <span
+                    aria-hidden="true"
+                    className={`absolute inset-x-3 -bottom-0.5 h-[3px] rounded-full bg-gold transition-transform duration-300 xl:inset-x-4 ${
+                      isActive ? "scale-x-100" : "scale-x-0"
+                    }`}
+                  />
+                </a>
+              </li>
+            );
+          })}
         </ul>
-        <a
-          href="https://play.google.com/store/apps/details?id=com.autafrika.agroflex"
-          className="hidden lg:flex"
-        >
-          <button className="btn bg-white h-12 rounded-full w-36 enable font-semibold hover:text-white lg:flex mr-5">
-            Télécharger
-          </button>
-        </a>
-      </nav>
-      {!isOpen ? (
-        <div className="flex bg-gradient-to-r justify-between w-screen backdrop-blur-3xl fixed from-white/90 items-center left-0 lg:hidden px-4 to-white/20 top-0 z-50">
-          <div className="flex rounded-s-md text-white w-full items-center lg:hidden">
+
+        <div className="flex items-center gap-2">
+          {/* .btn force display:flex : on masque via un conteneur */}
+          <div className="hidden sm:block">
             <a
-              className="bg- text-3xl font-bold leading-none mr-auto py-2"
-              aria-label="accueil"
-              href="#home"
+              href={PLAY_STORE}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn rounded-lg !bg-gold !px-5 font-semibold !text-forest-ink"
             >
-              <img
-                src={agroflex}
-                className="h-11 rounded-full w-auto cursor-pointer drop-shadow-xl lg:h-[4.5rem] lg:w-auto px-3 py-1"
-                alt="logo autafrika"
-              />
+              Télécharger l&apos;app
             </a>
           </div>
 
           <button
-            className="flex navbar-burger p-1 rounded-md font-bold items-center"
-            onClick={() => setIsOpen(true)}
+            ref={burgerRef}
+            type="button"
+            onClick={() => setIsOpen((o) => !o)}
+            aria-expanded={isOpen}
+            aria-controls="menu-mobile"
+            aria-label={isOpen ? "Fermer le menu" : "Ouvrir le menu"}
+            className={`flex h-10 w-10 items-center justify-center rounded-lg transition-colors lg:hidden ${
+              solid
+                ? "bg-forest text-white hover:bg-forest-soft"
+                : "bg-white/15 text-white ring-1 ring-white/40 backdrop-blur-sm hover:bg-white/25"
+            }`}
           >
-            <svg
-              className="bg-gray-600 border border-white/70 h-10 p-2 rounded-lg w-10 cursor-pointer duration-100 fill-white hover:bg-gray-700 hover:transition-colors"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <title>Menu du mobile</title>
-              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
-            </svg>
+            {isOpen ? (
+              <LuX className="h-5 w-5" aria-hidden="true" />
+            ) : (
+              <LuMenu className="h-5 w-5" aria-hidden="true" />
+            )}
           </button>
         </div>
-      ) : (
-        <>
-          <span className="h-screen w-screen backdrop-blur-[4px] fixed z-40"></span>
+      </nav>
 
-          <nav
-            className="flex flex-col bg-white/80 h-fit m-auto shadow-xl w-screen backdrop-blur-md fixed gap-4 left-0 lg:hidden max-w-md overflow-y-auto pt-2 px-5 py-6 top-0 z-50"
-            ref={menuRef}
-          >
-            <div className="flex bg-green-400/40 justify-between rounded-md shadow-md items-center">
-              <div className="flex rounded-s-md text-white w-full items-center lg:hidden">
-                <a
-                  className="text-3xl font-bold leading-none mr-auto"
-                  aria-label="accueil"
-                  href="/"
-                >
-                  <img
-                    src={agroflex}
-                    className="h-11 p-1 w-auto drop-shadow-xl lg:h-[4.5rem] lg:w-auto px-2"
-                    alt="logo autafrika"
-                  />
-                </a>
-              </div>
-
-              <button
-                className="navbar-close p-3"
-                onClick={() => setIsOpen(false)}
+      {/* Menu mobile */}
+      <AnimatePresence>
+        {isOpen && (
+          <>
+            <motion.div
+              aria-hidden="true"
+              className="fixed inset-0 top-16 -z-10 bg-forest/40 backdrop-blur-[2px] lg:hidden"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+            />
+            <motion.div
+              id="menu-mobile"
+              ref={menuRef}
+              className="border-t border-forest/10 bg-white px-4 pb-6 pt-2 shadow-xl lg:hidden"
+              initial={reduce ? false : { opacity: 0, y: -12 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={reduce ? { opacity: 0 } : { opacity: 0, y: -12 }}
+              transition={{ duration: 0.2, ease: "easeOut" }}
+            >
+              <ul className="flex flex-col">
+                {links.map(({ id, label }) => {
+                  const isActive = active === id;
+                  return (
+                    <li key={id}>
+                      <a
+                        href={`#${id}`}
+                        onClick={() => setIsOpen(false)}
+                        aria-current={isActive ? "true" : undefined}
+                        className={`flex items-center justify-between rounded-lg px-4 py-3 text-base transition-colors ${
+                          isActive
+                            ? "bg-cream font-semibold text-forest"
+                            : "text-gray-700 hover:bg-cream"
+                        }`}
+                      >
+                        {label}
+                        {isActive && (
+                          <span
+                            aria-hidden="true"
+                            className="h-2 w-2 rounded-full bg-gold"
+                          />
+                        )}
+                      </a>
+                    </li>
+                  );
+                })}
+              </ul>
+              <a
+                href={PLAY_STORE}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn mt-4 w-full rounded-lg !bg-forest py-3 font-semibold !text-white"
               >
-                <svg
-                  className="h-8 p-1 w-8 cursor-pointer duration-100 hover:bg-gray-400/30 hover:rounded-full hover:transition-colors"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M6 18L18 6M6 6l12 12"
-                  ></path>
-                </svg>
-              </button>
-            </div>
-
-            <ul onClick={() => setIsOpen(false)} className="mt-5">
-              <li className="mb-1">
-                <a
-                  href="#home"
-                  aria-label="accueil"
-                  className="rounded text-gray-500 text-sm block font-normal hover:bg-gray-600/10 hover:text-black px-4 py-3"
-                >
-                  Accueil
-                </a>
-              </li>
-              <li className="mb-1">
-                <a
-                  href="#fonctionnalites"
-                  aria-label="à propos"
-                  className="rounded text-gray-500 text-sm block font-normal hover:bg-gray-600/10 hover:text-black px-4 py-3"
-                >
-                  Fonctionnalités
-                </a>
-              </li>
-              <li className="mb-1">
-                <a
-                  href="#services"
-                  aria-label="services"
-                  className="rounded text-gray-500 text-sm block font-normal hover:bg-gray-600/10 hover:text-black px-4 py-3"
-                >
-                  Services
-                </a>
-              </li>
-              <li className="mb-1">
-                <a
-                  href="#newsletter"
-                  aria-label="newsletter"
-                  className="rounded-md text-gray-500 text-sm block font-normal hover:bg-gray-600/10 hover:text-black px-4 py-3"
-                >
-                  Newsletter
-                </a>
-              </li>
-              <li className="mb-1">
-                <a
-                  href="#contact"
-                  aria-label="contact"
-                  className="rounded text-gray-500 text-sm block font-normal hover:bg-gray-600/10 hover:text-black px-4 py-3"
-                >
-                  Contact
-                </a>
-              </li>
-            </ul>
-
-            <div className="mt-auto w-full">
-              <div className="pt-6 w-full">
-                <a
-                  href="https://play.google.com/store/apps/details?id=com.autafrika.agroflex"
-                  className="btn rounded-lg text-center text-sm text-white block enable font-semibold leading-loose mb-2 px-4 py-4"
-                  aria-label="prendre inscription"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Télécharger l&apos;app
-                </a>
-              </div>
-            </div>
-          </nav>
-        </>
-      )}
-    </>
+                Télécharger l&apos;app
+              </a>
+            </motion.div>
+          </>
+        )}
+      </AnimatePresence>
+    </header>
   );
 }
 

@@ -4,12 +4,12 @@ import { motion } from "framer-motion";
 
 function Meteo() {
   return (
-    <section className="meteo px-4 lg:px-32 py-14 flex flex-col justify-start items-center w-full h-auto ">
+    <section className="meteo  px-4 lg:px-32 py-14 flex flex-col justify-start items-center w-full h-auto ">
       <h2 className="font-semibold pt-4  pb-10 px-5 text-center text-slate-600 text-2xl lg:text-3xl">
         Surveillance Météorologique
       </h2>
 
-      <div className="w-full h-fit gap-5 flex flex-col items-center justify-center lg:flex-row ">
+      <div className="w-full max-w-7xl h-fit gap-5 flex flex-col items-center justify-center lg:flex-row ">
         <div className="serv-left relative h-full flex justify-center items-center  w-full lg:w-1/2 ">
           <span className="absolute bulb8 w-[20rem] h-[20rem] lg:w-[32rem] lg:h-[32rem] bg-amber-600/20 "></span>
           <motion.div

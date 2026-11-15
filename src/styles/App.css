@@ -1,10 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Playwrite+VN:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 @import "tailwindcss";
-* {
-  margin: 0;
-  box-sizing: border-box;
-  font-family: poppins, sans-serif;
-  scroll-behavior: smooth;
+
+/* Palette AgroFlex (alignée sur le nouveau hero) */
+@theme {
+  --color-forest: #0f2a1b;
+  --color-forest-ink: #14301f;
+  --color-forest-soft: #1c3d2a;
+  --color-gold: #f2b632;
+  --color-cream: #f7f5ee;
+}
+
+/* Les ancres (#marche, #prix…) s'arrêtent sous la navbar fixe */
+html {
+  scroll-padding-top: 4.5rem;
+}
+
+/* En @layer base pour que les utilitaires Tailwind (mx-auto, font-mono…) puissent la surcharger */
+@layer base {
+  * {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: poppins, sans-serif;
+    scroll-behavior: smooth;
+  }
 }
 .flexCenter {
   display: flex;
