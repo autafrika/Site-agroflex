@@ -1,5 +1,11 @@
 import React from "react";
-import { LuBuilding2, LuGlobe, LuTruck, LuUsers, LuArrowRight } from "react-icons/lu";
+import {
+  LuBuilding2,
+  LuGlobe,
+  LuTruck,
+  LuUsers,
+  LuArrowRight,
+} from "react-icons/lu";
 import { PhoneFrame, Reveal, Eyebrow } from "../Showcase/Showcase";
 import coopDashboard from "../../assets/images/Screenshot_20261104_221729_Chrome.jpg";
 
@@ -73,14 +79,14 @@ function Cooperative() {
                 aria-hidden="true"
               />
             </a>
-            <a
-              href="https://play.google.com/store/apps/details?id=com.autafrika.agroflex"
+            {/* <a
+              // href="https://play.google.com/store/apps/details?id=com.autafrika.agroflex"
               target="_blank"
               rel="noopener noreferrer"
               className="btn rounded-lg !border !border-white/50 !bg-white/10 !px-5 py-3 font-semibold !text-white hover:!bg-white/20 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
             >
-              Télécharger l&apos;app
-            </a>
+              Voir le marché
+            </a> */}
           </div>
         </Reveal>
 

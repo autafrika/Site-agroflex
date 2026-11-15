@@ -7,18 +7,18 @@ const PrivacyPolicy = () => {
     <div className="privacy-policy-container relative">
       <img
         src={logo}
-        alt="Agroflex Logo"
+        alt="Agrowote Logo"
         className="privacy-policy-logo badge opacity-7 justify-self-center w-[30rem] md:w-[40rem] lg:w-[46rem] fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2  "
       />
       <header className="privacy-policy-header">
-        <h1>Politique de Confidentialité pour Agroflex</h1>
+        <h1>Politique de Confidentialité pour Agrowote</h1>
         <p>Dernière mise à jour : 3 septembre 2025</p>
       </header>
       <main className="privacy-policy-content">
         <section>
           <h2>1. Introduction</h2>
           <p>
-            Bienvenue sur Agroflex. Nous nous engageons à protéger la vie privée
+            Bienvenue sur Agrowote. Nous nous engageons à protéger la vie privée
             de nos utilisateurs. Cette politique de confidentialité explique
             comment nous collectons, utilisons, divulguons et protégeons vos
             informations lorsque vous utilisez notre application mobile.

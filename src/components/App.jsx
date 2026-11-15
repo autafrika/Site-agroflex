@@ -40,13 +40,13 @@ const MainPage = () => (
     <Prix />
     <Cooperative />
     {/* <Functionnalities /> */}
-    <Services />
-    <Notifications />
+    {/* <Services /> */}
+    {/* <Notifications /> */}
     {/* <ChatAi /> */}
-    <Meteo />
-    <DetectionMaladie />
-    <Diagnostic />
-    <Vente />
+    {/* <Meteo /> */}
+    {/* <DetectionMaladie /> */}
+    {/* <Diagnostic /> */}
+    {/* <Vente /> */}
     <Newsletter />
     <Footer />
     <Analytics />

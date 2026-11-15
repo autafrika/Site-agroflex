@@ -1,17 +1,16 @@
 import React, { useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { LuMenu, LuX } from "react-icons/lu";
-import agroflex from "../../../public/agro_transparent.png";
+import agrowote from "../../../public/agro_transparent.png";
 
-const PLAY_STORE =
-  "https://play.google.com/store/apps/details?id=com.autafrika.agroflex";
+const AGRIWOTE = "https://agroflex.autafrika.com";
 
 /* Uniquement des sections réellement présentes sur la page */
 const links = [
   { id: "marche", label: "Marché" },
   { id: "prix", label: "Prix" },
   { id: "cooperative", label: "Coopérative" },
-  { id: "services", label: "Services" },
+  // { id: "services", label: "Services" },
   { id: "newsletter", label: "Newsletter" },
   { id: "contact", label: "Contact" },
 ];
@@ -130,12 +129,12 @@ function Header() {
         <a
           href="/"
           onClick={scrollTop}
-          aria-label="AgroFlex, retour en haut de page"
+          aria-label="AgroWote, retour en haut de page"
           className={`flex shrink-0 items-center rounded-full px-3  lg:px-5 py-1 transition-colors ${
             solid ? "bg-transparent" : "bg-white/90 shadow-md"
           }`}
         >
-          <img className="h-9 w-auto lg:h-12" src={agroflex} alt="AgroFlex" />
+          <img className="h-9 w-auto lg:h-12" src={agrowote} alt="AgroWote" />
         </a>
 
         {/* Liens desktop */}
@@ -174,12 +173,12 @@ function Header() {
           {/* .btn force display:flex : on masque via un conteneur */}
           <div className="hidden sm:block">
             <a
-              href={PLAY_STORE}
+              href={AGRIWOTE}
               target="_blank"
               rel="noopener noreferrer"
               className="btn rounded-lg !bg-gold !px-5 font-semibold !text-forest-ink"
             >
-              Télécharger l&apos;app
+              Créer un compte
             </a>
           </div>
 
@@ -253,12 +252,12 @@ function Header() {
                 })}
               </ul>
               <a
-                href={PLAY_STORE}
+                href={AGRIWOTE}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn mt-4 w-full rounded-lg !bg-forest py-3 font-semibold !text-white"
               >
-                Télécharger l&apos;app
+                Créer un compte
               </a>
             </motion.div>
           </>

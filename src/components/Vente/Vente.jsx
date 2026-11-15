@@ -35,7 +35,7 @@ function Vente() {
                 <BlurImage
                   className="h-84 min-w-40 lg:h-100 lg:min-w-48"
                   src={screen}
-                  alt={`Capture d’écran ${index + 1} de l’application Agroflex`}
+                  alt={`Capture d’écran ${index + 1} de l’application Agrowote`}
                 />
               </div>
               <div className="bg-black/25 w-full h-4 rounded-[50%] blur-sm"></div>

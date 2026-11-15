@@ -1,5 +1,5 @@
 import React from "react";
-import agroflex from "../../../public/agro_transparent.png";
+import agrowote from "../../../public/agro_transparent.png";
 import googleplaylogo from "../../assets/images/googleplaylogo.png";
 
 function Footer() {
@@ -12,20 +12,20 @@ function Footer() {
         <aside className="flex  flex-col gap-12 w-auto md:w-[50%] leading-loose ">
           <div className="">
             <img
-              src={agroflex}
-              className="rounded-xl w-24 -left-3 pb-2 relative"
-              alt="agroflex"
+              src={agrowote}
+              className="rounded-xl w-24  pb-2 relative"
+              alt="agrowote"
             />
             <p className="text-[15px]/7  lg:w-7/10 ">
-              Agroflex connecte les agriculteurs et les acteurs agricoles aux
-              outils et aux données nécessaires pour produire mieux, réduire les
-              pertes et acccéder aux marchés. Grâce à la technologie et à
-              l&apos;innovation, il optimise les pratiques agricoles , renforce
-              la résilience des exploitations et contribue à une agriculture
-              plus durable, éfficace et équitable:
+              Agrowote est une place de marché virtuelle dédiée au monde
+              agricole : elle relie directement les producteurs aux acheteurs
+              pour vendre plus vite, limiter les pertes et sécuriser les
+              revenus. Appuyée par la technologie et les données, elle
+              accompagne également les acteurs agricoles pour produire mieux et
+              développer une agriculture durable, efficace et équitable.
             </p>
           </div>
-          <div className="flex sociaux  ">
+          {/* <div className="flex sociaux  ">
             <a
               href="https://play.google.com/store/apps/details?id=com.autafrika.agroflex"
               className="!py-1 !px-3 btn enable !border !border-gray-500 bg-white flex items-center justify-center gap-1"
@@ -44,27 +44,24 @@ function Footer() {
                 </p>
               </div>
             </a>
-          </div>
+          </div> */}
         </aside>
         <nav className="flex flex-col gap-4">
           <h6 className="text-black footer-title">Liens</h6>
-          <a className="link link-hover" href="#home">
+          <a className="link link-hover" href="#">
             Accueil
           </a>
-          <a className="link link-hover" href="#fonctionnalites">
-            Fonctionnalités
+          <a className="link link-hover" href="#marche">
+            Marché
           </a>
-          <a className="link link-hover" href="#services">
-            Services
+          <a className="link link-hover" href="#price">
+            Prix
           </a>
           <a className="link link-hover" href="#newsletter">
             Newsletter
           </a>
           <a className="link link-hover" href="#contact">
             Contact
-          </a>
-          <a className="link link-hover" href="/privacy">
-            Politique de confidentialité
           </a>
         </nav>
         <nav className="flex flex-col gap-4">

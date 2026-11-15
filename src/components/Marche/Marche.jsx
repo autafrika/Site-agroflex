@@ -35,7 +35,7 @@ function Marche() {
     >
       <div className="mx-auto grid max-w-7xl items-center gap-14 lg:grid-cols-[1fr_1.15fr] lg:gap-20">
         <Reveal className="flex flex-col gap-6">
-          <Eyebrow>Le marché AgroFlex</Eyebrow>
+          <Eyebrow>Le marché Agriwote</Eyebrow>
           <h2 className="text-3xl font-[800] leading-tight text-forest md:text-4xl">
             Vos produits locaux, visibles par les acheteurs{" "}
             <span className="underline decoration-gold decoration-4 underline-offset-6">
@@ -69,7 +69,7 @@ function Marche() {
           <BrowserFrame
             src={feedDesktop}
             alt="Fil d'annonces AgroFlex : une offre de champignons avec boutons Contacter, Appeler et WhatsApp, et les prix près de chez vous"
-            url="agroflex.autafrika.com"
+            url="agriwote.autafrika.com"
             className="ml-auto w-[86%]"
           />
           <PhoneFrame
